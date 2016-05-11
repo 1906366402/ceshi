@@ -6,4 +6,6 @@ echo "dd";
 
 echo "ddddddd";
 
+echo "我再试一下";
+
 ?>
