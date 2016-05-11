@@ -22,4 +22,6 @@ echo "客户端的一次";
 
 echo "命令";
 
+echo "jintianzuihouyici";
+
 ?>
