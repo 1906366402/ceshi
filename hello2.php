@@ -10,4 +10,6 @@ echo "我再试一下";
 
 echo "dd";
 
+echo "ddd";
+
 ?>
