@@ -12,4 +12,6 @@ echo "dd";
 
 echo "ddd";
 
+echo "你好，我是刘宝南";
+
 ?>
