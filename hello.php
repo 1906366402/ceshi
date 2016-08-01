@@ -26,6 +26,5 @@ echo "jintianzuihouyici";
 
 echo "你不是真正的快乐";
 
-echo "哈哈哈";
 
 ?>
