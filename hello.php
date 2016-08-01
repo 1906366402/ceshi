@@ -26,5 +26,9 @@ echo "jintianzuihouyici";
 
 echo "你不是真正的快乐";
 
+echo "哈哈哈哈";  
+
+echo "你不是真正 点快了";
+
 
 ?>
