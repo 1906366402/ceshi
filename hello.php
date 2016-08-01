@@ -24,4 +24,6 @@ echo "命令";
 
 echo "jintianzuihouyici";
 
+echo "你不是真正的快乐";
+
 ?>
