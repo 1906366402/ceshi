@@ -10,5 +10,6 @@ echo "hello, i am liubaonan";
 
 echo "ni bu shi zhen zheng de kuai le";
 
+echo "醇海教食性饺";
 
 ?>
