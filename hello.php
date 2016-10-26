@@ -14,7 +14,7 @@ echo "我在测试git客户端的同步功能";
 
 
 
-echo "dd";
+echo "ddlist";
 
 
 ?>
