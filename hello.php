@@ -14,10 +14,6 @@ echo "我在测试git客户端的同步功能";
 
 
 
-echo "ddlist";
-echo "woshi dev";
-
-
 ?>
 
 
