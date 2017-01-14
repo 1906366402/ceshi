@@ -1,0 +1,27 @@
+<include file="Public/header" />
+<div class="nav_bottom">
+    <a href="/">
+        <em class="nav-ico01"></em>
+        <span>首页</span>
+    </a>
+    <a href="/put">
+        <em class="nav-ico02"></em>
+        <span>找项目</span>
+    </a>
+    <a href="/top">
+        <em class="nav-ico03"></em>
+        <span>排行榜</span>
+    </a>
+    <a href="/news">
+        <em class="nav-ico04"></em>
+        <span>创业资讯</span>
+    </a>
+	<script>
+		if(window.location.href.indexOf('liansuo')!=-1){
+			document.write('<a href="https://u.liansuo.com"><em class="nav-ico05"></em><span>我的连锁</span></a>');
+		}else{
+			document.write('<a href="javascript:void();"><span></span></a>');
+		}
+	</script>
+	
+</div>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>【<{$industry_pid.industryname}>加盟】项目报道,<{$industry_pid.industryname}>加盟品牌推荐,中国<{$industry_pid.industryname}>好项目-中国连锁网</title>
+<meta name="searchtitle" content="连锁加盟网">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="mobile-agent" content="format=html5;url=http://m.liansuo.com/baodao/<{$industry}>/">
+<meta name="Keywords" content="<{$industry_pid.industryname}>加盟品牌,<{$industry_pid.industryname}>加盟项目,<{$industry_pid.industryname}>加盟店">
+<meta name="Description" content="中国连锁网为您深度报道中国<{$industry_pid.industryname}>加盟好项目,为您推荐质优靠谱的餐厅加盟品牌,帮您找到适合自己的<{$industry_pid.industryname}>加盟店,更多<{$industry_pid.industryname}>加盟项目信息请关注中国连锁网公众号：liansuo-com.">
+<link rel="shortcut icon" href="http://www.liansuo.com/favicon.ico">
+<link href="http://www.liansuo.com/html/style/liansuo_ini.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/home/baodao/style_list2.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/home/public/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/js/home/baodao/jquery1.js"></script>
+</head>
+<body>
+<script>
+	var mob_url = "http://m.liansuo.com/baodao/<{$industry}>/";
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/home/news/ismob.js"></script>
+<div class="head">
+	<div class="lsgb_header_bj">
+		<div class="center">
+			<include file="../Public/html/home/tag/header.html"/>
+			<div class="space10 clear">
+			</div>
+			<div class="space10 clear">
+			</div>
+			<div class="lsgb_logo">
+				<a href="http://www.liansuo.com/" class="floatL m_r"><img width="210" height="55" src="__PUBLIC__/css/home/images/logo_11.png" alt="中国连锁网"></a>
+				<div class="floatL title_pro">
+					<h1><{$industry_pid.industryname}>加盟项目报道</h1>
+					<p>
+						<a target="_blank" href="">www.liansuo.com/baodao/<{$industry_pid.pathname}></a>
+					</p>
+				</div>
+				<div class="floatR ad_pic">
+					<adlist item="one"  cid="817" row="3">
+					<a href="<{$one.httpurl}>" target="_blank"><img width="226" height="55" src="http://img.liansuo.com/html/images/<{$one.fileurl}>"></a>
+					</adlist>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="space10 clear">
+	</div>
+	<div class="space10 clear">
+	</div>
+	<div class="pro_nav">
+		<div class="pro_nav_con">
+			  <div class="pro_nav_con">  
+				<a href="http://www.liansuo.com/baodao/" target="_blank">首页</a>
+				<volist name="industry_class" id="vo">
+				<a href="/baodao/<{$vo.pathname}>/" target="_blank"><{$vo.industryname}></a>
+				</volist>
+			  </div>
+		</div>
+	</div>
+</div>
+<div class="breadcrumbs center">
+	<span>当前位置 : </span>
+	<span class="breadcrumbs-links"><a href="http://www.liansuo.com">连锁网</a>＞</span>
+	<span class="breadcrumbs-links"><a href="http://www.liansuo.com/baodao/">加盟项目报道</a>></span>
+	<span class="breadcrumbs-links"><a href="http://www.liansuo.com/baodao/<{$industry_pid.pathname}>"><{$industry_pid.industryname}>加盟报道</a></span>
+	</span>
+</div>
+
+<if condition="count($industry_name)">
+<div class="center">
+	<div class="hy-box clearfix">
+		<span><if condition="$industry_pid.parentid eq 0"><{$industry_pid.industryname}><else /><{$industry_pid.parent.industryname}></if>类别:</span>
+		<div class="hy-box-content">
+			<volist name="industry_name" id="two">
+					  <a href="http://www.liansuo.com/baodao/<{$two.pathname}>/" title="<{$two.industryname}>加盟" class="abs"><{$two.industryname}></a>
+					</volist>
+		</div>
+	</div>
+</div>
+</if>
+<div class="center">
+	<div class="leftBox g-bb">
+		<div class="c-brand modRight">
+			<div class="hd">
+			<{$industry_pid.industryname}>品牌
+			</div>
+			<div class="bd clearfix">
+				<ul>
+					<plist row="6" item="one" cid="$industry_pid.id" order="orderid desc"> 
+						<li><a href="<{$one.ypurl}>" target="_blank"><img title="<{$one.title}>" height="50" width="64" alt="<{$one.title}>" src="http://img.liansuo.com/html/images/<{$one.logo}>"><{$one.title}></a></li>
+	                </plist> 			         
+				</ul>
+			</div>
+		</div>
+		<div class="c-keywords modRight" style="border-top:1px dashed #f8d9c2">
+			<div class="bd clearfix">
+				<dl>
+					<dt>投资金额</dt>
+					<if condition="$industry_pid.parentid eq 0">
+						<dd><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-0,1-_0_0-1.html" target="_blank" title="1万以下">1万以下</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-1,5-_0_0-1.html" target="_blank" title="1~5万">1~5万</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-5,10-_0_0-1.html" target="_blank" title="5~10万">5~10万</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-10,20-_0_0-1.html" target="_blank" title="10~20万">10~20万</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-20,50-_0_0-1.html" target="_blank" title=" 20~50万"> 20~50万</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-50,100-_0_0-1.html" target="_blank" title="10~20万">50~100万</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-100,9999-_0_0-1.html" target="_blank" title=" 100万以上"> 100万以上</a></dd>
+					<else />
+						<dd><a href="http://search.liansuo.com/<{$industry_pid.parentid}>-<{$industry_pid.id}>-0,1-_0_0-1.html" target="_blank" title="1万以下">1万以下</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-1,5-_0_0-1.html" target="_blank" title="1~5万">1~5万</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-5,10-_0_0-1.html" target="_blank" title="5~10万">5~10万</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-10,20-_0_0-1.html" target="_blank" title="10~20万">10~20万</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-20,50-_0_0-1.html" target="_blank" title=" 20~50万"> 20~50万</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-50,100-_0_0-1.html" target="_blank" title="10~20万">50~100万</a><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-100,9999-_0_0-1.html" target="_blank" title=" 100万以上"> 100万以上</a></dd>
+					</if>
+				</dl>
+				<dl>
+					<dt><if condition="$industry_pid.parentid eq 0"><{$industry_pid.industryname}><else /><{$industry_pid.parent.industryname}></if>分类</dt>
+					<dd>
+						<volist name="industry_name" id="two">
+							<a href="http://www.liansuo.com/baodao/<{$two.pathname}>/" target="_blank" title="<{$two.industryname}>加盟"><{$two.industryname}></a>
+						</volist>
+					</dd>
+				</dl>
+			</div>
+		</div>
+
+		 <div id="topzixun">
+      <div class="toplist">
+        <div class="tabtop" id="ul_a">
+	        <a class="tab-list current frist"><span>加盟指南</span></a>
+	        <a class="tab-list"><span>选址筹备</span></a>
+	        <a class="tab-list"><span>日常经营</span></a>
+	        <a class="tab-list"><span>项目资讯</span></a>
+        </div>
+        <div class="tabcontent" id="tabcontent">
+          <div class="tabs_ul" style="display:block;">
+          <div class="topslider topzixunslider" style="margin-top:0px"><span class="hot">最新</span>
+            <ul class="slider-box">
+            <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="e">
+                <li class="frist"><a href="<{$one.url}>" target="_blank"><img src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""><span class="pic-bg"></span><span class="pic-txt"><{$one.title}></span></a></li>
+            </arclist>
+            </ul>
+           </div>
+          <arclist item="one" row="5" industry="$industry_pid.id" deflag="e"> 
+	          <p class="textlist-1"><i class="rank"></i><a class="link js_link" href="<{$one.url}>" ><span><{$one.title}></span></a></p>
+          </arclist>
+          </div>
+          <div class="tabs_ul">
+          <div class="topslider topzixunslider" style="margin-top:0px"><span class="hot">最新</span>
+            <ul class="slider-box">
+            <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="g">
+                <li class="frist"><a href="<{$one.url}>"><img src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""><span class="pic-bg"></span><span class="pic-txt"><{$one.title}></span></a></li>
+            </arclist>
+            </ul>
+           </div> 
+          <arclist item="one" row="5" industry="$industry_pid.id" deflag="g"> 
+	          <p class="textlist-1"><i class="rank"></i><a class="link js_link" href="<{$one.url}>" ><span><{$one.title}></span></a></p>
+          </arclist>
+          </div>
+          <div class="tabs_ul">
+          <div class="topslider topzixunslider" style="margin-top:0px"><span class="hot">最新</span>
+            <ul class="slider-box">
+            <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="i,k,o">
+                <li class="frist"><a href="<{$one.url}>"><img src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""><span class="pic-bg"></span><span class="pic-txt"><{$one.title}></span></a></li>
+            </arclist>
+            </ul>
+           </div>
+          <arclist item="one" row="5" industry="$industry_pid.id" deflag="i,k,o"> 
+	          <p class="textlist-1"><i class="rank"></i><a class="link js_link" href="<{$one.url}>" ><span><{$one.title}></span></a></p>
+          </arclist>
+          </div>
+          <div class="tabs_ul">
+          <div class="topslider topzixunslider" style="margin-top:0px"><span class="hot">最新</span>
+            <ul class="slider-box">
+            <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="l,q">
+                <li class="frist"><a href="<{$one.url}>"><img src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""><span class="pic-bg"></span><span class="pic-txt"><{$one.title}></span></a></li>
+            </arclist>
+            </ul>
+           </div>
+          <arclist item="one" row="5" industry="$industry_pid.id" deflag="l,q"> 
+	          <p class="textlist-1"><i class="rank"></i><a class="link js_link" href="<{$one.url}>" ><span><{$one.title}></span></a></p>
+          </arclist>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="topyingshi" monkey="bangdan" data-rm="server">
+      <div class="toplist">
+        <div class="tabtop" id="tabtop_2">
+	        <a class="tab-list current frist"><span>经典案例</span></a>
+	        <a class="tab-list "><span>人物专访</span></a>
+	        <a class="tab-list "><span>参展信息</span></a>
+	        <a class="tab-list "><span>行业动态</span></a>
+        </div>
+        <div class="tabcontent"  id="tabcontent_2">
+        <div class="tabs_ul" style="display:block;">
+          <div class="topslider topyingshislider" style="margin-top:0px" monkey="img"><span class="hot">热播</span>
+            <ul class="slider-box">
+            <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="n">
+                <li class="frist"><a href="<{$one.url}>"><img src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""><span class="pic-bg"></span><span class="pic-txt"><{$one.title}></span></a></li>
+            </arclist>
+            </ul>
+          </div>
+              <arclist item="one" row="5" industry="$industry_pid.id" deflag="n"> 
+	         	  <p class="textlist-1"><i class="rank"></i><a class="link js_link" href="<{$one.url}>" ><span><{$one.title}></span></a></p>
+              </arclist>
+         </div>
+         <div class="tabs_ul">
+          <div class="topslider topyingshislider" style="margin-top:0px" monkey="img"><span class="hot">热播</span>
+            <ul class="slider-box">
+            <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="m">
+                <li class="frist"><a href="<{$one.url}>"><img src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""><span class="pic-bg"></span><span class="pic-txt"><{$one.title}></span></a></li>
+            </arclist>
+            </ul>
+          </div>
+          <arclist item="one" row="5" industry="$industry_pid.id" deflag="m"> 
+	          <p class="textlist-1"><i class="rank"></i><a class="link js_link" href="<{$one.url}>" ><span><{$one.title}></span></a></p>
+          </arclist>
+         </div>
+         <div class="tabs_ul">
+          <div class="topslider topyingshislider" style="margin-top:0px" monkey="img"><span class="hot">热播</span>
+            <ul class="slider-box">
+            <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="x">
+                <li class="frist"><a href="<{$one.url}>"><img src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""><span class="pic-bg"></span><span class="pic-txt"><{$one.title}></span></a></li>
+            </arclist>
+            </ul>
+          </div>
+          <arclist item="one" row="5" industry="$industry_pid.id" deflag="x"> 
+	          <p class="textlist-1"><i class="rank"></i><a class="link js_link" href="<{$one.url}>" ><span><{$one.title}></span></a></p>
+          </arclist>
+         </div>
+         <div class="tabs_ul">
+          <div class="topslider topyingshislider" style="margin-top:0px" monkey="img"><span class="hot">热播</span>
+            <ul class="slider-box">
+            <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="q,u">
+                <li class="frist"><a href="<{$one.url}>"><img src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""><span class="pic-bg"></span><span class="pic-txt"><{$one.title}></span></a></li>
+            </arclist>
+            </ul>
+          </div>
+          <arclist item="one" row="5" industry="$industry_pid.id" deflag="q,u"> 
+	          <p class="textlist-1"><i class="rank"></i><a class="link js_link" href="<{$one.url}>" ><span><{$one.title}></span></a></p>
+          </arclist>
+         </div>
+  
+        </div>
+      </div>
+    </div>
+	<div class="ul_list">
+				<dl>
+					<dt>一周内<span>热门文章</span>排行榜</dt>
+					<dd>
+					<ul class="list">
+							<arclist item="one" row="10" cid="$industry_pid.id">
+								<li><a target="_blank" title="<{$one.title}>" href="<{$one.url}>"><{$one.title}></a></li>
+							</arclist>
+					</ul>
+					</dd>
+				</dl>
+			</div>
+	</div>
+	<div id="hao_r" class="fl">
+		<div class="Choice_events hao_border" style="margin-top:0px;">
+			<div class="hd_right">
+				<{$industry_pid.industryname}>精选推荐
+			</div>
+			<div class="h_s_list clearfix">
+				<ul>
+					<plist item="one" cid="$industry_pid.id" order="orderid desc">
+						<li><a target="_blank" title="<{$one.brandname}>" href="<{$one.ypurl}>"><{$one.brandname}></a></li>
+						</plist>
+				</ul>
+			</div>
+		</div>
+		<div id="Dynamic" class="mbar clearfix">
+			<dl>
+				<dt>留言播报：</dt>
+				<dd style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; height: 50px;">
+				<ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 300px; top: -74.6946px;">
+					<plist item="one" cid="$industry_pid.id" row="20" order="orderid desc">
+					<?php
+	$surname = array('刘先生','张先生','段先生','张先生','丁先生','曹女士','陈女士','王女士','贾女士','周女士');
+    $province = array('成都','北京','上海','深圳','青岛','唐山','合肥');
+    shuffle($surname);
+    shuffle($province);
+?>
+					<li style="overflow: hidden; float: none; width: 295px; height: 50px;">
+	  来自
+					<?php echo $province[0]; ?>
+					的
+					<?php echo $surname[0];  ?>
+					 咨询了 
+					<a target="_blank"><{$industry_pid.industryname}></a>类的
+					<a href="<{$one.ypurl}>" target="_blank"><{$one.brandname}></a>
+					</li>
+					</plist>
+				</ul>
+			</dl>
+		</div>
+		<div class="hao_border" id="addMod">
+			<div class="hd_right">
+				<div class="hd_tabs hd_tabs_2" id="tabtag">
+					<ul>
+						<li class="cur" style="cursor: pointer;"><a href="javascript:void(0);"><{$industry_pid.industryname}>项目</a></li>
+						<li style="cursor: pointer;" class=""><a href="javascript:void(0);"><{$industry_pid.industryname}>资讯</a></li>
+						<li style="cursor: pointer;" class=""><a href="javascript:void(0);"><{$industry_pid.industryname}>精品推荐</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="tabcon">
+				<div class="bd" id="bd_event" style="display: block;">
+					<ul class="news_list">
+						<plist item="one" row="100" cid="$industry_pid.id" >
+						<li><a target="_blank" title="<{$one.brandname}>" href="<{$one.ypurl}>"><{$one.brandname}></a></li>
+						</plist>
+					</ul>
+				</div>
+				<div class="bd" style="display: none;">
+					<ul class="news_list_2">
+						<arclist item="one" row="100" cid="$industry_pid.id" >
+						<li><a target="_blank" title="<{$one.title}>" href="<{$one.url}>"><{$one.title}></a></li>
+						</arclist>
+					</ul>
+				</div>
+
+				<div class="bd" id="bd_acc" style="display: none;">
+					<ul class="news_list">
+						<plist item="one" row="100" cid="$industry_pid.id" order="orderid desc">
+						<li><a target="_blank" title="<{$one.brandname}>" href="<{$one.ypurl}>"><{$one.brandname}></a></li>
+						</plist>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hao_border" style="margin-top:20px;">
+			<div class="hd_right">
+				相关关键词
+			</div>
+			<div class="bd">
+				<ul class="mod_list clearfix">
+					<if condition="$industry_pid.parentid eq 0">
+						<modlist item="one" cid="$industry_pid.id" name="seoword" row="400,40" >
+						<li><a target="_blank" href="<{$one.url}>"><{$one.word}></a></li>
+						</modlist>
+					<else />
+						<modlist item="one" cid="$industry_pid.parentid" name="seoword" row="400,40" >
+						<li><a target="_blank" href="<{$one.url}>"><{$one.word}></a></li>
+						</modlist>
+					</if>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="rightBox g-bb">
+		<div class="brand_con_rx">
+			<div class="phb" id="ranklist">
+				<h3><a rel="nofollow" class="floatR" href="http://www.liansuo.com/top.html" target="_blank">完整榜单</a>本周<{$industry_pid.industryname}>好项目</h3>
+				<p>
+					排名&nbsp;&nbsp;&nbsp;加盟品牌
+				</p>
+				<ul class="list listNav">
+					<plist row="10" item="one" cid="$industry_pid.id"> 
+						<if condition="$one['oid']==1"><li class="active"><else/><li></if>
+	                    	  <a href="<{$one.ypurl}>" target="_blank"><i><{$one.oid}></i><{$one.title}></a>
+			                  <div class="add_div">
+				                  	<div class="floatL"><a title="<{$one.title}>" href="<{$one.ypurl}>"><img title="<{$one.title}>" alt="<{$one.title}>" src="http://img.liansuo.com/html/images/<{$one.logo}>"></a></div>
+				                    <div class="floatR text_pro">
+	                                	<p class="name"><a href="<{$one.ypurl}>" target="_blank"><{$one.title}></a></p>
+				                    	<p class="hangye">行业：<a href="http://search.liansuo.com/0-0-0--1.html"><{$one.industryname}></a></p> 
+				                        <p class="jine">金额：<a href="http://search.liansuo.com/0-0-<{$one.joinlinemin}>,<{$one.joinlinemax}>-_0_0-1.html"><{$one.joinlinemin}>万~<{$one.joinlinemax}>万</a></p>
+				                        <p class="anniu"><a rel="nofollow" href="<{$one.ypurl}>">申请加盟</a></p>
+				                    </div>
+			               	  </div>
+	                    </li>
+	                </plist> 			         
+				</ul>
+			</div>
+		</div>
+		<div class="recom-right">
+			<h3><{$industry_pid.industryname}>热门标签</h3>
+			<div id="scroll-tag">
+				<volist name="tagArrayrmbq" id="one">
+					<a href="http://www.liansuo.com/tag/<{$one.id}>/" target="_self" title="<{$one.tag}>" class="c2"><{$one.tag}></a>
+				</volist>
+				<volist name="tagArrayrmbq" id="one">
+					<a href="http://www.liansuo.com/tag/<{$one.id}>/" target="_self" title="<{$one.tag}>" class="c1"><{$one.tag}></a>
+				</volist>
+			</div>
+			<script type="text/javascript" src="__PUBLIC__/js/home/baodao/zzsc.js"></script>
+		</div>
+		<div class="fc_right">
+			<div class="information">
+				<h3><{$industry_pid.industryname}>行业资讯</h3>
+				<ul>
+					<arclist item="one" row="10" cid="$industry_pid.id" >
+						<li><a target="_blank" title="<{$one.title}>" href="<{$one.url}>"><{$one.title}></a></li>
+					</arclist>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<div class="space10">
+</div>
+<div class="space10">
+</div>
+<div class="center">
+	<div class="category hao_border" style="margin-top:20px;">
+		<div class="hd">
+			<em class="ico_ask"></em><a herf="#" style="cursor:hand;">热门关键词：</a>
+		</div>
+		<ul class="list">
+			<modlist name="newssearch" cid="$industry_pid.id" item="one" row="40">
+				<li><a href="/hot/<{$one.id}>.html" title="<{$one.word}>"><{$one.word}></a></li>
+			</modlist>
+		</ul>
+		<div class="fd-clear">
+		</div>
+	</div>
+</div>	<!-- 公共页脚部分 -->
+		<include file="../Public/html/public/footer.html" />
+		<!-- 公共页脚部分end -->
+<div class="toolbar">
+   <a href="###" class="toolbar-item toolbar-item-weixin">
+   <span class="toolbar-layer"></span>
+   </a>
+   <a href="https://u.liansuo.com/Home/Register/register" target="_blank" class="toolbar-item toolbar-item-feedback"></a>
+   <a href="http://www.liansuo.com/about/contactus.html" target="_blank" class="toolbar-item toolbar-item-app">
+   </a>
+   <div onclick="window.scroll(0,0)" style="cursor:pointer;" id="top" class="toolbar-item toolbar-item-top"></div>
+</div>
+
+<script src="__PUBLIC__/js/home/baodao/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/baodao/jquerytabs_list.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/baodao/jcarousellite_1.js"></script>
+<script type="text/javascript">$(function() {$("#Dynamic dd").jCarouselLite({vertical:true,hoverPause:true,visible:1,auto:1000,speed:1800
+});});</script>
+<script type="text/javascript">
+function ranklist(id,ele,elename,elechild,start_ele,cur_ele){
+    var obj_id=document.getElementById(id);
+    var obj_ele=$tag(obj_id,ele);
+    for(i=0;i<obj_ele.length;i++){
+        if(obj_ele[i].className.indexOf(elename) == -1) continue;
+        var objlist=$tag(obj_ele[i],elechild);
+        for(j=0;j<objlist.length;j++){
+            objlist[j].onmouseover=function(){
+                var paris=this.parentNode;
+                var list=$tag(paris,elechild);
+                for(x=0;x<list.length;x++){
+                    var thisdiv=$tag(list[x],cur_ele)[0];
+                    var thisp=$tag(list[x],start_ele)[0];
+                    thisdiv.style.display="none";
+                    thisp.style.display="block";
+                    }
+                var start=$tag(this,start_ele)[0];
+                start.style.display='none';
+                var cur=$tag(this,cur_ele)[0];
+                cur.style.display='block';
+            }
+        }
+    }
+}
+function $tag(id,tag){return id.getElementsByTagName(tag);}
+setTimeout("ranklist('ranklist','ul','listNav','li','a','div')",0);
+function b(){	
+  t = parseInt(x.css('top'));
+  y.css('top','30px');	
+  x.animate({top: t - 30 + 'px'},'slow');	//19为每个li的高度
+  if(Math.abs(t) == h-30){ //19为每个li的高度
+    y.animate({top:'0px'},'slow');
+    z=x;
+    x=y;
+    y=z;
+  }
+  setTimeout(b,3000);//滚动间隔时间 现在是3秒
+}
+$(function(){
+		window.onload = function()
+		{
+			var $li = $('#tab a');
+			var $ul = $('#content .project_con');
+			$li.mouseover(function(){
+				var $this = $(this);
+				var $t = $this.index();
+				$li.removeClass();
+				$this.addClass('current');
+				$ul.css('display','none');
+				$ul.eq($t).css('display','block');
+			})
+		}
+	});
+</script>
+<script>
+	$(function(){
+		window.onload = function()
+		{
+			var $li = $('#ul_a a');
+			var $ul = $('#tabcontent .tabs_ul');
+			$li.mouseover(function(){
+				var $this = $(this);
+				var $t = $this.index();
+				$li.removeClass('current');
+				$this.addClass('current');
+				$ul.css('display','none');
+				$ul.eq($t).css('display','block');
+			})
+		}
+		{
+			var $li = $('#tabtop_2 a');
+			var $ul = $('#tabcontent_2 .tabs_ul');
+			$li.mouseover(function(){
+				var $this = $(this);
+				var $t = $this.index();
+				$li.removeClass('current');
+				$this.addClass('current');
+				$ul.css('display','none');
+				$ul.eq($t).css('display','block');
+			})
+		}
+	});
+</script>
+</body>
+</html>

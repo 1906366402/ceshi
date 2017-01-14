@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* base common style */      
+html,body{padding:0; margin:0;}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0 }
+body, button, input, select, textarea { font: 12px/1.5 "Microsoft YaHei", 微软雅黑,\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu; color:#666 }
+h1, h2, h3, h4, h5, h6 { font-size: 100% }
+address, cite, dfn, em, var { font-style: normal }
+ul, ol, dl { list-style: none }
+a { text-decoration: none !important; outline: none ;font-family:"Microsoft YaHei", 微软雅黑,\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;cursor: pointer;}
+img { border: 0 }
+button, input, select, textarea { font-size: 100% ;font-family:"Microsoft YaHei", 微软雅黑,\9ed1\4f53,\5b8b\4f53, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;outline: none;}
+table { border-collapse: collapse; border-spacing: 0 }
+.clearfix {*zoom:1;}
+.clearfix:after{display:block;clear:both;content:"\0020";visibility:hidden;height:0;}
+.global_wrap{position: relative;min-height:100%; clear: both; content: ""; }
+.ielt7 .global_wrap{height:100%; }
+#clsIframe,#LR_Flash{position: absolute;}
+.col_l{float: left;*display: inline;}
+.col_r{float: right;*display: inline;}
+.ect{text-overflow:ellipsis; overflow: hidden; white-space: nowrap;}
+.erro{
+	position: absolute;
+	top: 36px;
+	left: 0;
+	font-size:12px;
+	color: #c7c7c7;
+}
+.zxbj-calc-wrap .erro em {
+ 	position: static;
+ 	background: url(sjybj_global.png?20150724) no-repeat;
+ 	_background: url(sjybj_global.gif?20150724) no-repeat;
+    background-position: 0 -892px;
+    width: 18px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.zxbj-calc-wrap {
+	overflow: hidden;;
+    width: 280px;
+    border: none;
+    background: #464857 url(zxbj_widget_bg.jpg) no-repeat center bottom;
+    _background: #464857;
+    border-radius: 4px;
+}
+.zxbj-calc-header {
+	height: 112px;
+	background:url(zxbj_calc_header.png) no-repeat center;
+}
+.zxbj-calc-header h3 {
+	height: 38px;
+	line-height: 38px;
+	color: #f26f2f;
+	font-size: 16px;
+	text-align: center;
+	font-weight: normal;
+}
+.calc-header-total {
+	width: 210px;
+	height: 42px;
+	margin: 8px auto;
+	_margin-left:15px;
+}
+.calc-header-total em {
+	float: right;
+	height: 58px;
+	padding: 0 10px;
+	line-height: 110px;
+}
+.calc-header-total span {
+	float: right;
+	padding-left: 12px;
+	line-height: 100px;
+	font-weight: bold;
+	color: #f26f2f;
+	font-size: 30px;
+}
+.zxbj-calc-con {
+	width: 250px;
+	margin: 0 15px;
+	padding-top: 0px;
+	padding-bottom: 8px;
+}
+.zxbj-calc-con .element {
+	position: relative;
+	margin-bottom: 12px;
+	width: 250px;
+}
+.zxbj-calc-con .element select {
+	width: 105px;
+	height: 36px;
+	padding: 0 5px;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	color: #333;
+}
+
+.zxbj-calc-con .text {
+    -webkit-box-sizing: inherit;
+	width: 218px;
+	height: 34px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	line-height: 34px;
+	outline: none; 
+}
+.zxbj-calc-con .element b {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	height: 34px;
+	padding: 0 10px;
+	line-height: 34px;
+	color: #999;
+	font-weight: normal;
+}
+.zxbj-calc-con .element .unit {
+	position: absolute;
+	top: 0;
+	right: 8px;
+	height: 34px;
+	line-height: 34px;
+	font-style: normal;
+}
+.zxbj-calc-con .submit-btn {
+	display: block;
+	width: 240px;
+	height: 40px;
+	background: #f25618;
+	line-height: 36px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+}
+
+
+.new-container{
+	width:280px;
+	border-radius:4px;
+	-o-border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	background:#464857 url(images/zxbj_widget_bg.jpg) no-repeat center bottom;
+	_background:#464857 url(images/zxbj_widget_bg.jpg) no-repeat center bottom;
+}
+.zxbj-calc-con .p_tz_ctop{width:250px;height:300px;margin:0 auto;padding-top:0px;}
+.zxbj-calc-con .p_tz_ctops{width:250px;text-align:center;font-size:18px;color:#393939;height:50px;margin:10px auto;line-height:40px;}
+.zxbj-calc-con .p_tz_ctops .p_tz_ctops1{width:72px;float:left;text-align:right;line-height:30px;font-size:14px;color:#fff;}
+.zxbj-calc-con .p_tz_ctops .p_tz_ctops2{float:left;width:115px;height:30px;font-size:18px;color:#393939;border:1px solid #c9c9c9;background-color:#FFF;padding:0px 10px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.zxbj-calc-con .p_tz_ctops .p_tz_ctops3{float:left;width:35px;line-height:35px;color:#fff;font-size:14px;} 
+
+.zxbj-calc-con .p_tz_cbot{width:280px;margin:0 auto;line-height:80px;font-size:18px;height:80px;}
+.zxbj-calc-con .p_tz_cbot .p_tz_cbot1{float:left;width:145px;color:#2f2f2f;text-align:right;font-weight:bold;font-size:16px;line-height:60px;}
+.zxbj-calc-con .p_tz_cbot .p_tz_cbot2{float:left;width:188px;font-size:18px;height:30px;margin-top:15px;border:1px solid #c9c9c9;color:#fa6104;font-weight:bold;text-align:center;background-color:#FFF;padding:0px 10px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.zxbj-calc-con .p_tz_cbot .p_tz_cbot3{float:left;width:55px;color:#393939;text-align:center;line-height:60px;}
+
+
+.zxbj-calc-con .element .second-line{
+	width:68px;
+	height:36px;
+	margin-top:4px;
+}
+.zxbj-calc-con .element .line-chu{
+	margin-right:1px;
+}
+.zxbj-calc-con .element .line-wei{
+	margin-right:2px;
+}
+.zxbj-calc-con .szxbj-type{
+	height:76px;
+	_height:50px;
+	margin-bottom:12px;
+}
+.zxbj-calc-con .glideimg{
+	text-align:center;
+	height:11px;
+}
+
+#z_jisuan_sumx{border:none;background:none;position:absolute;left:35px;top:36px;width:180px;overflow:hidden;text-align:center;}

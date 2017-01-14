@@ -1,0 +1,310 @@
+<include file="Public/nav_header" />
+<header class="index-header active">
+    <h1><img id="logo" src=""></h1>
+    <div>
+        <form action="/home/search/search_res" class="search-form">
+            <input type="text" placeholder="想找什么项目   ？" name="keyword">
+            <button type="submit"><img src="__PUBLIC__/images/search_ico_gray.png" alt=""></button>
+        </form>
+    </div>
+    <a href="/home/chanel/index">
+        <img src="__PUBLIC__/images/menu_btn_white01.png" alt="">
+        <span>分类</span>
+    </a>
+</header>
+<!-- banner begin -->
+<div class="index-banner">
+    <div class="dot">
+        <span class="cur"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul>
+        <foreach name="lunbo" item="vo">
+            <li>
+                <a href="/p/{$vo.memberid}.html"><img src="{$vo.lunboImg}" alt=""></a>
+            </li>
+        </foreach>
+    </ul>
+</div>
+<!-- 项目分类 -->
+<div class="index-pro-class">
+    <a href="/home/rank/index">
+        <em class="index-pro-class-ico01"></em>
+        <h2>精品项目</h2>
+    </a>
+    <a href="/home/rank/index">
+        <em class="index-pro-class-ico02"></em>
+        <h2>万元创业</h2>
+    </a>
+    <a href="/home/rank/index">
+        <em class="index-pro-class-ico03"></em>
+        <h2>人气项目</h2>
+    </a>
+    <a href="javascript:;">
+        <em class="index-pro-class-ico04"></em>
+        <h2>南北商机</h2>
+    </a>
+    <a href="javascript:;">
+        <em class="index-pro-class-ico05"></em>
+        <h2>签到</h2>
+    </a>
+    <a href="javascript:;">
+        <em class="index-pro-class-ico06"></em>
+        <h2>创业抽奖</h2>
+    </a>
+    <a href="javascript:;">
+        <em class="index-pro-class-ico07"></em>
+        <h2>积分创业</h2>
+    </a>
+    <a href="javascript:;">
+        <em class="index-pro-class-ico08"></em>
+        <h2>更多</h2>
+    </a>
+</div>
+<!-- 火爆区 -->
+<div class="index-hot-pro">
+    <div class="index-hot-pro-title">
+        <dl>
+            <dt class="active"><span>全部</span></dt>
+            <dd><span>餐饮</span></dd>
+            <dd><span>服装</span></dd>
+        </dl>
+        <strong>
+                <img src="__PUBLIC__/images/right_arrow_ico.png" alt="">
+            </strong>
+    </div>
+    <div class="index-hot-loop">
+        <div>
+            <div class="index-hot-pro-con">
+                <dl>
+                    <dt>
+                        <span><img src="__PUBLIC__/images/hot_ico.png" alt=""></span> 火爆区
+                    </dt>
+                    <dd>
+                        <span>荐：</span>
+                        <volist name="hottext" id="arr">
+                            <!-- 瓦罐香沸新店开业送千元礼包 -->
+                            <a href="/p/{$arr.memberid}.html">
+                                <?php echo $arr['s_3_1'];?>
+                            </a>
+                        </volist>
+                    </dd>
+                </dl>
+                <ul>
+                    <!-- 三条数据 -->
+                    <volist name="hotcode" id="arr">
+                        <li>
+                            <a href="/p/{$arr.memberid}.html"><img  src="http://img.liansuo.com/html/images/<?php echo $arr['s_621_1'];?>"   alt=""></a>
+                        </li>
+                    </volist>
+                    <!-- <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/temp/temp_index_pro_img01.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/temp/temp_index_pro_img02.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/temp/temp_index_pro_img03.jpg" alt=""></a></li>-->
+                </ul>
+                <p>
+                    <volist name="hotlongcode" id="arr">
+                        <!-- <a href="javascript:;"> -->
+                        <a href="/p/{$arr.memberid}.html">
+                            <img src="__PUBLIC__/images/temp_img.png" data-original="http://img.liansuo.com/html/images/<?php echo $arr['s_507_1'];?>" alt=""></a>
+                    </volist>
+                </p>
+            </div>
+            <div class="index-hot-pro-con">
+                <dl>
+                    <dt>
+                        <span><img src="__PUBLIC__/images/hot_ico.png" alt=""></span> 餐饮区
+                    </dt>
+                    <dd>
+                        <span>荐：</span>
+                        <volist name="foodtext" id="arr">
+                            <!-- 瓦罐香沸新店开业送千元礼包 -->
+                            <a href="/p/{$arr.memberid}.html">
+                                <?php echo $arr['s_3_1'];?>
+                            </a>
+                        </volist>
+                    </dd>
+                </dl>
+                <ul>
+                    <volist name="foodcode" id="arr">
+                        <li>
+                            <a href="/p/{$arr.memberid}.html"><img  src="http://img.liansuo.com/html/images/<?php echo $arr['s_621_1'];?>"   alt=""></a>
+                        </li>
+                    </volist>
+                    <!-- <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/temp/temp_index_pro_img01.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/temp/temp_index_pro_img02.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/temp/temp_index_pro_img03.jpg" alt=""></a></li> -->
+                </ul>
+                <p>
+                    <volist name="foodlongcode" id="arr">
+                        <!-- <a href="javascript:;"> -->
+                        <a href="/p/{$arr.memberid}.html">
+                            <img src="__PUBLIC__/images/temp_img.png" data-original="http://img.liansuo.com/html/images/<?php echo $arr['s_507_1'];?>" alt=""></a>
+                    </volist>
+                    <!--       <a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="http://img.liansuo.com/html/images/20150902/ban_14411579617779.gif" alt=""></a> -->
+                </p>
+            </div>
+            <div class="index-hot-pro-con">
+                <dl>
+                    <dt>
+                        <span><img src="__PUBLIC__/images/hot_ico.png" alt=""></span> 服装区
+                    </dt>
+                    <dd>
+                        <span>荐：</span>
+                        <volist name="codetext" id="arr">
+                            <!-- 瓦罐香沸新店开业送千元礼包 -->
+                            <a href="/p/{$arr.memberid}.html">
+                                <?php echo $arr['s_3_1'];?>
+                            </a>
+                        </volist>
+                    </dd>
+                </dl>
+                <ul>
+                    <volist name="codecode" id="arr">
+                        <li>
+                            <a href="/p/{$arr.memberid}.html"><img  src="http://img.liansuo.com/html/images/<?php echo $arr['s_621_1'];?>"   alt=""></a>
+                        </li>
+                    </volist>
+                    <!-- <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/temp/temp_index_pro_img01.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/temp/temp_index_pro_img02.jpg" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/temp/temp_index_pro_img03.jpg" alt=""></a></li> -->
+                </ul>
+                <p>
+                    <volist name="codelongcode" id="arr">
+                        <!-- <a href="javascript:;"> -->
+                        <a href="/p/{$arr.memberid}.html">
+                            <img  src="__PUBLIC__/images/temp_img.png" data-original="http://img.liansuo.com/html/images/<?php echo $arr['s_507_1'];?>" alt=""></a>
+                    </volist>
+                    <!-- <a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="http://img.liansuo.com/html/images/20160113/ban_14526759152361.gif" alt=""></a> -->
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 挣嗨天 -->
+<div class="index-zht-pro">
+    <h1>
+            <span><img src="__PUBLIC__/images/index_money_ico.png" alt=""></span>
+            挣嗨天
+        </h1>
+    <ul class="index-zht-pro-con01">
+        <volist name="hightt" id="arr">
+            <li>
+                <!-- <a href="javascript:;"> -->
+                <a href="/p/{$arr.memberid}.html">
+                <img src="__PUBLIC__/images/temp_img.png" data-original="http://img.liansuo.com/html/images/<?php echo $arr['s_621_1'];?>" alt=""></a></li>
+            <a href="javascript:;">
+        </volist>
+        <!-- <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/index_zht_img01.jpg" alt=""></a></li>
+            <li><a href="/home/rank/index"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/index_zht_img02.jpg" alt=""></a></li>
+            <li><a href="javascript:;"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/index_zht_img03.jpg" alt=""></a></li> -->
+    </ul>
+    <ul class="index-zht-pro-con02">
+        <volist name="hightf" id="arr">
+            <li>
+                <!-- <a href="javascript:;"> -->
+                <a href="/p/{$arr.memberid}.html">
+                <img   src="__PUBLIC__/images/temp_img.png" data-original="http://img.liansuo.com/html/images/<?php echo $arr['s_641_1'];?>" alt=""></a></li>
+            <a href="javascript:;">
+        </volist>
+        <!-- <li><a href="/home/put/index/id/30"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/index_zht_img04.jpg" alt=""></a></li>
+            <li><a href="/home/put/index/id/4"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/index_zht_img05.jpg" alt=""></a></li>
+            <li><a href="/home/put/index/id/9"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/index_zht_img06.jpg" alt=""></a></li>
+            <li><a href="/home/put/index/id/6"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/index_zht_img07.jpg" alt=""></a></li> -->
+    </ul>
+    <p>
+        <volist name="hekf" id="arr">		
+            <a href="/p/{$arr.memberid}.html">"><img src="__PUBLIC__/images/temp_img.png" data-original="http://img.liansuo.com/html/images/<?php echo $arr['s_307_1'];?>"></a>
+        
+        </volist>
+		
+    </p> 
+</div>
+<!-- 特色专区 -->
+<div class="index-ts-pro">
+    <h1>特色专区</h1>
+    <dl class="index-ts-pro-con">
+        <volist name="teset" id="arr">
+            <dt>
+                <a href="/home/put/index/id/<?php echo $arr['industry'];?>"><img src="__PUBLIC__/images/temp_img.png" data-original="http://img.liansuo.com/html/images/<?php echo $arr['s_621_1'];?>" alt=""></a>
+            </dt>
+        </volist>
+        <volist name="tesecode" id="arr">
+            <dd><a href="/home/put/index/id/<?php echo $arr['industry'];?>"><img src="__PUBLIC__/images/temp_img.png" data-original="http://img.liansuo.com/html/images/<?php echo $arr['s_641_1'];?>" alt=""></a></dd>
+        </volist>
+        <!-- <dd><a href="/home/put/index/id/18"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/index_ts_img02.jpg" alt=""></a></dd>
+            <dd><a href="/home/put/index/id/25"><img src="__PUBLIC__/images/temp_img.png" data-original="__PUBLIC__/images/index_ts_img03.jpg" alt=""></a></dd> -->
+    </dl>
+</div>
+<!-- 猜你喜欢 -->
+<div class="index-like-pro">
+    <h1>猜你喜欢</h1>
+    <ul>
+        <!-- 循环li标签开始 -->
+        <volist name="likeArr" id="arr">
+            <li>
+                <a href="/p/{$arr.memberid}.html"><img src="__PUBLIC__/images/temp_img.png" data-original="{$arr.img1}" alt=""></a>
+                <div>
+                    <h1>
+                        <a href="/p/{$arr.memberid}.html">
+                            {$arr.brandname|mb_substr=###,0,7,'utf-8'}<img src="__PUBLIC__/images/vip_ico02.png" alt=""><br>
+                            <em>金额：</em><span>{$arr.joinlinemin}-{$arr.joinlinemax}万</span>
+                        </a>
+                    </h1>
+                    <h2 class="favorite-btn">
+                        <em></em>
+                        <span>收藏</span>
+                    </h2>
+                </div>
+            </li>
+        </volist>
+        <!-- 循环li标签结束 -->
+    </ul>
+    <!--加载更多按钮-->
+    <div class="load-btn">
+        <a href="javascript:;">加载更多</a>
+    </div>
+</div>
+<script src="__PUBLIC__/js/zepto.min.js"></script>
+<script src="__PUBLIC__/js/zepto.picLazyLoad.min.js"></script>
+<script src="__PUBLIC__/js/fx.js"></script>
+<script src="__PUBLIC__/js/swipeSlide.min.js"></script>
+<script src="__PUBLIC__/js/common.js?2323232"></script>
+<script type="text/javascript">
+commonFun.indexFn();
+
+var aEle = ['.index-hot-pro', '.index-zht-pro', '.index-ts-pro', '.index-like-pro'];
+for (var i = 0; i < aEle.length; i++) {
+    $(aEle[i] + ' img').picLazyLoad();
+}
+$('.index-banner').swipeSlide({
+    continuousScroll: true,
+    speed: 3000,
+    transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',
+    callback: function(i) {
+        $('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+    }
+});
+var slideTab = $('.index-hot-pro').swipeSlide({
+    ul: $('.index-hot-loop > div'),
+    li: $('.index-hot-pro-con'),
+    continuousScroll: true,
+    speed: 3000,
+    transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',
+    callback: function(i) {
+        $('.index-hot-pro-title dl').children().eq(i).addClass('active').siblings().removeClass('active');
+    }
+});
+$('.index-hot-pro-title dl').children().on('touchstart', function(i) {
+    $(this).addClass('active').siblings().removeClass('active');
+    slideTab[0].goTo($(this).index());
+});
+</script>
+<include file="Public/footer" />
+</body>
+
+</html>

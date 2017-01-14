@@ -1,0 +1,821 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>加盟问答_中国创业投资者问答平台<if condition="!empty($pagehou) && $pagehou != 'home' ">-第<{$pagenum}>页</if>-中国连锁网</title>
+<meta name="Keywords" content="中国连锁网为创业者提供了一个创业问答,投资创业问答,加盟知识问答,创业知识问答,连锁加盟问答等一个专业的加盟问答平台." />
+<meta name="Description" content="创业问答,投资创业问答,加盟知识问答,创业知识问答,连锁加盟问答" />
+<meta http-equiv="Cache-Control" content="no-transform"> 
+<meta name="mobile-agent" content="format=html5; url=http://m.liansuo.com/qa/">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/qa/ls_common.css"/> 
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/qa/stylesheetindex.css"/>  
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/home/qa/style_list.css"/> 
+<link href="http://www.liansuo.com/html/style/liansuo_ini.css" rel="stylesheet" type="text/css" />
+<link href="http://www.liansuo.com/html/style/qa/ask_box.css" rel="stylesheet" type="text/css" />
+<link  rel="stylesheet" type="text/css"  href="http://www.liansuo.com/html/style/top_footer_index.css"/>
+<script type="text/javascript" src="http://www.liansuo.com/html/js/jquery-1.3.2.js"></script>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>  
+<base target="_blank" />
+</head>
+<body>
+<script>//移动端自动跳转
+var mob_url = "http://m.liansuo.com/qa/"; 
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/home/news/ismob.js"></script>
+<div class="head">
+  <div class="lsgb_header_bj">
+    <div class="center">
+      <div class="lsgb_top">
+         <p class="lsgb_index_ul floatL"> 
+	         <a href="http://www.liansuo.com/"><em class="bg_1">1</em>首页</a>| 
+	         <a href="http://search.liansuo.com/"><em class="bg_2">3</em>找项目</a>|
+	         <a href="http://www.liansuo.com/top.html"><em class="bg_3">3</em>排行榜</a>| 
+	         <a href="http://www.liansuo.com/news/"><em class="bg_4">3</em>指南</a>| 
+	         <a href="http://zhanhui.liansuo.com/"><em class="bg_5">3</em>展会</a>| 
+	         <a href="http://zhaoshang.liansuo.com/"><em class="bg_6">4</em>招商</a>|
+	         <a href="http://www.liansuo.com/people.html"><em class="bg_7">4</em>人物</a>|
+	         <a href="http://www.liansuo.com/qa/"><em class="bg_8">8</em>问答</a>
+         </p> 
+        <div style="float:right;" class="Topnav_floatR">  
+	          <div class="top_r_login">
+		          <a id="dLqq" class="txqq" target="_blank" href="https://u.liansuo.com/Home/QQLogin/qqRedirect">
+		          <img width="50" height="16" src="http://img.liansuo.com/html/images/918/topnav_qq.png"></a>&nbsp;&nbsp;
+		          <a rel="nofollow" target="_blank" href="https://u.liansuo.com/Home/Login/index">登录</a>&nbsp;
+		          <a><img src="http://img.liansuo.com/html/images/918/i_linex.png"></a>&nbsp;
+		          <a rel="nofollow" target="_blank" href="https://u.liansuo.com/Home/Register/register">注册</a>&nbsp;
+		          <a><img src="http://img.liansuo.com/html/images/918/i_linex.png"></a>&nbsp;
+		          <a target="_blank" href="http://www.liansuo.com/top10/">十大品牌</a>&nbsp;<a><img src="http://img.liansuo.com/html/images/918/i_linex.png"></a>&nbsp;
+		          <a target="_blank" href="http://yp.liansuo.com">项目库</a>&nbsp;<a><img src="http://img.liansuo.com/html/images/918/i_linex.png"></a>&nbsp;
+		          <a target="_blank" href="http://zhuanti.liansuo.com">专题</a>
+	          </div>
+        </div>
+      </div>
+      <div class="space10 clear"></div>
+      <div class="space10 clear"></div>
+      <div class="lsgb_logo"> <a href="http://www.liansuo.com/" class="floatL m_r"> <img width="210" height="55" src="/html/images/logo_11.png" alt="中国连锁网"> </a>
+        <div class="floatL title_pro">  
+          <h1>中国创业投资者问答</h1>
+          <p><a target="_blank" href="">www.liansuo.com/qa/</a></p>
+        </div>
+        <div class="floatR ad_pic"> 
+    		<adlist item="one" cid="817" row="1">
+				<a href="<{$one.httpurl}>" target="_blank"><img width="550" height="55" src="http://img.liansuo.com/html/images/<{$one.fileurl}>"></a>
+			</adlist>	
+        </div>
+      </div>
+    </div> 
+  </div> 
+  <div class="space10 clear"></div>
+  <div class="space10 clear"></div>
+	  <div class="pro_nav">
+		    <div class="pro_nav_con">
+		    	<a href="http://www.liansuo.com/qa/" target="_blank">首页</a>
+				<a href="http://www.liansuo.com/qa/canyin/" target="_blank">餐饮</a>
+				<a href="http://www.liansuo.com/qa/jiafang/" target="_blank">家纺</a>
+				<a href="http://www.liansuo.com/qa/fuzhuang/" target="_blank">服装</a>
+				<a href="http://www.liansuo.com/qa/jiaju/" target="_blank">家居</a>
+				<a href="http://www.liansuo.com/qa/shipin/" target="_blank">饰品</a>
+				<a href="http://www.liansuo.com/qa/jiaoyu/" target="_blank">教育</a>
+				<a href="http://www.liansuo.com/qa/huanbao/" target="_blank">环保</a>
+				<a href="http://www.liansuo.com/qa/yingtong/" target="_blank">婴童</a>
+				<a href="http://www.liansuo.com/qa/meirong/" target="_blank">美容</a>
+				<a href="http://www.liansuo.com/qa/ganxi/" target="_blank">干洗</a>
+				<a href="http://www.liansuo.com/qa/zhubao/" target="_blank">珠宝</a>
+				<a href="http://www.liansuo.com/qa/qiche/" target="_blank">汽车</a>
+				<a href="http://www.liansuo.com/qa/jiancai/" target="_blank">建材</a>
+				<a href="http://www.liansuo.com/qa/wujin/" target="_blank">五金</a>
+				<a href="http://www.liansuo.com/qa/tese/" target="_blank">特色</a>  
+			</div>
+	  </div>
+</div>
+<div style="height:10px"></div>
+<div class="xpindao" >
+	<div class="xpindao_left">
+		<div class="qltop01">&nbsp;</div>
+		<div class="ql01">
+			<div class="dleft"><img src="http://www.liansuo.com/html/images/qa_img/7984.jpg" /></div>
+			<div class="ql01_2">
+				<div class="ql01_2title">
+					<div class="ql01_2title01">连锁热点问答</div>
+					<div class="ql01_2title02">2016.10.24</div>
+					<div class="ql01_2title03"><!-- <a href="#">更多</a> --></div>
+				</div>
+				<div class="psrlist">
+					<ul>
+						<modlist name="qalist" item="one" row="8" order="ctime desc">
+							<li><span class="dright"><span class="xcolorred"><{$one.req_num}></span>回答</span><div><a title="<{$one.content}>" href="<{$one.id}>.html"><{$one.content}></a></div></li>
+						</modlist>   
+					</ul>
+				</div>
+			</div>
+			<div class="ql01_3 dleft">&nbsp;</div>  
+			<div class="ql01_2">
+				<div class="ql01_2title"> 
+					<div class="ql01_2title01">连锁常用问答</div>
+					<div class="ql01_2title02">2016.10.24</div>
+					<div class="ql01_2title03"><!-- <a href="#">更多</a> --></div>
+				</div>
+				<div class="psrlist">
+					<ul>
+						<modlist name="qalist" item="one" row="8,8" order="ctime desc">
+							<li><span class="dright"><span class="xcolorred"><{$one.req_num}></span>回答</span><div><a title="<{$one.content}>" href="<{$one.id}>.html"><{$one.content}></a></div></li>
+						</modlist> 
+  					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="qlbottom01">&nbsp;</div>
+		<div class="ql02">
+<div class="ql02l">
+	<div class="second-nav" id="slide-category">
+		<volist name="indusarr" id="one">
+			  <dl class=""> 
+				    <dt> 
+				      <h4><a title="<{$one.prindustryname}>加盟" href="http://www.liansuo.com/qa/<{$one.prpathname}>/"><strong><{$one.prindustryname}></strong></a><br /></h4>
+				      <div class="sort-small"> 
+							<volist name="one.subarr" id="two">
+						     		 <a title="<{$two.industryname}>加盟" href="http://www.liansuo.com/qa/<{$two.pathname}>/"><{$two.industryname}></a>
+						    </volist>
+				      </div>
+				    </dt>
+				    <dd>
+						<volist name="one.subarr" id="two">
+					      <a title="<{$two.industryname}>加盟" href="http://www.liansuo.com/qa/<{$two.pathname}>/"><{$two.industryname}></a>
+					    </volist>
+				    </dd>
+			  </dl>
+		  </volist>
+	  </div>
+	  
+		<script type="text/javascript">
+		(function($) {
+		    $("#slide-category dl").hover(function() {
+		        $(this).addClass("hover");
+		    }, function() {
+		        $(this).removeClass("hover");
+		    });
+		
+		})(jQuery);
+		</script>
+</div>
+			<div class="ql02r">
+				<div class="ql02rtop">&nbsp;</div>
+<div class="ql02rc"  id="outer">
+	<table width="480" cellspacing="0" cellpadding="0">
+	   <tbody>
+		  <tr>
+			  <td>
+					<div class="xpindao_title03">
+						<div class="pd_more"><a target="_self" href="http://meishi.liansuo.com/qa/">&nbsp;</a></div>
+							<ul id="changeli">
+								<li class="tabcurrent"><a>全部</a></li>
+								<li class=""><a>未解决</a></li>
+								<li class=""><a>已解决</a></li>
+								  <div align="left"><img src="http://www.liansuo.com/html/images/qa_img/pindaoicon.gif"></div>
+							</ul>
+						<div>
+				   	    </div>
+					</div>
+			  </td>
+		  </tr>
+		  <tr id="content"><td style="display:block">
+					<div class="xquelist">
+						<ul>
+						<if condition="empty($asklikeArray)">
+							<modlist name="qalist" order="ctime desc" item="one" total="1" pid="pid" row="$startpage" >
+								<li>
+									<div  class="xquelil02"><if condition="$one['flag'] eq 1">已解决<else/>未解决</if></div>  
+									<div class="xquelil01a">
+										<a title="<{$one.brandname}>" target="_blank" href="<{$one.ypurl}>">【<{$one.brandname}>】</a>
+										<span class="xquelil001a"><a href="<{$one.id}>.html"><{$one.content}></a></span>
+									</div>
+									<div class="xquelil03">
+										<span>提问人：<{$one.nickname}></span>    
+						 				<span><span class="xcolorred"><{$one.req_num}></span>条回答</span>  
+										<span>
+											<span class="xcolorred">
+												<a style="cursor:pointer" onClick="xianshibiaodan()">我要提问</a>
+											</span>
+										</span>
+										 <span class="xcolor999"><{$one.ctime}></span> 
+									</div>
+								</li>
+							</modlist>
+							<else/>
+								<if condition="$asklikeArray=='无'">
+									没有该问题
+								<else/>
+									<volist name="asklikeArray" id="one">
+										<li>
+											<div  class="xquelil02"><if condition="$one['flag'] eq 1">已解决<else/>未解决</if></div>  
+											<div class="xquelil01a">
+												<span class="xquelil001a"><a href="<{$one.askid}>.html"><{$one.ask_content}></a></span>
+											</div>
+											<div class="xquelil03">
+												<span>提问人：<{$one.nickname}></span>    
+												<span><span class="xcolorred"><{$one.req_num}></span>条回答</span> 
+												<span>
+													<span class="xcolorred">
+														<a style="cursor:pointer" onClick="xianshibiaodan()">我要提问</a>
+													</span>
+												</span>
+												 <span class="xcolor999"><{$one.ctime}></span> 
+											</div>
+										</li>
+									</volist>
+								</if>
+							</if>
+						</ul>
+				    </div>
+		    	<style>
+					.pdskip{ width:auto;height:30px; padding-right:200px; padding-top:10px;text-align:center;}
+					.pdskip div{margin:0 auto;text-align:center;}
+					.pdskip a { text-decoration: none;display:inline-block;border: 1px solid #CCC; padding:5px 10px; margin-right:10px;}
+					.pdskip span {display:inline-block;border:1px solid #ccc; padding: 5px 10px; background: #CCC; color: #853645;margin-right:10px; }
+					.pdskip span.current{display:inline-block;border:1px solid #eb6100; padding:5px 10px;background: #fff; margin-right:10px;color:#eb6100;}
+				</style>				   
+				    <div class="pdskip">
+						<{$page}>
+			        </div>
+	    </td><td style="display:none">
+					<div class="xquelist">
+						<ul>
+						<if condition="empty($asklikeArray)">
+							<modlist name="qalist" order="ctime desc" flag="0" item="one"  total="1" pid="pid" row="$startpage" > 
+								<li>
+									<div  class="xquelil02"><if condition="$one['flag'] eq 1">已解决<else/>未解决</if></div>  
+									<div class="xquelil01a">
+										<a title="<{$one.brandname}>" target="_blank" href="<{$one.ypurl}>">【<{$one.brandname}>】</a>
+										<span class="xquelil001a"><a href="<{$one.id}>.html"><{$one.content}></a></span>
+									</div>
+									<div class="xquelil03">
+										<span>提问人：<{$one.nickname}></span>    
+										<span><span class="xcolorred"><{$one.req_num}></span>条回答</span> 
+										<span>
+											<span class="xcolorred">
+												<a style="cursor:pointer" onClick="xianshibiaodan()">我要提问</a>
+											</span>
+										</span>
+										 <span class="xcolor999"><{$one.ctime}></span> 
+									</div>
+								</li>
+							</modlist>
+							<else/>
+								<if condition="$asklikeArray=='无'">
+									没有该问题
+								<else/>
+									<volist name="asklikeArray" id="one">
+										<li>
+											<div  class="xquelil02"><if condition="$one['flag'] eq 1">已解决<else/>未解决</if></div>  
+											<div class="xquelil01a">
+												<span class="xquelil001a"><a href="<{$one.askid}>.html"><{$one.ask_content}></a></span>
+											</div>
+											<div class="xquelil03">
+												<span>提问人：<{$one.nickname}></span>    
+												<span><span class="xcolorred"><{$one.req_num}></span>条回答</span> 
+												<span>
+													<span class="xcolorred">
+														<a style="cursor:pointer" onClick="xianshibiaodan()">我要提问</a>
+													</span>
+												</span>
+												 <span class="xcolor999"><{$one.ctime}></span> 
+											</div>
+										</li>
+									</volist>
+								</if>
+							</if>
+						</ul>
+				    </div>
+		    	<style>
+					.pdskip{ width:100%; height:30px; padding-right:200px; padding-top:10px;text-align:center;}
+					.pdskip div{margin:0 auto;text-align:center;}
+					.pdskip a { text-decoration: none;display:inline-block;border: 1px solid #CCC; padding:5px 10px; margin-right:10px;}
+					.pdskip span { inline-block;border: 1px solid #ccc; padding: 5px 12px; background: #CCC; color: #853645;margin-right:10px; }
+					.pdskip span.current{border: 1px solid #eb6100; padding: 5px 10px;background: #fff; margin-right:10px;color:#eb6100;}
+				</style>				   
+				    <div class="pdskip">
+						<{$page}>
+			        </div>
+	    </td><td style="display:none">
+					<div class="xquelist">
+						<ul>
+						<if condition="empty($asklikeArray)">
+							<modlist name="qalist" order="ctime desc" flag="1" item="one" total="1" pid="pid" row="$startpage" >
+								<li>
+									<div  class="xquelil02"><if condition="$one['flag'] eq 1">已解决<else/>未解决</if></div>  
+									<div class="xquelil01a">
+										<a title="<{$one.brandname}>" target="_blank" href="<{$one.ypurl}>">【<{$one.brandname}>】</a>
+										<span class="xquelil001a"><a href="<{$one.id}>.html"><{$one.content}></a></span>
+									</div>
+									<div class="xquelil03">
+										<span>提问人：<{$one.nickname}></span>    
+										<span><span class="xcolorred"><{$one.req_num}></span>条回答</span> 
+										<span>
+											<span class="xcolorred">
+												<a style="cursor:pointer" onClick="xianshibiaodan()">我要提问</a>
+											</span>
+										</span>
+										 <span class="xcolor999"><{$one.ctime}></span> 
+									</div>
+								</li>
+							</modlist>
+							<else/>
+								<if condition="$asklikeArray=='无'">
+									没有该问题
+								<else/>
+									<volist name="asklikeArray" id="one">
+										<li>
+											<div  class="xquelil02"><if condition="$one['flag'] eq 1">已解决<else/>未解决</if></div>  
+											<div class="xquelil01a">
+												<span class="xquelil001a"><a href="<{$one.askid}>.html"><{$one.ask_content}></a></span>
+											</div>
+											<div class="xquelil03">
+												<span>提问人：<{$one.nickname}></span>    
+												<span><span class="xcolorred"><{$one.req_num}></span>条回答</span> 
+												<span>
+													<span class="xcolorred">
+														<a style="cursor:pointer" onClick="xianshibiaodan()">我要提问</a>
+													</span>
+												</span>
+												 <span class="xcolor999"><{$one.ctime}></span> 
+											</div>
+										</li>
+									</volist>
+								</if>
+							</if>
+						</ul>
+				    </div>
+		    	<style>
+					.pdskip{ width:100%; height:30px; padding-right:200px; padding-top:10px;text-align:center;}
+					.pdskip div{margin:0 auto;text-align:center;}
+					.pdskip a { text-decoration: none;display:inline-block;border: 1px solid #CCC; padding:5px 10px; margin-right:10px;}
+					.pdskip span { inline-block;border: 1px solid #ccc; padding: 5px 12px; background: #CCC; color: #853645;margin-right:10px; }
+					.pdskip span.current{border: 1px solid #eb6100; padding: 5px 10px;background: #fff; margin-right:10px;color:#eb6100;}
+				</style>				   
+				    <div class="pdskip">
+						<{$page}>
+			        </div>
+	    </td>
+	    </tr>
+	    </tbody>
+    </table>
+				</div>
+				<div class="ql02rbottom">&nbsp;</div>
+			</div>
+		</div>
+</div>
+	<div  class="xpindao_right">
+		<div class="xpdobjectt">&nbsp;</div>
+		<div class="xpindao_right01c">
+			<div class="xpdrtitle">问题搜索<span>Search:</span></div>
+			<form target="_self" action="http://www.liansuo.com/qa/" method="post">
+				<table width="209" border="0" cellspacing="0" cellpadding="0">
+				   <tr>
+				        <td colspan="2"><input name="asklike" type="text" class="pdrinputw" /></td>
+				   </tr>
+			 	  <tr>
+					    <td align="center"><input type="submit" value="&nbsp;" class="pnrinputs01" /></td>
+					    <td align="center"><input  onClick="xianshibiaodan()" name="button" type="button" class="pnrinputs02" value="&nbsp;"/></td>
+					    <script>
+						    function postask(){
+								var tmpForm = $("<form action='http://www.liansuo.com/index.php?act=public&opt=qa' method='post'></form>");
+						       tmpForm.append("<input type='hidden' value='"+$("#topBlueSearchInput").val()+"' name='title'/>");
+						       tmpForm.submit();
+							}
+					    </script>
+				  </tr>
+				</table>
+			</form>
+		</div>
+		<div class="xpdobjectb">&nbsp;</div>
+		<div class="xpdobjectt2">&nbsp;</div>
+		<div class="xpindao_right02c">
+			<div class="xpdrtitle">连锁回答<span>活跃企业:</span></div>
+			<div class="pdpaihang">
+				<ul>
+					<plist item="one" order="rand()" ispay="1" row="10">
+						<li>
+							  <table width="210" border="0" cellspacing="0" cellpadding="0">
+								  <tr id="dis_<{$one.oid}>"  onmouseover="ph_changeTab(<{$one.oid}>)">
+								    <td valign="middle"><img src="http://www.liansuo.com/html/images/qa_img/paihang_<{$one.oid}>.jpg" width="14" height="13" /></td>
+								    <td valign="middle"><a target="_blank" href="<{$one.ypurl}>">[<{$one.brandname}>]</a></td>
+								    <td align="right" valign="middle"><img src="http://www.liansuo.com/html/images/qa_img/xup.jpg" /><{$one.joinlinemin}>万~<{$one.joinlinemax}>万</td>
+								  </tr>
+								  <tr id="disn_<{$one.oid}>" class="hy_list_over" >
+									  <td width="98" rowspan="2"><a target="_blank" href="<{$one.ypurl}>">
+										  <img style="height: 92px;width: 88px;" src="http://img.liansuo.com/html/images/<{$one.logo}>" /></a>
+									  </td>
+									  <td width="102"><strong><a target="_blank" href="<{$one.ypurl}>"><{$one.brandname}></a></strong><br />
+										       投资金额：<strong><{$one.joinlinemin}>万~<{$one.joinlinemax}>万</strong><br />
+										       招商区域：<strong><{$one.joinregion}></strong>
+									  </td>
+								  </tr>
+		                     </table>
+						</li>
+					</plist>
+						 <script>
+							function ph_changeTab(a){
+								for(i=1;i<=10;i++){
+									document.getElementById("disn_"+i).className="hy_list_over";
+									document.getElementById("dis_"+i).className="";
+								}
+							  document.getElementById("dis_"+a).className="hy_list_over";
+							  document.getElementById("disn_"+a).className="";
+							}
+						  </script>
+				</ul>
+			</div>
+		</div>
+		<div class="xpdobjectb2">&nbsp;</div>
+
+		<div class="xpdobjectt2">&nbsp;</div>
+		<div class="xpindao_right02c">
+			<div class="xpdrtitle"><div class="pd_more"><a href="http://www.liansuo.com/index.php?act=search&opt=gold">&nbsp;</a></div>品牌推荐<span>Brand:</span></div>
+			<div class="pdrbrangli">
+				<ul>
+					 <arclist item="one" row="10" >
+						 <li>
+							 <table cellpadding="0" cellspacing="0">
+								  <tr>
+								  		<td valign="middle"><a href="<{$one.url}>"><{$one.title}></a></td>
+								  </tr>
+							  </table>
+						 </li>
+					  </arclist>
+				</ul>
+			</div> 
+		</div>
+		<div class="xpdobjectb2">&nbsp;</div>
+
+		<div class="xpdobjectt2">&nbsp;</div>
+		<div class="xpindao_right02c">
+			<div class="xpdrtitle"><div class="pd_more"><a style="cursor:pointer">&nbsp;</a></div>相关专题<span>Clothing:</span></div>
+			<div class="psrlist">
+				<ul>
+				   	<volist name="seotag" id="one">
+					   	<li><a href="<{$one.url}>"><{$one.title}></a></li>
+				   	</volist>
+   				</ul>
+			</div>
+		</div>
+		<div class="xpdobjectb2">&nbsp;</div>
+
+	</div>
+</div>
+<div class="clear space10"></div>
+<div class="clear space10"></div>
+
+<!-- <script language="javascript" type="text/javascript" src="http://www.liansuo.com/check_login.php"></script> -->
+<script type="text/javascript" src="http://www.liansuo.com/c.js"></script>
+<style type="text/css">
+.wytw_gdkin{width:440px;height:160px;}
+#indu{}
+.pname{width:154px;}
+#hyfgb{display:block;text-align:right;}
+.zanwei{display:inline-block;width:190px;}
+.td_1{text-align:right;width:100px;}
+.td_3{text-align:right;}
+.td_2{width:50px;}
+</style>
+
+
+<div class='wytw_gdk' style="display:none" id="hyf">
+<div class='wytw_gdkin' id="hyf" style="background:#FFf;border:2px solid #FFA82C" >
+<div class="title-bar" style="background: url(http://img.liansuo.com/html/images/boxyimages/top_mid.jpg) repeat-x;
+    padding: 6px;
+    position: relative;top:0;left:0;"><h2 style="float: left"
+>连锁网提示信息</h2>
+	<a class="td_3" title="关闭" id="hyfgb" onclick="gbhyf()">关闭</a>
+	</div>
+<form method="post" action="http://www.liansuo.com/index.php?act=public&opt=qa"><table width="400"><tbody>
+<tr><td class="td_1">项目分类：</td><td>
+<select   id='indu' name="industry" onchange="jilian(this.value)">
+ <option  value="0" selected>请选择</option> 
+<option  value="1">餐饮</option>    	
+<option  value="2">家纺</option>    	
+<option  value="3">服装</option>    	
+<option  value="4">家居</option>    	
+<option  value="5">饰品</option>    	
+<option  value="6">教育</option>    	
+<option  value="7">环保</option>    	
+<option  value="8">婴童</option>    	
+<option  value="9">美容</option>    	
+<option  value="10">干洗</option>    	
+<option  value="11">珠宝</option>    	
+<option  value="12">汽车</option>    	
+<option  value="13">建材</option>    	
+<option  value="15">五金</option>    	
+<option  value="16">特色</option>    	
+<option  value="24">茶叶</option>    	
+<option  value="218">金融</option>    	
+</select>
+
+<select id='aasubid' name="subindustry">
+
+</select>
+</td>
+	<td>
+</td>
+<tr>
+<tr><td class="td_1">项目名称：</td><td><input name="pname" class="pname" type="text"  /></td><td></td></tr>
+<tr><td class="td_1">项目提问：</td><td><input name="asktext" type="text" style="height:60px; width: 154px "
+ /></td><td></td></tr>
+<tr><td class="td_1"></td><td width="154" align="center"
+><p style="text-align:center;"><button type="submit"> 提交</button></p></td><td></td></tr>
+
+</tbody></table>
+</form>	
+
+</div>
+</div>
+<style>
+.wytw_gdk{ width:100%; height:400px;  position:fixed; top:140px;  }
+.wytw_gdkin{ width:400px; height:200px; border:1px solid #ddd ; background:#CCC; margin:auto }
+</style>
+<script>
+	$(function(){
+		window.onload = function()
+		{
+			var $li = $('#changeli li');
+			var $ul = $('#content td');
+						
+			$li.mouseover(function(){
+				var $this = $(this);
+				var $t = $this.index();
+				$li.removeClass();
+				$this.addClass('tabcurrent');
+				$ul.css('display','none');
+				$ul.eq($t).css('display','block');
+			})
+		}
+	});
+</script>
+<script>
+	//实现级联菜单
+subindu = [];
+		subindu[1]=[];    	
+   		subindu[1][17] = '面食加盟';
+   		subindu[1][18] = '火锅加盟';
+   		subindu[1][19] = '快餐加盟';
+   		subindu[1][20] = '小吃加盟';
+   		subindu[1][21] = '西餐加盟';
+   		subindu[1][22] = '饮品加盟';
+   		subindu[1][158] = '粉店加盟';
+   		subindu[1][159] = '干锅加盟';
+   		subindu[1][160] = '凉皮加盟';
+   		subindu[1][161] = '汉堡加盟';
+   		subindu[1][25] = '烧烤加盟';
+   		subindu[1][26] = '香锅加盟';
+   		subindu[1][27] = '熟食加盟';
+   		subindu[1][28] = '餐具加盟';
+   		subindu[1][29] = '冰淇淋加盟';
+   		subindu[1][30] = '精品餐饮加盟';
+   		subindu[1][31] = '其他加盟';
+   		subindu[1][122] = '甜品加盟';
+   		subindu[1][123] = '咖啡加盟';
+   		subindu[1][124] = '酒水加盟';
+   		subindu[1][149] = '奶茶加盟';
+   		subindu[1][151] = '麻辣烫加盟';
+   		subindu[1][154] = '包子加盟';
+   		subindu[1][156] = '中餐加盟';
+   		subindu[1][157] = '粥铺加盟';
+   		subindu[1][162] = '煎饼加盟';
+   		subindu[1][163] = '面包加盟';
+   		subindu[1][164] = '手抓饼加盟';
+   		subindu[1][165] = '调味品加盟';
+   		subindu[1][166] = '披萨加盟';
+   		subindu[1][167] = '串串香加盟';
+   		subindu[1][168] = '烤鸭加盟';
+   		subindu[1][169] = '烤鱼加盟';
+   		subindu[1][170] = '早餐加盟';
+   		subindu[1][171] = '炸鸡排加盟';
+   		subindu[1][172] = '炸排骨加盟';
+   		subindu[1][173] = '鲜奶加盟';
+   		subindu[1][174] = '米线加盟';
+   		subindu[1][210] = '纯净水加盟';
+   		subindu[1][190] = '进口食品加盟';
+   		subindu[1][193] = '零食加盟';
+   		subindu[1][197] = '食品机器加盟';
+   		subindu[1][206] = '食品机械加盟';
+   		subindu[1][209] = '拉面加盟';
+   		subindu[1][213] = '卤味小吃加盟';
+   		subindu[1][215] = '蛋糕店加盟';
+   		subindu[1][231] = '烘焙加盟';
+     
+		subindu[2]=[];    	
+   		subindu[2][32] = '床上用品加盟';
+   		subindu[2][33] = '布艺加盟';
+   		subindu[2][34] = '竹纤维加盟';
+     
+		subindu[3]=[];    	
+   		subindu[3][35] = '女装加盟';
+   		subindu[3][36] = '男装加盟';
+   		subindu[3][37] = '童装加盟';
+   		subindu[3][38] = '内衣加盟';
+   		subindu[3][39] = '休闲加盟';
+   		subindu[3][40] = '运动加盟';
+   		subindu[3][41] = '皮具加盟';
+   		subindu[3][42] = '鞋子加盟';
+   		subindu[3][43] = '箱包加盟';
+   		subindu[3][44] = '衬衣加盟';
+   		subindu[3][45] = '孕妇装加盟';
+   		subindu[3][46] = '其他加盟';
+   		subindu[3][125] = '户外加盟';
+   		subindu[3][181] = '鞋套机加盟';
+   		subindu[3][196] = '服饰加盟';
+   		subindu[3][237] = '帽子加盟';
+     
+		subindu[4]=[];    	
+   		subindu[4][47] = '家具加盟';
+   		subindu[4][48] = '橱柜加盟';
+   		subindu[4][49] = '吊顶加盟';
+   		subindu[4][50] = '装饰加盟';
+   		subindu[4][51] = '卫浴加盟';
+   		subindu[4][52] = '生活馆加盟';
+   		subindu[4][53] = '其他加盟';
+   		subindu[4][155] = '全景画加盟';
+   		subindu[4][186] = '家用电器加盟';
+   		subindu[4][205] = '婴童家具加盟';
+   		subindu[4][214] = '衣柜加盟';
+     
+		subindu[5]=[];    	
+   		subindu[5][54] = '时尚加盟';
+   		subindu[5][55] = '银饰加盟';
+   		subindu[5][56] = '民族加盟';
+   		subindu[5][57] = '琥珀加盟';
+   		subindu[5][58] = '精品饰品加盟';
+     
+		subindu[6]=[];    	
+   		subindu[6][59] = '英语加盟';
+   		subindu[6][60] = '作文加盟';
+   		subindu[6][61] = '潜能加盟';
+   		subindu[6][62] = 'IT教育加盟';
+   		subindu[6][63] = '辅导加盟';
+   		subindu[6][64] = '公务员认证加盟';
+   		subindu[6][126] = '教具教材加盟';
+   		subindu[6][127] = '招生加盟';
+   		subindu[6][128] = '留学加盟';
+   		subindu[6][129] = '幼儿早教加盟';
+   		subindu[6][179] = '学生用品加盟';
+   		subindu[6][201] = '远程教育加盟';
+     
+		subindu[7]=[];    	
+   		subindu[7][65] = '节能加盟';
+   		subindu[7][66] = '空气净化加盟';
+   		subindu[7][67] = '水净化加盟';
+   		subindu[7][68] = '其他加盟';
+   		subindu[7][182] = '环卫用品加盟';
+   		subindu[7][188] = '节能灯加盟';
+   		subindu[7][203] = '环保用品加盟';
+   		subindu[7][207] = '垃圾处理器加盟';
+     
+		subindu[8]=[];    	
+   		subindu[8][69] = '早教加盟';
+   		subindu[8][70] = '儿童玩具加盟';
+   		subindu[8][71] = '母婴用品加盟';
+   		subindu[8][72] = '月嫂加盟';
+   		subindu[8][73] = '其他加盟';
+   		subindu[8][212] = '婴儿纸巾加盟';
+   		subindu[8][130] = '婴童食品加盟';
+   		subindu[8][131] = '洗护用品加盟';
+   		subindu[8][132] = '儿童摄影加盟';
+   		subindu[8][147] = '童鞋童服加盟';
+   		subindu[8][148] = '儿童乐园加盟';
+   		subindu[8][217] = '游泳馆加盟';
+     
+		subindu[9]=[];    	
+   		subindu[9][74] = '化妆品加盟';
+   		subindu[9][75] = '美体瘦身加盟';
+   		subindu[9][76] = '产后恢复加盟';
+   		subindu[9][77] = '保健养生加盟';
+   		subindu[9][78] = '汗蒸加盟';
+   		subindu[9][79] = '足浴加盟';
+   		subindu[9][80] = '其他加盟';
+   		subindu[9][133] = '香水加盟';
+   		subindu[9][134] = '美甲加盟';
+   		subindu[9][150] = '药妆加盟';
+   		subindu[9][216] = '祛痘加盟';
+   		subindu[9][239] = '美发加盟';
+     
+		subindu[10]=[];    	
+   		subindu[10][81] = '干洗店加盟';
+   		subindu[10][82] = '干洗设备加盟';
+   		subindu[10][83] = '皮衣养护加盟';
+     
+		subindu[11]=[];    	
+   		subindu[11][84] = '钻石加盟';
+   		subindu[11][85] = '玉器加盟';
+   		subindu[11][86] = '黄金加盟';
+   		subindu[11][87] = '铂金加盟';
+   		subindu[11][88] = '精品珠宝加盟';
+   		subindu[11][135] = '翡翠加盟';
+   		subindu[11][136] = '工艺礼品加盟';
+   		subindu[11][137] = '彩宝加盟';
+     
+		subindu[12]=[];    	
+   		subindu[12][89] = '汽修加盟';
+   		subindu[12][90] = '汽车美容加盟';
+   		subindu[12][91] = '车饰加盟';
+   		subindu[12][92] = '导航加盟';
+   		subindu[12][93] = '音响加盟';
+   		subindu[12][94] = '其他加盟';
+   		subindu[12][180] = '电池修复加盟';
+   		subindu[12][189] = '节油器加盟';
+   		subindu[12][194] = '汽车养护加盟';
+   		subindu[12][195] = '汽车用品加盟';
+   		subindu[12][199] = '洗车加盟';
+   		subindu[12][202] = '租车加盟';
+     
+		subindu[13]=[];    	
+   		subindu[13][95] = '门窗加盟';
+   		subindu[13][96] = '油漆涂料加盟';
+   		subindu[13][97] = '壁纸加盟';
+   		subindu[13][98] = '地板加盟';
+   		subindu[13][99] = '楼梯加盟';
+   		subindu[13][100] = '瓷砖加盟';
+   		subindu[13][101] = '采暖加盟';
+   		subindu[13][102] = '其他加盟';
+   		subindu[13][138] = '防水加盟';
+   		subindu[13][139] = '锁具加盟';
+   		subindu[13][140] = '木业加盟';
+   		subindu[13][141] = '灯饰加盟';
+   		subindu[13][142] = '石材加盟';
+   		subindu[13][184] = '机械设备加盟';
+   		subindu[13][187] = '建筑贴膜加盟';
+   		subindu[13][198] = '水晶建材加盟';
+     
+		subindu[15]=[];    	
+   		subindu[15][107] = '五金工具加盟';
+   		subindu[15][108] = '日用五金加盟';
+   		subindu[15][109] = '建筑五金加盟';
+   		subindu[15][110] = '机械五金加盟';
+   		subindu[15][111] = '其他加盟';
+   		subindu[15][143] = '装饰五金加盟';
+   		subindu[15][204] = '五金配件加盟';
+     
+		subindu[16]=[];    	
+   		subindu[16][14] = '零售加盟';
+   		subindu[16][241] = '加盟';
+   		subindu[16][112] = '数码影像加盟';
+   		subindu[16][113] = '整蛊搞笑加盟';
+   		subindu[16][114] = '娱乐设备加盟';
+   		subindu[16][115] = '其他加盟';
+   		subindu[16][211] = '电影院加盟';
+   		subindu[16][118] = '酒店加盟';
+   		subindu[16][119] = '视力保健加盟';
+   		subindu[16][121] = '烟酒加盟';
+   		subindu[16][144] = '家政加盟';
+   		subindu[16][145] = '特产加盟';
+   		subindu[16][146] = '钓具加盟';
+   		subindu[16][152] = '户外用品加盟';
+   		subindu[16][175] = 'ktv加盟';
+   		subindu[16][176] = '超市加盟';
+   		subindu[16][177] = '成人用品加盟';
+   		subindu[16][178] = '房产中介加盟';
+   		subindu[16][183] = '婚庆加盟';
+   		subindu[16][185] = '网络商城加盟';
+   		subindu[16][191] = '酒吧加盟';
+   		subindu[16][192] = '快递加盟';
+   		subindu[16][200] = '眼镜加盟';
+   		subindu[16][243] = '安防加盟';
+   		subindu[16][245] = '律师事务所加盟';
+   		subindu[16][223] = '多肉植物加盟';
+   		subindu[16][225] = '水果店加盟';
+   		subindu[16][227] = '糖果店加盟';
+   		subindu[16][229] = '药店加盟';
+   		subindu[16][233] = '宠物店加盟';
+     
+		subindu[24]=[];    	
+   		subindu[24][120] = '茶叶店加盟';
+   		subindu[24][208] = '茶馆加盟';
+     
+		subindu[218]=[];    	
+   		subindu[218][219] = '理财产品加盟';
+   		subindu[218][221] = '借贷加盟';
+     
+
+function jilian(num){
+	
+	arr = subindu[num];
+	$('#aasubid').html("");
+	$('#aasubid').append('<option value=0 selected >请选择</option>');
+	for(var key in arr)
+  {		
+		$('#aasubid').append('<option value='+key+'>'+arr[key]+'</option>');  // 0,1	
+  }
+}
+jilian(1);
+</script>
+<script>
+function xianshibiaodan() 
+{
+	document.getElementById('hyf').style.display = 'block';
+}
+function gbhyf()
+{
+	document.getElementById('hyf').style.display='none';
+}
+</script>
+		<script src="http://www.liansuo.com/c.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- <link href="http://www.liansuo.com/html/style/ls.boxy.css" type="text/css" rel="stylesheet"> -->
+<link rel="stylesheet" type="text/css" href="/html/style/qa/ls_common.css"/>
+<link href="http://www.<{$smarty.const.WEBDOMAIN}>/html/style/qa/ask_box.css" rel="stylesheet" type="text/css" />
+<link  rel="stylesheet" type="text/css"  href="http://www.<{$smarty.const.WEBDOMAIN}>/html/style/top_footer_index.css"/>
+<script type="text/javascript" src="http://www.<{$smarty.const.WEBDOMAIN}>/html/js/jquery-1.3.2.js"></script>
+<!-- <script type="text/javascript" src="http://www.<{$smarty.const.WEBDOMAIN}>/html/js/jquery.boxy.dialog.js"></script> -->
+<title>连锁问答-投资创业问答-加盟知识问答--中国连锁网(创业知识问答首页)</title>
+<meta name="Keywords" content="创业问答,投资创业问答,加盟知识问答,创业知识问答,连锁加盟问答" />
+<meta name="Description" content="中国连锁网为创业者提供了一个创业问答,投资创业问答,加盟知识问答,创业知识问答,连锁加盟问 答等一个专业的加盟问答平台." />
+
+<base target="_blank" />
+</head>
+<script type="text/javascript">
+$(document).ready(function(){
+   changshow(<{$changli}>);
+});
+function askbox(condition){
+	$.getScript("/index.php?act=public&opt=qa_ask&"+condition, function(){dia.toggle();$(".boxy-content").css('padding','0px');});
+}
+function changshow(tempi){
+	 $("#changeli li").removeClass();
+	 $("#changeli li:nth-child("+tempi+")").addClass("tabcurrent");
+	}
+function delqaask(id) {
+	if (confirm('删除问题将不可恢复，确定吗？')) {
+		$.getScript("/index.php?act=public&opt=qa_index&ext=del&info="+id, function(){
+			if (data=='Y') {alert('删除成功');location.reload();}else{alert(data);}
+		});
+	}
+
+}
+function shqaask(id) {	
+		$.getScript("/index.php?act=public&opt=qa_index&ext=sh&info="+id, function(){
+			if (data=='Y') {alert('审核成功');location.reload();}else{alert(data);}
+		});
+
+}
+</script>
+<body>
+<!--#include virtual="/header_footer/header_index_hangye.html"-->
+<!--#include virtual="/header_footer/header_index.html"-->
+<{*include file="base810/base_header.html"*}>
+<div class="xpindao" >
+	<div class="xpindao_left">
+		<div class="qltop01">&nbsp;</div>
+		<div class="ql01">
+			<div class="dleft"><img src="http://www.<{$smarty.const.WEBDOMAIN}>/html/images/qa_img/7984.jpg" /></div>
+			<div class="ql01_2">
+				<div class="ql01_2title">
+					<div class="ql01_2title01">连锁热点问答</div>
+					<div class="ql01_2title02">2012.03.14</div>
+					<div class="ql01_2title03"><!-- <a href="#">更多</a> --></div>
+				</div>
+				<div class="psrlist">
+					<ul>
+					<{foreach from=$asknlist item="one" }>
+<li><span class="dright"><span class="xcolorred"><{$one.sum}></span>回答</span><div><a title="<{$one.ask_content}>" href="http://<{$one.pathname}>.<{$smarty.const.WEBDOMAIN}>/qa/<{$one.askid}>.html"><{$one.ask_content}></a></div></li>
+<{/foreach}>
+						</ul>
+				</div>
+			</div>
+			<div class="ql01_3 dleft">&nbsp;</div>
+			<div class="ql01_2">
+				<div class="ql01_2title">
+					<div class="ql01_2title01">连锁常用问答</div>
+					<div class="ql01_2title02">2012.03.14</div>
+					<div class="ql01_2title03"><!-- <a href="#">更多</a> --></div>
+				</div>
+				<div class="psrlist">
+					<ul>
+						<{foreach from=$hitsasks item="one" }>
+						<li><span class="dright"><span class="xcolorred"><{$one.sum}></span>回答</span><div><a title="<{$one.ask_content}>" href="http://<{$one.pathname}>.liansuo.com/qa/<{$one.askid}>.html"><{$one.ask_content}></a></div></li>
+					    <{/foreach}>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="qlbottom01">&nbsp;</div>
+		<div class="ql02">
+			<div class="ql02l">
+				<div class="xpdobjectt2">&nbsp;</div>
+				<div class="xpindao_right02c">
+					<div class="xpdrtitle"><div class="pd_more"><a target="_self" href="http://meishi.<{$smarty.const.WEBDOMAIN}>/qa/">&nbsp;</a></div>问答分类<span>Class:</span></div>
+				  <div class="qlclass">
+	<{foreach from=$indusarr item="one"}>
+						 <a title="<{$one.prindustryname}>加盟" href="<{$one.classpath}>"><strong><{$one.prindustryname}></strong></a><br />
+						    <{foreach from=$one.subarr item="two"}>
+						      <a title="<{$two.industryname}>加盟" href="<{$two.classpath}>"><{$two.industryname}></a>
+						    <{/foreach}>
+						    <br />
+						<{/foreach}>
+				  </div>
+				</div>
+				<div class="xpdobjectb2">&nbsp;</div>
+			</div>
+			<div class="ql02r">
+				<div class="ql02rtop">&nbsp;</div>
+				<div class="ql02rc">
+					<table width="480" cellpadding="0" cellspacing="0">
+					  <tr><td>
+						<div class="xpindao_title03">
+							<div class="pd_more"><a target="_self" href="http://meishi.<{$smarty.const.WEBDOMAIN}>/qa/">&nbsp;</a></div>
+								<ul id="changeli">
+									<li  class="tabcurrent"><a target="_self" onClick="changshow(1);" href="<{$path0}>">全部</a></li>
+									<li><a target="_self" onClick="changshow(2);" href="<{$path1}>">未解决</a></li>
+									<li><a target="_self" onClick="changshow(3);" href="<{$path2}>">已解决</a></li>
+									<li>
+									  <div align="left"><img src="http://www.<{$smarty.const.WEBDOMAIN}>/html/images/qa_img/pindaoicon.gif" /></div>
+									</li>
+								</ul>
+							<div>
+						</div>
+						</div></td></tr>
+					<tr><td><div class="xquelist">
+				<ul>
+				<{foreach from=$asklist item="one" }>
+					<li>
+						<div  class="xquelil02"><{if $one.flag eq 1}>已解决<{else}>未解决<{/if}><{if $ouruser eq 'true'}>&nbsp;&nbsp;&nbsp;<a onClick="delqaask('<{$one.askid}>')" style="cursor:pointer;">删除</a><{if $one.status eq 2}>|<a onClick="shqaask('<{$one.askid}>')" style="cursor:pointer;">审核</a><{/if}><{/if}></div>
+						<div class="xquelil01a"><a title="<{$one.askitem}>加盟" target="_blank" href="<{$one.linkurl}>">【<{$one.askitem}>】</a><span class="xquelil001a"><a href="http://<{$one.pathname}>.<{$smarty.const.WEBDOMAIN}>/qa/<{$one.askid}>.html"><{$one.ask_content}></a></span></div>
+						<div class="xquelil03"><span>提问人：<{$one.nickname}></span>   <span><span class="xcolorred"><{$one.req_num}></span>条回答</span>   <span><span class="xcolorred"><a style="cursor:pointer" onClick="xianshibiaodan()">我要提问</a></span></span> <span class="xcolor999"><{$one.ctime}></span>  </div>
+					</li>
+					<{/foreach}>
+				</ul>
+				    </div>
+				    <div class="pdskip">
+			      <{$pagelist}></div>
+				    </td></tr></table>
+				</div>
+				<div class="ql02rbottom">&nbsp;</div>
+			</div>
+		</div>
+</div>
+	<div  class="xpindao_right">
+		<div class="xpdobjectt">&nbsp;</div><div class="xpindao_right01c">
+			<div class="xpdrtitle">问题搜索<span>Search:</span></div>
+<form target="_self" action="http://www.liansuo.com/qa/" method="post">
+			<table width="209" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2"><input name="asklike" type="text" class="pdrinputw" /></td>
+    </tr>
+  <tr>
+    <td align="center"><input type="submit" value="&nbsp;" class="pnrinputs01" /></td>
+    <td align="center"><input  onClick="xianshibiaodan()" name="button" type="button" class="pnrinputs02" value="&nbsp;"  /></td>
+    <script>
+    
+    function postask(){
+		var tmpForm = $("<form action='http://www.liansuo.com/index.php?act=public&opt=qa' method='post'></form>");
+       tmpForm.append("<input type='hidden' value='"+$("#topBlueSearchInput").val()+"' name='title'/>");
+       tmpForm.submit();
+	}
+    
+    </script>
+  </tr>
+</table>
+			</form>
+
+		</div>
+		<div class="xpdobjectb">&nbsp;</div>
+
+		<div class="xpdobjectt2">&nbsp;</div>
+		<div class="xpindao_right02c">
+			<div class="xpdrtitle">连锁回答<span>活跃企业:</span></div>
+			<div class="pdpaihang">
+				<ul>
+				<{yp_list row=10 item="one" cindex=1 orderby="cindex" orderway="desc"}>
+					<li>
+					  <table width="210" border="0" cellspacing="0" cellpadding="0">
+						  <tr id="dis_<{$one.oid}>" <{if $one.oid eq 1}>class="hy_list_over"<{/if}> onmouseover="ph_changeTab(<{$one.oid}>)">
+						    <td valign="middle"><img src="http://www.<{$smarty.const.WEBDOMAIN}>/html/images/qa_img/paihang_<{$one.oid}>.jpg" width="14" height="13" /></td>
+						    <td valign="middle"><a target="_blank" href="<{$one.url}>">[<{$one.brandname|truncate_cn:12:""}>]</a></td>
+						    <td align="right" valign="middle"><img src="http://www.<{$smarty.const.WEBDOMAIN}>/html/images/qa_img/xup.jpg" /><{$one.joinvalue}></td>
+						  </tr>
+						  <tr id="disn_<{$one.oid}>" <{if $one.oid neq 1}> class="hy_list_over" <{/if}>><td width="98" rowspan="2"><a target="_blank" href="<{$one.url}>"><img style="height: 92px;width: 88px;" src="<{$one.picture}>" /></a></td><td width="102"><strong><a target="_blank" href="<{$one.url}>"><{$one.brandname|truncate_cn:12:""}></a></strong><br />
+						投资金额：<strong><{$one.joinvalue}></strong><br />
+						招商区域：<strong><{$one.joinregion}></strong></td>
+						  </tr>
+                     </table>
+					</li>
+					 <{/yp_list}>
+		 <script>
+		function ph_changeTab(a){
+			for(i=1;i<=10;i++){
+				document.getElementById("disn_"+i).className="hy_list_over";
+				document.getElementById("dis_"+i).className="";
+			}
+		  document.getElementById("dis_"+a).className="hy_list_over";
+		  document.getElementById("disn_"+a).className="";
+		}
+	  </script>
+				</ul>
+			</div>
+		</div>
+		<div class="xpdobjectb2">&nbsp;</div>
+
+
+		<div class="xpdobjectt2">&nbsp;</div>
+		<div class="xpindao_right02c">
+			<div class="xpdrtitle"><div class="pd_more"><a href="http://www.liansuo.com/index.php?act=search&opt=gold">&nbsp;</a></div>品牌推荐<span>Brand:</span></div>
+			<div class="pdrbrangli">
+				<ul>
+					<{ad_list cid=421 row=5 item=one width=70 height=30  lazyload=1}>
+					 <li><table cellpadding="0" cellspacing="0">
+					  <tr><td valign="middle"><{$one.html}></td>
+					  <td valign="middle"><a href="<{$one.url}>"><{$one.title}></a></td>
+					  </tr></table>
+					 </li>
+					 <{/ad_list}>
+				</ul>
+			</div>
+		</div>
+		<div class="xpdobjectb2">&nbsp;</div>
+
+		<div class="xpdobjectt2">&nbsp;</div>
+		<div class="xpindao_right02c">
+			<div class="xpdrtitle"><div class="pd_more"><a style="cursor:pointer">&nbsp;</a></div>相关专题<span>Clothing:</span></div>
+			<div class="psrlist">
+				<ul>
+				   <{foreach from=$seolist item="one"}>
+					<li><a href="<{$one.url}>"><{$one.title}></a></li>
+				   <{/foreach}>
+				</ul>
+			</div>
+		</div>
+		<div class="xpdobjectb2">&nbsp;</div>
+
+	</div>
+</div>
+<div class="clear space10"></div>
+<div class="clear space10"></div>
+<{*include file="base810/base_footer.html"*}>
+
+<!--#include virtual="/header_footer/tongji.html"-->
+<style type="text/css">
+.wytw_gdkin{width:440px;height:160px;}
+#indu{}
+.pname{width:154px;}
+#hyfgb{display:block;text-align:right;}
+.zanwei{display:inline-block;width:190px;}
+.td_1{text-align:right;width:100px;}
+.td_3{text-align:right;}
+.td_2{width:50px;}
+</style>
+
+
+<div class='wytw_gdk' style="display:none" id="hyf">
+<div class='wytw_gdkin' id="hyf" style="background:#FFf;border:2px solid #FFA82C" >
+<div class="title-bar" style="background: url(http://img.liansuo.com/html/images/boxyimages/top_mid.jpg) repeat-x;
+    padding: 6px;
+    position: relative;top:0;left:0;"><h2 style="float: left"
+>连锁网提示信息</h2>
+	<a class="td_3" title="关闭" id="hyfgb" onclick="gbhyf()">关闭</a>
+	</div>
+<form method="post" action="http://www.liansuo.com/index.php?act=public&opt=qa"><table width="400"><tbody>
+<tr><td class="td_1">项目分类：</td><td>
+<select   id='indu' name="industry" onchange="jilian(this.value)">
+ <option  value="0" selected>请选择</option> 
+<{foreach from=$indusarr item="one"}>
+<option  value="<{$one.prid}>"><{$one.prindustryname}></option>    	
+<{/foreach}>
+</select>
+
+<select id='aasubid' name="subindustry">
+
+</select>
+</td>
+	<td>
+</td>
+<tr>
+<tr><td class="td_1">项目名称：</td><td><input name="pname" class="pname" type="text"  /></td><td></td></tr>
+<tr><td class="td_1">项目提问：</td><td><input name="asktext" type="text" style="height:60px; width: 154px "
+ /></td><td></td></tr>
+<tr><td class="td_1"></td><td width="154" align="center"
+><p style="text-align:center;"><button type="submit"> 提交</button></p></td><td></td></tr>
+
+</tbody></table>
+</form>	
+
+</div>
+</div>
+<style>
+.wytw_gdk{ width:100%; height:400px;  position:fixed; top:140px;  }
+.wytw_gdkin{ width:400px; height:200px; border:1px solid #ddd ; background:#CCC; margin:auto }
+</style>
+
+<script>
+	//实现级联菜单
+subindu = [];
+<{foreach from=$indusarr item="one"}>
+		subindu[<{$one.prid}>]=[];    	
+   <{foreach from=$one.subarr item="two"}>
+		subindu[<{$one.prid}>][<{$two.id}>] = '<{$two.industryname}>加盟';
+   <{/foreach}>  
+<{/foreach}>
+
+function jilian(num){
+	
+	arr = subindu[num];
+	$('#aasubid').html("");
+	$('#aasubid').append('<option value=0 selected >请选择</option>');
+	for(var key in arr)
+  {		
+		$('#aasubid').append('<option value='+key+'>'+arr[key]+'</option>');  // 0,1	
+  }
+}
+jilian(1);
+</script>
+<script>
+function xianshibiaodan() 
+{
+	document.getElementById('hyf').style.display = 'block';
+}
+function gbhyf()
+{
+	document.getElementById('hyf').style.display='none';
+}
+</script>
+
+</body>
+</html>

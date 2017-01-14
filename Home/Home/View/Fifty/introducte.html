@@ -1,0 +1,79 @@
+<include file="Fifty/header"/>
+<div class="sp-box">
+	<div class="content-box-rel">
+		<div class="rel_div"><img src="__PUBLIC__/image/home/fifty/intro/intro_01.jpg" width="1093" height="229" alt=""></div>
+	<div class="rel_div"><img src="__PUBLIC__/image/home/fifty/intro/intro_02.jpg" width="1093" height="181" alt="">
+    	<dl class="rel_div_dl">
+        	<dt class="floatL"><a href=""><img src="__PUBLIC__/image/home/fifty/sy/img2.jpg" width="275" height="180"></a></dt>
+            <dd class="floatR">
+            	<p>由中网载线旗下中国连锁网主办的加盟行业年度最高奖项"连锁50强"盛装登场！</p>
+            	<p>"2016年度【连锁50强】"网络评选活动于2016年11月15日正式启动。"连锁网50强"由中网载线旗下中国连锁网主办，旨在选拔最优秀的招商连锁品牌、树立行业标杆，引领连锁加盟行业健康发展。是连锁加盟领域含金量最高的奖项。</p>
+                <p>投票时间：2016年11月15日00:00-2016年1月15日24:00</p>
+            </dd>
+        </dl>
+    </div>
+	<div class="rel_div"><img src="__PUBLIC__/image/home/fifty/intro/intro_03.jpg" width="1093" height="132" alt=""></div>
+	<div class="rel_div"><img src="__PUBLIC__/image/home/fifty/intro/intro_04.jpg" width="1093" height="95" alt=""></div>
+	<div class="rel_div"><img src="__PUBLIC__/image/home/fifty/intro/intro_05.jpg" width="1093" height="113" alt=""></div>
+	<div class="rel_div"><img src="__PUBLIC__/image/home/fifty/intro/intro_06.jpg" width="1093" height="322" alt="">
+    	<div class="text_intro">
+        	<h3>"2016【连锁50强】年度优秀人物与品牌评选活动"网络评选设立以下五大奖项：</h3>
+            <p class="p_text">①2016年中国连锁加盟最具投资价值品牌（TOP10获奖）<br>
+            ②2016年中国连锁加盟最佳口碑品牌（TOP10获奖）<br>
+            ③2016年中国连锁加盟最佳人气品牌（TOP10获奖）<br>
+            ④2016年中国连锁加盟年度新锐品牌（TOP10获奖）<br>
+            ⑤2016年中国连锁加盟连锁人物（TOP10获奖）
+            </p>
+            <p class="h3_text">★ 享受活动主办方颁发的资质奖牌与认证证书 ★</p>
+        </div>
+    </div>
+	<div class="rel_div"><img src="__PUBLIC__/image/home/fifty/intro/intro_07.jpg" width="1093" height="129" alt=""></div>
+	<div class="rel_div"><img src="__PUBLIC__/image/home/fifty/intro/intro_08.jpg" width="1093" height="329" alt="">
+    	<p class="text_in_1">请先关注中国连锁网官方微信：创富加盟网（liansuo-com），在微信菜单栏最后一栏的投票入口为相应的奖项投票即可。每人每天每个奖项限投一票，可分享至朋友圈拉票。</p>
+        <p class="text_in_2">通过连锁网官网专属投票区进行投票：投票入口将随专题页面一同开放。一个IP每天限投三票。
+（*本活动最终解释权归中国连锁网所有。）</p>
+    </div> 
+	</div>	
+</div>
+
+
+<include file="Fifty/footer" />
+
+
+<script src="__PUBLIC__/js/home/fifty/jquery-1.11.2.min.js"></script>
+<script src="__PUBLIC__/js/home/fifty/vote_ny.js"></script>
+<script>
+
+//第一页
+	$(function(){
+		$(".ms-box").animate({opacity:'1'},1000,'swing');
+		$(".ms-img1,.ms-content").delay(1500).animate({'opacity':1},'slow');
+		$(".ms-img4").delay(700).animate({height:'553px',opacity:'1'},500,'swing');
+		$(".ms-img7").delay(400).animate({right:'50%',opacity:'1'},600,'swing');
+		$(".ms-img9").delay(1500).animate({opacity:1},800,'swing');
+	});
+//第二页
+$(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>400){
+			$(".dm-title").animate({top:"75px",opacity:1},1000,'swing');
+			$(".dm-content1").delay(200).animate({top:'140px',opacity:'1'},1000,'swing');
+			$(".dm-img-box").delay(400).animate({top:'272px',opacity:'1'},1000,'swing');
+		}
+		if($(window).scrollTop()>1200){ 
+			$(".sp-title").animate({top:'75px',opacity:'1'},1000,'swing');
+		}
+		if($(window).scrollTop()>1120){
+			$(".sp-img4").animate({right:'5px',top:'86px',opacity:1},1000,'swing');
+		}
+		if($(window).scrollTop()>1100){
+			$(".sp-img3").animate({right:'-241px',top:'40px',opacity:1},1000,'swing');
+		}
+		
+	     	       					
+	});
+});
+//
+</script>    
+</body>
+</html>

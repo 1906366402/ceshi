@@ -1,0 +1,49 @@
+<extend name="Project:index" />
+<block name="yellowTDK">
+	  <title><{$brandinfo.brandname}>加盟动态_<{$brandinfo.brandname}>企业资讯—中国连锁网</title>
+	  <meta name="Keywords" content="<{$brandinfo.brandname}>加盟动态,<{$brandinfo.brandname}>企业资讯" />
+	  <meta name="Description" content="<{$brandinfo.brandname}>加盟动态为您详细介绍<{$brandinfo.brandname}>加盟资讯,<{$brandinfo.brandname}>企业动态,<{$brandinfo.brandname}>加盟信息,<{$brandinfo.brandname}>品牌新闻等。" />
+</block>
+<block name="banner">
+  <h1><p class="banner-name"><{$brandinfo.brandname}>加盟资讯</p></h1>
+       <span style="color:white;font-size:14px;line-height:44px;position:absolute;left:160px;top:53px;"><{$brandinfo.brandname}>加盟品牌新闻</span>
+</block>
+<block name="row01-title">
+【<{$brandinfo.brandname}>加盟】品牌新闻
+</block>
+<block name="section02-left">
+			<div class="section02-left"> 
+				<h1 class="section02-left-title">
+					<span><{$brandinfo.brandname}>品牌新闻</span>
+				</h1><hr>
+				<div class="section02-left-nr">
+					<p>
+						<volist name="rgej" id="one">
+							<div class="item">
+							  <a href="<{$one.newsid}>.html" ><h2 class="item-title"><{$brandinfo.brandname}><{$one.title}></h2></a>
+								<div class="item-info clearfix">
+									<p class="lf">
+										<span>作者：<{$one.editor}></span>
+										<span>时间：<{$one.ctime}></span>
+										<span>（<{$one.counthits}>）看过</span>
+									</p>
+									<div class="rf">
+										<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a></div>
+										<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+									</div>
+								</div>
+								<div class="item-tw clearfix">
+									<div class="item-txt lf">
+										<p><{$one.description}><a href="<{$newsurl}><{$one.newsid}>.html">&nbsp;&nbsp;&nbsp;详情>></a></p>
+									</div>
+								</div>
+						    </div>
+						</volist>
+	                    <div class="fenye">
+	                  		  <{$fenyeStr}>	
+	                    </div>				 
+					</p>
+				</div>	
+				<div class="space10 clear"></div>
+			</div>
+</block>

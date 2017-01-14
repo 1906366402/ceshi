@@ -1,0 +1,36 @@
+<extend name="Project:index" />
+<block name="yellowTDK">
+	  <title><{$brandinfo.brandname}>加盟店展示图片_<{$brandinfo.brandname}>产品图片—中国连锁网</title>
+	  <meta name="Keywords" content="<{$brandinfo.brandname}>产品展示,<{$brandinfo.brandname}>加盟店展示" />
+	  <meta name="Description" content="<{$brandinfo.brandname}>加盟展示为您提供<{$brandinfo.brandname}>加盟店展示,<{$brandinfo.brandname}>产品展示,<{$brandinfo.brandname}>装修效果图展示等,以便您更直观的了解<{$brandinfo.brandname}>店面和产品,放心加盟<{$brandinfo.brandname}>" />
+</block>
+<block name="ddddd">
+<meta name="mobile-agent" content="format=html5;url=http://m.liansuo.com/p/<{$brandinfo.memberid}>/cpzs.html">
+</block>
+<block name="banner"> 
+<h1><p class="banner-name"><{$brandinfo.brandname}>加盟产品展示</p></h1>
+       <span style="color:white;font-size:14px;line-height:44px;position:absolute;left:160px;top:53px;"><{$brandinfo.brandname}>加盟实力展示</span>
+</block>
+<block name="row01-title">
+【<{$brandinfo.brandname}>加盟】产品展会 
+</block>
+<block name="yellowSP">
+	<script>//移动端自动跳转 
+		var mob_url = "http://m.liansuo.com/p/<{$brandinfo.memberid}>/cpzs.html"; 
+		var __qid=<{$brandinfo.memberid}>; 		  
+	</script> 
+	<script type="text/javascript" src="__PUBLIC__/js/home/news/ismob.js"></script> 
+</block>
+<block name="section02-left">
+        <h2 class="section02-left-title"><span><{$brandinfo.brandname}></span>产品展示</h2>
+        <hr>
+        <div class="section02-left-nr">
+        	<div class="item">
+     		 	  <volist name="brandinfo.allpicture.cptp" id="one">
+        	          <a rel="group" href="http://img.liansuo.com/html/images/<{$one}>" title="<{$brandinfo.brandname}>">
+        			      <img style="cursor:pointer;" src="http://img.liansuo.com/html/images/<{$one}>" height="134" width="214">
+        		      </a>
+       			  </volist> 
+        	</div>  
+        </div> 
+</block>   

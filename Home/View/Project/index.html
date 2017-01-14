@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><block name="yellowTDK"></block> 	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	  <link rel="shortcut icon" href="http://www.liansuo.com/favicon.ico" />
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	  <meta http-equiv="Cache-Control" content="no-transform">
+	  <link rel="stylesheet" href="http://cdn.bootcss.com/normalize/3.0.2/normalize.min.css" />
+	  <link rel="stylesheet" href="__PUBLIC__/css/home/project/reset.css">
+	  <link rel="stylesheet" href="__PUBLIC__/css/home/project/slick.css">
+	  <link rel="stylesheet" href="__PUBLIC__/css/home/project/style.css">
+	  <link rel="stylesheet" href="__PUBLIC__/css/home/project/fancybox.css">
+	  <link rel="stylesheet" href="__PUBLIC__/css/home/project/newspage.css">
+	  <script type="text/javascript" src="__PUBLIC__/js/home/project/ismob.js"></script> 
+	  <script type="text/javascript" src="__PUBLIC__/js/home/project/jquery-1.8.3.min.js"></script> 
+	  <script type="text/javascript" src="__PUBLIC__/js/home/project/gb_hb.js"></script> 
+	  <base target="_blank" />
+</head>
+<body>
+	<!---头部开始--->
+	<include file="./Public/html/public/yel_header.html" />
+	<!-- 头部结束 -->
+<div class="space5 clear"></div>
+
+<!-- 隐藏值 用于表单提交 -->
+<input id="hidval" type="hidden" value="<{$brandinfo.memberid}>" />
+<input id="jsindustry" type="hidden" value="<{$brandinfo.industry}>" />
+<input id="jssubindustry" type="hidden" value="<{$brandinfo.subindustry}>" />
+
+<div class="container">
+  <span style="font-size:18px"><a href="http://www.liansuo.com">首页</a>><a target="_blank" href="http://<{$industry.pathname}>.liansuo.com" title="<{$industryname}>加盟" ><{$industry.industryname}>加盟</a> &gt;<a target="_blank" href="http://<{$subindustry.pathname}>.liansuo.com" title="<{$subindustry}>加盟"><{$subindustry.industryname}>加盟</a>>
+  <a href="<{$url}>" target="_blank" ><{$brandinfo.brandname}>加盟</a>
+   
+<div class="banner">
+	<img style="cursor:default" class="banner-a"  src="http://img.liansuo.com/html/images/<{$brandinfo.logo}>" alt="<{$brandinfo.brandname}>加盟" />
+	<block name="banner"></block>
+	<p class="banner-info">
+	       加盟品牌：【<{$brandinfo.brandname}>】<br>
+	       所属行业：<a href="http://search.liansuo.com/<{$brandinfo.industry}>-0-0-0-1.html" title="<{$industry.industryname}>加盟"><{$industry.industryname}></a> ><a href="http://search.liansuo.com/<{$brandinfo.subindustry}>-0-0-0-1.html" title="<{$subindustry.industryname}>加盟"><{$subindustry.industryname}></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基本投资：<{$brandinfo.joinlinemin}>万元  ~ <{$brandinfo.joinlinemax}>万元 <br>
+	  <if condition="$brandinfo['isupload'] eq 3 || $brandinfo['isupload'] eq 1">招商加盟：<a href="<{$brandinfo.hburl}>"><{$brandinfo.hburl}></a></if>
+	</p>
+	<p class="banner-phone">400-810-<if condition="$brandinfo['BigCode'] neq ''">
+		<?php echo str_replace('810','',$brandinfo['BigCode']);?>
+		<else/>7676</if>
+	<if condition="$brandinfo['BigCode'] eq '8107676'">
+	   	<if condition="$brandinfo['BigCode'] neq '0'"> 
+	     	<if condition="$brandinfo['BigCode'] !== ''"> 转 <{$brandinfo.ExtCode}></if>
+	    </if>
+	</if>
+	</p>
+</div>
+    <div id="contid" class="main-nav">
+		<ul class="clearfix"> 
+			<li><a href="" target="_self" title="<{$brandinfo.brandname}>项目介绍">项目介绍</a></li>
+            <if condition="!empty($brandinfo['vcr_href'])"><li><a id="showdiv" href="#inline" target="_self" title="<{$brandinfo.brandname}>品牌VCR">品牌VCR</a></li></if>
+            <if condition="!empty($brandinfo['pc_contents1'])"><li><a href="scqj.html" target="_self" title="<{$brandinfo.brandname}>市场前景">市场前景</a></li></if>
+            <if condition="!empty($brandinfo['pc_contents2'])"><li><a href="jmys.html" target="_self" title="<{$brandinfo.brandname}>加盟优势">加盟优势</a></li></if>
+            <if condition="!empty($brandinfo['contents3'])"><li><a href="jyfx.html" target="_self" title="<{$brandinfo.brandname}>经营分析">经营分析</a></li></if>
+            <if condition="!empty($brandinfo['allpicture']['cptp'])"><li><a href="cpzs.html" title="<{$brandinfo.brandname}>产品展示" target="_self">产品展示</a></li></if>
+			<if condition="$newshas"><li><a href="ppxw.html" target="_self" title="<{$brandinfo.brandname}>品牌新闻" >品牌新闻</a></li></if>
+            <if condition="$brandinfo['lsrw'][0]['title']"><li><a href="<{$brandinfo.lsrw.0.outsideurl}>" title="<{$brandinfo.brandname}>领军人物" target="_blank">领军人物</a></li></if>
+			<li><a href="lxfs.html" target="_self" title="<{$brandinfo.brandname}>联系方式">联系方式</a></li>
+			<if condition="$brandinfo['isupload'] eq 1 || $brandinfo['isupload'] eq 3">
+				<li> 
+					<a href="<{$brandinfo.hburl}>" title="<{$brandinfo.brandname}>招商海报"  target="_blank">招商海报
+						<i ><img src="http://img.liansuo.com/html/images/hto.gif"></i>
+					</a>
+				</li>
+			</if>
+		</ul>
+    </div> 
+     
+    <div class="space10"></div> 
+    <div class="section01 clearfix">
+	      <div class="slide slider1">
+      			<volist name="brandinfo.allpicture.cptp" offset="0" id="one" length="3">
+      				<div><a><img width="390" height="270" src="http://img.liansuo.com/html/images/<{$one}>"></a></div>
+      			</volist>
+	      </div>
+	      <div class="section01-middle">
+		       <div class="row01 clearfix share">
+			        <!-- 二维码 -->
+	                <div id="detail">
+						<pre><div id="qrcode"></div></pre>
+	                </div>
+			        <span class="row01-title lf">
+			        	<b id="name">
+				        	<!-- 模板继承  start-->
+				        	<block name="row01-title"></block>
+				        	<!-- 模板继承  end-->
+				        	<a rel="nofollow" href="<{$brandinfo.hburl}>" target="_blank" >(了解更多)</a>
+			        	</b>
+			        </span>
+					<p class="row01-handle rf">
+						<a id="t1"><i class="icon3"></i>扫描到手机</a>
+					</p>
+		            <ul class="share-contents" id="share_contents">
+							<li class="s_wx"><i class="icon-s_wx"></i><a>微信好友</a></li>
+							<li class="msQQ"><i class="icon-msQQ"></i><a>QQ好友</a></li>
+							<li class="msQzone"><i class="icon-msQzone"></i><a>QQ空间</a></li>
+							<li class="msSina"><i class="icon-msSina"></i><a>新浪微博</a></li>
+							<li class="msWeibo"><i class="icon-msWeibo"></i><a>腾讯微博</a></li>
+				    </ul>          
+			    </div>
+		        <div class="row02 clearfix">
+			          <p>
+					            成立时间：<span><{$brandinfo.createtime}>年</span><br>
+					            经营产品：<span><{$industry.industryname}></span><br>
+					            投资额度：<span><{$brandinfo.joinlinemin}>~<{$brandinfo.joinlinemax}></span><br>
+					            品牌源地：<span><{$brandinfo.cradle}></span><br>
+			          </p>
+			          <p>
+					            加盟店数：<span><b><{$brandinfo.jmnum}></b>家</span><br> 
+					            直营店总数：<span><b><{$brandinfo.zydnum}></b>家</span><br>
+					            门店总数：<span><b><if condition="$brandinfo['storesnum'] == 0">审核中<else /><{$brandinfo.storesnum}></if></b>家</span><br>
+					            加盟区域：<span><{$brandinfo.joinregion}></span><br>
+			          </p>
+			          <div class="rf">
+			            <h3 class="rf-h3"><b><{$brandinfo.joinlinemin}>万</b><br><span>投资金额</span></h3>
+			            <a href="<{$url}>lxfs.html" rel="nofollow" target="_self">申请加盟</a>
+			          </div>
+		        </div>
+		        <p>适合人群：<span>自由创业者、在岗投资、毕业生创业、其他</span></p>
+		        <p>意向加盟：<b class="big"><{$brandinfo.visit_sum}>0</b><span>人次</span> &nbsp;&nbsp;&nbsp;申请加盟：<b class="big"><{$brandinfo.msg_sum}></b><span>人次</span>  &nbsp;&nbsp;&nbsp;好评率：<b class="big">99%</b></p>
+				<div class="refer clearfix">
+					<a href="<{$url}>#qusfal" target="_self"><i class="icon4"></i>在线咨询</a>
+					<a href="<{$url}>#qusfal" target="_self"><i class="icon5"></i>索要资料</a>
+					<a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&uin=800102420&site=qq&menu=yes" title="中国连锁网—加盟指导"><i class="icon6"></i>QQ咨询</a>
+				</div>
+	      </div>
+	      <div class="section01-right">
+	       	    <h2 class="section01-right-title">企业信息</h2>
+	       	    <hr><hr class="hr2">
+		        <div class="info">
+				企业名称：<span title="<{$brandinfo.companyname}>" style="cursor:pointer;"><{$brandinfo.companyname}></span><br>
+				注册资金：<span><if condition="$brandinfo['funds'] eq '' or $brandinfo['funds'] eq '--'">审核中<else /><{$brandinfo.funds}>万元</if></span><br>
+				企业地址：<span title="<{$brandinfo.address}>" style="cursor:pointer;"><{$brandinfo.address}></span><br>
+				企业资质认证：<em><i class="icon8"></i>人工已核实</em> 
+				</div>
+		        <div class="other clearfix"> 
+			        <a href="http://www.liansuo.com/about/b/feedback.html" title="中国连锁网 虚假品牌投诉中心"  rel="nofollow">投诉举报</a>
+					<a href="http://search.liansuo.com/tx-0-1.html" title="中国连锁网招商加盟项目备案查询"  rel="nofollow">备案查询</a>
+		        </div>
+				<div class="call">
+				  请输入您的手机号免费回呼：<br>
+				  <input id="callNum" type="text" value="请输入您的手机号/电话号码" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999"><button id="sendNum">免费回呼</button>
+				</div>
+	      </div>
+	    </div>
+	    
+<div class="section_contant clearfix">
+    <div class="section02 clearfix">
+        <div class="section02-left lf">
+        <!-- 模板继承  start-->
+	       <block name="section02-left"></block>
+	    <!-- 模板继承  end-->
+	        <div class="space10 clear"></div>
+				<if condition="$brandinfo['contents1'] && $brandinfo['contents2'] && $brandinfo['contents3']">
+				<div class="market-prospect">			
+					<div  id="tab">
+						<div class="market-prospect-header clearfix">
+							<a href="<{$url}>scqj.html" target="_blank" title="<{$brandinfo.brandname}>市场前景">市场前景</a>
+							<a href="<{$url}>jmys.html" target="_blank" title="<{$brandinfo.brandname}>加盟优势">加盟优势</a>
+							<a href="<{$url}>lrfx.html" target="_blank" title="<{$brandinfo.brandname}>经营分析">经营分析</a>
+						</div>			
+						<div class="mask">
+								<div class="market-prospect-body clearfix">
+									<if condition="!empty($brandinfo['images1'])">
+										<div class="market-prospect-body-left lf">
+										  	<a  target="_blank"><img src="http://img.liansuo.com/html/images/<{$brandinfo.images1}>" height="173" width="282" alt="<{$brandinfo.brandname}>加盟"></a>
+										</div>
+										<div class="market-prospect-body-right rf" style="cursor:pointer;" >
+									<else/>
+										<div class="market-prospect-body-right rf market-nwid" style="cursor:pointer;" >
+									</if>
+										<p><{$brandinfo.pc_contents1}></p>
+								</div>
+						</div>
+							<div class="market-prospect-body clearfix hid">
+								<if condition="!empty($brandinfo['image2'])">
+									<div class="market-prospect-body-left lf">
+										  <a  target="_blank"><img src="http://img.liansuo.com/html/images/<{$brandinfo.images2}>" height="173" width="282" alt="alt="<{$brandinfo.brandname}>加盟"></a>
+									</div>	
+									<div class="market-prospect-body-right rf" style="cursor:pointer;" >
+								<else/>
+									<div class="market-prospect-body-right rf market-nwid" style="cursor:pointer;">
+								</if>
+									<p><{$brandinfo.pc_contents2}></p>
+							</div>
+							</div>
+							<div class="market-prospect-body clearfix hid">
+								<if condition="!empty($brandinfo['images3'])">
+									<div class="market-prospect-body-left lf">
+									  <a  target="_blank"><img src="http://img.liansuo.com/html/images/<{$brandinfo.images3}>" height="173" width="282" alt="alt="<{$brandinfo.brandname}>加盟"></a>
+									</div>	
+									<div class="market-prospect-body-right rf" style="cursor:pointer;" >
+								<else/>
+									<div class="market-prospect-body-right rf market-nwid" style="cursor:pointer;" >
+								</if>
+										<p><{$brandinfo.pc_contents3}></p>
+							</div>
+							</div>
+						</div>
+					 	
+						 <script type="text/javascript">
+							$(document).ready(function(){
+								var tab_li = $('#tab .market-prospect-header a');
+								tab_li.hover(function(){
+									$(this).addClass('active').siblings().removeClass('active');
+									var index = tab_li.index(this);
+									$('div.mask > div').eq(index).show().siblings().hide();
+								});
+							});
+						  </script>			 
+					</div>
+					<!-- 选项卡end -->
+				</div>
+				</if>
+
+       		  <div  class="product-show"  >
+					<div class="product-show-header commont-header">
+						<h3><span><{$brandinfo.brandname}>加盟</span>&nbsp;展示图</h3>
+					</div>
+					<!-- 产品展示 -->
+					<div class="product-show-body clearfix">
+                        <div class="product-show-body-left lf">
+							<a target="_blank"  rel="group" href="http://img.liansuo.com/html/images/<{$brandinfo.allpicture.cptp.0}>" title="<{$brandinfo.brandname}>"><img src="http://img.liansuo.com/html/images/<{$brandinfo.allpicture.cptp.0}>" height="278" width="446" alt="<{$brandinfo.brandname}>"></a>
+						</div>
+						<div class="product-show-body-right rf clearfix">
+							<volist name="brandinfo.allpicture.cptp" id="one" offset="1" length="4">
+								<a target="_blank"  rel="group" href="http://img.liansuo.com/html/images/<{$one}>" title="<{$brandinfo.brandname}>"><img style="cursor:pointer;" src="http://img.liansuo.com/html/images/<{$one}>" height="134" width="214"></a>
+							</volist>
+						</div>
+					</div>
+					<!-- 产品展示end -->
+			  </div>
+				<div class="xmhy-lyb"  name="qusfal" style="position:relative;">
+						 <div style="position:absolute;top:-43px;" id="qusfal"></div>
+							<h2>
+								<span><em>我要</em>&nbsp;咨询</span>
+							</h2>
+						<iframe id="iframeid" marginheight="0" marginwidth="0" noresize="" style="margin:0 auto; margin-top:0px;"
+							src="https://g.liansuo.com/gbook/gbook_dialogboxchild_7781.php?mid=<{$brandinfo.memberid}>" scrolling="no" 
+							frameborder="0" height="345" width="100%">
+						</iframe>
+						<script>
+						    var url = window.location.href;
+						    var pattern = /(\w+)=(\w+)/ig;//定义正则表达式
+						    var parames = {};//定义数组
+						    url.replace(pattern, function(a, b, c){
+						        parames[b] = c;
+						    });
+						    var bannerID = parames['bannerID'];//返回这个数组.
+						  if (bannerID) {
+						    document.getElementById('iframeid').src +='&bannerID='+bannerID;
+						  }else{
+						    document.getElementById('iframeid').src +='&bannerID=0';
+						  }
+						</script>		
+					</div>
+      </div>
+      <div class="section02-right rf">
+					<div class="section02-right-title clearfix"><h3>
+						<if condition="empty($brandinfo['vcr_href'])">
+							连锁网
+						<else/>
+							<{$brandinfo.brandname}>
+						</if>VCR</h3>
+						<a href="http://zhaoshang.liansuo.com/" rel="nofollow">MORE</a></div>
+						<hr>
+					<div id="inline" class="video">
+						<if condition="empty($brandinfo['vcr_href'])">
+				    		<embed src="http://yuntv.letv.com/bcloud.swf" allowFullScreen="true" quality="high"  width="277" height="188" align="middle" allowScriptAccess="always" flashvars="uu=ac4dc4f583&vu=f2b0c717f5&auto_play=0&gpcflag=1&width=640&height=360" type="application/x-shockwave-flash"></embed>
+				    	<else/>
+				    		<embed src="http://yuntv.letv.com/bcloud.swf" allowFullScreen="true" quality="high"  width="277" height="188" align="middle" allowScriptAccess="always" flashvars="<{$brandinfo.vcr_href|substr=11,-1}>" type="application/x-shockwave-flash"></embed>
+				    	</if>
+					</div>
+        <div class="section02-right-title clearfix"><h3>精品项目推荐</h3><a href="http://search.liansuo.com/" rel="nofollow">MORE</a></div>
+        <hr>
+        <div class="recommend">
+        
+			<div class="recommend-header clearfix">
+			    <p>
+			        <a href="<{$url}>">
+			            <img width="135" height="95" src="http://img.liansuo.com/html/images/<{$brandinfo.logo}>" alt="<{$brandinfo.brandname}>">
+			        </a>
+			    </p>
+			    <p class="recommend-header-other">
+			        <a href="<{$brandinfo.hburl}>" rel="nofollow"> 
+			            关注项目
+			        </a>
+			        <a href="<{$brandinfo.hburl}>#iframeid" rel="nofollow">
+			            留言咨询
+			        </a>
+			        <a href="<{$url}>" rel="nofollow" class="recommend-header-other-last">
+			            了解详情
+			        </a>
+			    </p>
+			</div>
+			<p>
+			    项目名称：
+			    <a href="<{$url}>" 	class="xiangmu" title="<{$brandinfo.brandname}>加盟">
+			        <{$brandinfo.brandname}>
+			    </a>
+			</p>
+			<p class="recommend-dashed">
+			    投资金额：<{$brandinfo.joinlinemin}>万-<{$brandinfo.joinlinemax}>万
+			</p>
+			<p>
+			    项目特点：<a rel="nofollow" href="<{$url}>" target="_blank" title="<{$brandinfo.brandname}>加盟">
+			   			<?php echo $this->msubstr($brandinfo['projectbrief'], $start=0, 34, $charset="utf-8", $suffix=true);?>
+			    	</a>
+			</p>
+			<volist name="jptj"  id="vo" offset="0" length="3">
+			    <div class="recommend-list clearfix">
+			        <p>
+			            <a target="_blank" href="http://www.liansuo.com/p<{$vo['memberid']}>/">
+			                <img width="82" height="58" src="http://img.liansuo.com/html/images/<{$vo.logo}>" alt="<{$vo.brandname}>加盟">
+			            </a>
+			        </p>
+			        <p class="recommend-list-info">
+			            项目名称： 
+			            <a target="_blank" href="http://www.liansuo.com/p<{$vo['memberid']}>/" class="xiangmu" title="<{$vo.brandname}>加盟">
+			                <{$vo.brandname}>
+			            </a>
+			            <br>
+			            投资金额：<{$vo.joinlinemin}>万-<{$vo.joinlinemax}>万
+			            <br>
+			            项目特点：<a target="_blank" href="http://www.liansuo.com/p<{$vo['memberid']}>/" rel="nofollow" >			 
+						   <?php echo $this->msubstr($vo['projectbrief'], $start=0, 6, $charset="utf-8", $suffix=true);?>
+					   </a>
+			        </p>
+			    </div>
+			</volist>           
+        </div>
+        <div class="section02-right-title clearfix"><h3>加盟聚焦</h3><a href="http://news.liansuo.com/" target="_blank" rel="nofollow">MORE</a></div><hr>
+		<div class="hot-nr">
+			<volist name="jmjj" id="v">
+				<a href="<{$url}>ppxw/<{$v.newsid}>.html" title="<{$v.title}>">
+				<?php echo $this->msubstr($v['title'], $start=0, 15, $charset="utf-8", $suffix=true);?>
+				</a>
+			</volist>
+		</div>
+        <div class="clear"></div>
+        <div class="space10"></div>	
+  		<div class="section-05-right rf" id="section-05-right">		
+				<div class="section-05-right-header commont-header">
+					<h3><span><{$brandinfo.brandname}></span>加盟流程</h3>
+				</div>
+				<div class="section-05-right-body">
+					<div class="call-tel">
+						<div class="wd_pohne">
+						<p>项目咨询热线</p>
+							<p>400-810-<if condition="$brandinfo['BigCode'] neq ''">
+							<?php echo str_replace('810','',$brandinfo['BigCode']);?>
+							<else/>7676</if>
+							<if condition="$brandinfo['BigCode'] eq '8107676'">
+								<if condition="$brandinfo['ExtCode'] neq '0'"> 
+									<if condition="$brandinfo['BigCode'] == '8107676'"> 转 <{$brandinfo.ExtCode}></if>	
+								</if>
+							</if>
+							</p>
+						</div>
+					</div>
+					<p>直接与我们沟通。通过<span>免费回呼</span>功能直接与我们沟通。</p>
+					<div class="recall-back">
+						<div><input id="callNum2" type="text" value="请输入你的手机号码/电话号码" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999"><button id="sendNum2">免费回呼</button></div></div>
+					<div class="section-05-right-body-item">
+						<b>1、给我们留言</b>
+						<p>直接给我们留言。如果您不太方便的话可以通过留言的方式与我们沟通，我们会在24小时内给您回电并免费邮寄项目资料。</p>
+					</div>
+					<div class="section-05-right-body-item">
+						<b>2、项目考察</b>
+						<p>对项目进行考察是加盟必不可少的一步，你可以通过连锁地图线上，或直接与我们联系，我们会根据您的日程来给您安排实地考察工作。</p>
+					</div>
+					<div class="section-05-right-body-item">
+						<b>3、加盟洽谈</b>
+						<p>项目考察过后，如果您满意的话，就可以进行加盟手续的办理成功加盟了</p>
+					</div>
+				</div>	
+			</div>
+			<!-- 加盟流程end -->
+      </div>
+    </div> 
+  <div class="clear space10"></div>
+  <div class="space10"></div>
+  <div class="center phb_xgb">
+	    <div class="floatL canyin_l">
+				<div class="section02-right-title clearfix"><h3>综合排行榜</h3><a rel="nofollow" href="http://www.liansuo.com/top.html" target="_blank">MORE</a></div>
+				<hr>
+				<div class="phb_con">
+					<p class="phb_title"><a>项目名称</a><a>投资金额</a><a>所属行业</a></p>
+					<ul class="phb_list">
+						<volist name="phbCom" id="v" key="k" offset="0" length="10">
+							<li>
+								<a href="http://www.liansuo.com/p<{$v.memberid}>/" title="<{$v.brandname}>"><i class="bg_red"><{$k}></i><{$v.brandname}></a>
+								<a class="red" rel="nofollow" target="_blank" href="http://search.liansuo.com/0-0-<{$v.joinlinemin}>,<{$v.joinlinemax}>--1.html" ><{$v.joinlinemin}>-<{$v.joinlinemax}>万</a>
+								<a><{$v.industryname}></a>
+							</li>	
+						</volist>
+					</ul>
+				</div>		
+		</div>
+	    <div class="floatL canyin_l">
+			<div class="section02-right-title clearfix"><h3><{$industry.industryname}>加盟排行榜</h3><a rel="nofollow" href="http://www.liansuo.com/top-<{$brandinfo.industry}>-0-1.html" target="_blank">MORE</a></div>
+			<hr> 
+			<div class="phb_con">
+				<p class="phb_title"><a>项目名称</a><a>投资金额</a><a>所属行业</a></p>
+				<ul class="phb_list">
+					<volist name="phbMax" id="v" key="k" offset="0" length="10">
+						<li>
+							<a href="http://www.liansuo.com/p<{$v.memberid}>/" title="<{$v.brandname}>"><i class="bg_red"><{$k}></i><{$v.brandname}></a>
+							<a class="red" rel="nofollow" target="_blank" href="http://search.liansuo.com/0-0-<{$v.joinlinemin}>,<{$v.joinlinemax}>--1.html" ><{$v.joinlinemin}>-<{$v.joinlinemax}>万</a>
+							<a><{$v.industryname}></a>
+						</li>	
+					</volist>
+				</ul>
+			</div>		
+		</div>
+	    <div class="floatL canyin_l">
+			<div class="section02-right-title clearfix"><h3><a></a><{$subindustry.industryname}>加盟排行榜</h3><a rel="nofollow" href="http://www.liansuo.com/top-<{$brandinfo.subindustry}>-0-1.html" target="_blank">MORE</a></div>
+			<hr>
+			<div class="phb_con">
+				<p class="phb_title"><a>项目名称</a><a>投资金额</a><a>所属行业</a></p>
+				<ul class="phb_list">
+					<volist name="phbMin" id="v" key="k" offset="0" length="10">
+						<li>
+							<a href="http://www.liansuo.com/p<{$v.memberid}>/" title="<{$v.brandname}>"><i class="bg_red"><{$k}></i><{$v.brandname}></a>
+							<a class="red" rel="nofollow" target="_blank" href="http://search.liansuo.com/0-0-<{$v.joinlinemin}>,<{$v.joinlinemax}>--1.html" ><{$v.joinlinemin}>-<{$v.joinlinemax}>万</a>
+							<a><{$v.industryname}></a>
+						</li>	
+					</volist>
+				</ul>
+			</div>		
+		</div>
+  </div>
+	<div class="clear space10"></div>
+	<div class="space10"></div>
+	<div class="center">
+			<script type="text/javascript">
+				$(function(){
+					$('.all_city_contant li').click(function(){
+						$('.all_city_contant li').removeClass("current");								 
+						$(this).addClass("current");
+						$('.all_city_contant li').find('ul').addClass("hid");
+						$(this).find('ul').removeClass("hid");
+					})
+				})
+			</script>
+			<div class="clear space10"></div>
+	</div>
+	<div class="clear space10"></div>
+	<div class="center">
+		<div class="all_city">
+			<div class="section02-right-title clearfix"><h3>全国地区加盟站</h3></div>
+			<hr>
+			<div class="border_div">
+				<div class="all_city_contant">
+					<include file="./Public/html/public/allcity.html" />
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		$(function(){
+			$('.all_city_contant_x li').click(function(){
+				$('.all_city_contant_x li').removeClass("current");								 
+				$(this).addClass("current");
+				$('.all_city_contant_x li').find('.ls_brand').addClass("hid");
+				$(this).find('.ls_brand').removeClass("hid");
+			})
+		})
+		</script>
+	</div>
+	<!-- 引入页脚 -->
+	<div class="clear space10"></div>
+		<include file="./Public/html/public/navfoot_news.html" />
+	<script type="text/javascript" src="__PUBLIC__/js/home/project/slick.js"></script>
+	<script>
+	   $('.slide').slick({
+	     slidesToShow: 1,//显示多少个图片
+	     slidesToScroll:1,//每次滚动几张图片
+	     arrows: false,//是否显示两边的箭头
+	     autoplay:true,//是否自动滚动
+	     dots: true
+	   });
+	   
+	   
+		(function(){
+		    var bp = document.createElement('script');
+		    var curProtocol = window.location.protocol.split(':')[0];
+		    if (curProtocol === 'https'){
+		   bp.src = "https://zz.bdstatic.com/linksubmit/push.js";
+		  }
+		  else{
+		  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		  }
+		    var s = document.getElementsByTagName("script")[0];
+		    s.parentNode.insertBefore(bp, s);
+		})();
+	   
+	   
+	</script>
+</body>
+<script type="text/javascript" src="__PUBLIC__/js/home/project/artDialog.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/project/jquery.fancybox-1.3.1.pack.js"></script>
+<script type="text/javascript" src="http://www.liansuo.com/c.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/project/qrcode.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/project/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/project/ypst.js"></script>
+</html>

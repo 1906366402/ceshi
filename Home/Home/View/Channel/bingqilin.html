@@ -1,0 +1,1383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><{$cata.meta_title}></title>
+<meta name="Keywords" content="<{$cata.meta_keywords}>" />
+<meta name="Description" content="<{$cata.meta_description}>" />
+<link rel="alternate"   type="application/vnd.wap.xhtml+xml"  media="handheld"   href="http://m.liansuo.com/C/index/<{$cata.id}>-0_0-0-0-0-1.html" >
+<meta name="mobile-agent" content="format=xhtml; url=http://m.liansuo.com/C/index/<{$cata.id}>-0_0-0-0-0-0.html">
+<meta name="mobile-agent" content="format=wml; url=http://wap.liansuo.com/channel/<{$cata.id}>.html">
+<meta name="mobile-agent" content="format=html5; url=http://4g.liansuo.com/home/put/index/id/<{$cata.id}>">
+<meta http-equiv="Cache-Control" content="no-transform"> <meta name ="applicable-device" content ="pc" >
+
+<script>
+//移动端自动跳转
+var mob_url = "http://m.liansuo.com/c/index/<{$cata.id}>-0_0-0-0-0-1.html";
+</script>
+
+
+
+<script src="http://www.liansuo.com/html/js/dialog_ini.js"></script>
+<link type="text/css" rel="stylesheet" href="http://www.liansuo.com/html/style/20151101/third.css" />
+<!--[if gte IE 7]>
+
+      <link rel="stylesheet" href="http://www.liansuo.com/html/style/20151101/third_ie.css" />
+	  
+<![endif]-->
+<base target="_blank" />
+</head >
+<body style="background: #e6e6e6;behavior: url(http://www.liansuo.com/html/style/20151101/PIE.htc); ">
+<%include file="web/baidu_js_push.html" %>
+<!--#include virtual="/header_footer/20151101/top.html"-->  
+<div class="content">
+<div>
+<%*
+	<%dd_list_rs  cid=195   item="one" %>		
+		<a href="<%$one.url%>" target="_blank"><img src="<%$one.content1%>" width="1200" height="55"  ></a>
+	<%/dd_list_rs%>	*%>	
+</div>
+</div>
+
+<div class="content">
+<div class="header_bottom">
+<div class="logo floatL">
+<img src="http://img.liansuo.com/html/images/011/bingqilinlogo.jpg" title="<{$cata.categoryname}>加盟" alt="<{$cata.categoryname}>加盟"/>
+
+
+</div>
+<div class="search floatL">
+	<form class="form">
+		<p class="int">
+			<input type="text" onblur="if (value=='') {value='您在寻找的冰淇淋品牌'}" onfocus="if(value=='您在寻找的冰淇淋品牌')  {value=''} " value="您在寻找的冰淇淋品牌" id="searchInput" onmouseover="if(value=='您在寻找的冰淇淋品牌')  {value=''} " onmouseout="if (value=='') {value='您在寻找的冰淇淋品牌'}">
+		</p>
+		<p class="bton">
+			<button onclick="if($('#searchInput').val()!='您在寻找的冰淇淋品牌'){window.open('http://search.liansuo.com/0-0-0-'+$('#searchInput').val()+'-1.html')}else{window.open('http://search.liansuo.com');}"></button>
+		</p>
+    </form>
+    <p class="search_xm">
+		<%yp_list cid=$subi item=one row=4 %>
+			<a href="<%$one.url%>" target="_blank" title="<%$one.title%>加盟"><%$one.title%></a>
+		<%/yp_list%>		
+	</p>
+</div>
+
+<div class="floatR guess">
+	<span class="user_pic">
+		<div id="imgpic">
+			
+		</div>
+	</span>
+	<div class="like_btn" id="guesslike"><i class="ico heart"></i>猜你喜欢<i class="ico sj"></i></div>
+</div>
+</div>
+</div>
+<div class="content">
+<div id="Nav">
+	<div class="floatL N_left">
+    	<a href="<%$purl%>"><a href="<%$purl%>"><h3 class="T_one"><i class="ico hyfl"></i>餐饮行业分类</h3></a></a>
+        <ul class="jy_class">
+        	<li class="activex">
+            	<dl>
+                	<dt class="jyfl_pic bql"></dt>
+                    <dd class="jyfl_text">
+                    	<h3 class="T_two">											
+							<a href="http://bingqilin.liansuo.com" target="_blank" title="冰淇淋加盟"><i class="ico jt"></i>冰淇淋</a>					
+						</h3>						
+                        <p>
+						<%yp_list cid=$subi row=3 item="one" orderway='desc' %>
+							<a href="<%$one.ypurl%>" target="_blank" title="<%$one.brandname%>加盟"><%$one.brandname%></a>
+						<%/yp_list%>														
+						</p>
+						
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<dt class="jyfl_pic cyms"></dt>
+                    <dd class="jyfl_text">
+                    	<h3 class="T_two">
+							<%dd_list sql="select lssort, pathname,id,parentid,industryname FROM   ls_class_industry WHERE  parentid =$industry and lssort>0 limit 0,3"  item="one"%>
+								<a href="http://<%$one.pathname%>.liansuo.com" target="_blank" title="<%$one.industryname%>加盟"><i class="ico jt"></i><%$one.industryname%></a>
+							<%/dd_list%>
+						</h3>
+                        <p>					
+							<%yp_list cid="17,18,19" row=3 item="one"%>
+								<a href="<%$one.ypurl%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname%></a>
+							<%/yp_list%>
+							
+						</p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<dt class="jyfl_pic kcxc"></dt>
+                    <dd class="jyfl_text">
+                    	<h3 class="T_two">
+							<%dd_list sql="select lssort, pathname,id,parentid,industryname FROM ls_class_industry WHERE  parentid =$industry and lssort>0 limit 3,3"  item="one"%>
+								<a href="http://<%$one.pathname%>.liansuo.com" target="_blank" title="<%$one.industryname%>加盟"><i class="ico jt"></i><%$one.industryname%></a>
+							<%/dd_list%>
+						</h3>
+                        <p>						
+							<%yp_list cid="20,21,22" row=3 item="one"%>
+								<a href="<%$one.ypurl%>" target="_blank" title="<%$one.brandname%>加盟"><%$one.brandname%></a>
+							<%/yp_list%>
+							
+						</p>
+                    </dd>
+                </dl> 
+            </li>
+            <li>
+            	<dl>
+                	<dt class="jyfl_pic sk"></dt>
+                    <dd class="jyfl_text">
+                    	<h3 class="T_two">
+							<%dd_list sql="select lssort, pathname,id,parentid,industryname FROM   ls_class_industry WHERE  parentid =$industry and lssort>0 limit 6,1"  item="one"%>
+								<a href="http://<%$one.pathname%>.liansuo.com" target="_blank" title="<%$one.industryname%>加盟"><i class="ico jt"></i><%$one.industryname%></a>
+							<%/dd_list%>
+								<a href="http://jpcy.liansuo.com" target="_blank" title="精品餐饮"><i class="ico jt"></i>精品餐饮</a>
+								<a href="http://malatang.liansuo.com" target="_blank" title="麻辣烫"><i class="ico jt"></i>麻辣烫</a>
+						</h3>
+                        <p>							
+							<%yp_list cid="25,30,151" row=3 item="one"%>
+								<a href="<%$one.ypurl%>" target="_blank" title="<%$one.brandname%>加盟"><%$one.brandname%></a>
+							<%/yp_list%>
+						</p>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<dt class="jyfl_pic tp"></dt>
+                    <dd class="jyfl_text">
+                    	<h3 class="T_two">
+							<%dd_list sql="select lssort, pathname,id,parentid,industryname FROM   ls_class_industry WHERE  parentid =$industry  and lssort>0 limit 9,3"  item="one"%>
+								<a href="http://<%$one.pathname%>.liansuo.com" target="_blank" title="<%$one.industryname%>加盟" ><i class="ico jt"></i><%$one.industryname%></a>
+							<%/dd_list%>
+							
+						</h3>  
+                        <p>
+							
+							<%yp_list cid="123,124,122" row=3 item="one"%>
+								<a href="<%$one.ypurl%>" target="_blank"  title="<%$one.brandname%>加盟"><%$one.brandname%></a>
+							<%/yp_list%>
+						</p>
+                    </dd>
+                </dl>
+            </li>
+            <li class="last_li">
+            	<dl>
+                	<dt class="jyfl_pic cs"></dt>
+                    <dd class="jyfl_text">
+                    	<h3 class="T_two">
+							
+							<%dd_list sql="select lssort, pathname,id,parentid,industryname FROM   ls_class_industry WHERE  parentid =$industry   and lssort>0 limit 12,1"  item="one"%>
+								<a href="http://<%$one.pathname%>.liansuo.com" target="_blank" title="<%$one.industryname%>加盟"><i class="ico jt"></i><%$one.industryname%></a>
+							<%/dd_list%>
+							<a href="http://dangao.liansuo.com/" target="_blank" title="蛋糕">蛋糕</a>
+							<a href="http://search.liansuo.com/1-161-0--1.html" target="_blank" title="汉堡">汉堡</a>
+						
+						</h3>
+                        <p>
+							<%yp_list cid="149,215,161" row=3 item="one"%>
+								<a href="<%$one.ypurl%>" target="_blank" title="<%$one.brandname%>加盟"><%$one.brandname%></a>
+							<%/yp_list%>							
+						</p>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+		
+		<!--新添代码开始-->
+		<!--1-->
+		
+
+<div class="nav-pane">
+	<div class="nav-pane-l floatL">
+		<div class="class_jm">
+			 <a href="http://www.liansuo.com/tag-%E5%A4%A7%E5%AD%A6%E7%94%9F-1.html" class="pink" target="_blank"  rel="nofollow"      title="大学生创业加盟">大学生创业<i class="fl"></i></a>
+			<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" class="green" target="_blank"  rel="nofollow"     title="白领创业加盟">白领创业
+				<i class="fl"></i></a>
+			<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,9999-_0_0-1.html" class="ble" target="_blank"  rel="nofollow"     title="白领创业加盟">全职创业
+				<i class="fl"></i></a>
+		</div>
+		<div class="clear space10"></div>
+		<div class="clear space10"></div>
+		<div class="row">
+			<div class="floatL title">
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" target="_blank">1万元以下</a>
+			</div> 
+			<div class="floatL content_lc">
+				<%yp_list cid=$subi joinlinemax=1 item=one limit="0,15" orderway='desc'%>
+					<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+				<%/yp_list%></p>						
+			</div>
+		</div>	 
+		<div class="row">
+			<div class="floatL title">
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,5-_0_0-1.html" target="_blank" title="1-5万元加盟">1-5万元</a>
+			</div> 
+			<div class="floatL content_lc">	
+				<%yp_list cid=$subi joinlinemin=1 joinlinemax=5 item=one limit="0,10" orderway='desc'%>
+					<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+				<%/yp_list%></p>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="floatL title">				
+						<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-5,10-_0_0-1.html" target="_blank" title="5-10万元加盟">5-10万元</a>				
+			</div> 
+			<div class="floatL content_lc">	
+				<%yp_list  joinlinemin = 5 cid=$subi  joinlinemax =10  item=one limit="0,5" %>
+					<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+				<%/yp_list%></p>				
+		
+			</div>
+		</div>	
+		<div class="row">
+			<div class="floatL title">				
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-10,20-_0_0-1.html" target="_blank" title="10-20万元加盟">10-20万元</a>				
+			</div> 
+			<div class="floatL content_lc">	
+				<%yp_list  joinlinemin = 10 cid=$subi  joinlinemax =20  item=one limit="0,5" %>
+					<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+				<%/yp_list%></p>				
+		
+			</div>
+		</div>
+		<div class="row">
+			<div class="floatL title">				
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-20,50-_0_0-1.html" target="_blank" title="20-50万元加盟">20-50万元</a>				
+			</div> 
+			<div class="floatL content_lc">	
+				<%yp_list  joinlinemin = 20 cid=$subi  joinlinemax =50  item=one limit="0,10"%>
+					<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+				<%/yp_list%></p>				
+		
+			</div>
+		</div>
+		<div class="row">
+			<div class="floatL title">				
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-50,100-_0_0-1.html" target="_blank" title="50-100万元加盟">50-100万元</a>				
+			</div> 
+			<div class="floatL content_lc">	
+				<%yp_list  joinlinemin = 50 cid=$subi  joinlinemax =100  item=one limit="0,5"%>
+					<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+				<%/yp_list%></p>				
+		
+			</div>
+		</div>
+	<!-- 	<div class="row">
+			<div class="floatL title">				
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-100,9999-_0_0-1.html" target="_blank" title="100万以上加盟">100万以上</a>				
+			</div> 
+			<div class="floatL content_lc">	
+				<%yp_list  joinlinemin = 100 cid=$subi  joinlinemax =9999  item=one limit="0,5"%>
+					<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+				<%/yp_list%></p>				
+		
+			</div>
+		</div> -->
+
+		
+	</div>
+		<div class="nav-pane-r floatR">
+			<div class="title">热门品牌</div>
+			<div class="content_rc">
+				<%yp_list  cid=$subi  limit = "0,14" ispay  =1 item="one" %>
+					<a href="<%$one.url%>" target="_blank">
+						<img width="80" height="52" title="<%$one.title%>加盟" alt="<%$one.title%>加盟" src="<%$one.picture%>">
+					</a>					
+				<%/yp_list%>		
+			</div>      
+		</div>
+</div>
+
+
+<!--2-->	  
+<div class="nav-pane">
+        <div class="nav-pane-l floatL">
+			<div class="class_jm">
+				 <a href="http://www.liansuo.com/tag-%E5%A4%A7%E5%AD%A6%E7%94%9F-1.html" class="pink" target="_blank"  rel="nofollow"      title="大学生创业加盟">大学生创业<i class="fl"></i></a>
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" class="green" target="_blank"  rel="nofollow"     title="白领创业加盟">白领创业
+					<i class="fl"></i></a>
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,9999-_0_0-1.html" class="ble" target="_blank"  rel="nofollow"     title="白领创业加盟">全职创业
+					<i class="fl"></i></a>
+			</div>
+			<div class="clear space10">
+			</div>
+			<div class="clear space10">
+			</div>
+			<div class="row">
+		        <div class="floatL title">
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" target="_blank" title="1万元以下加盟" >1万元以下</a>
+				</div> 
+			    <div class="floatL content_lc">
+					<%yp_list  joinlinemin = 0  joinlinemax =1 cid="17,18,19"  item=one limit="0,15" %>
+						<a href="<%$one.hburl %>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>						
+				</div>
+			</div>
+		 
+			<div class="row">
+				<div class="floatL title">
+					
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,5-_0_0-1.html" target="_blank" title="1-5万元加盟">1-5万元</a>
+					
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 1  cid="17,18,19"  joinlinemax =5  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-5,10-_0_0-1.html" target="_blank" title="5-10万元加盟">5-10万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 5 cid="17,18,19"  joinlinemax =10  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>	
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-10,20-_0_0-1.html" target="_blank" title="10-20万元加盟">10-20万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 10 cid="17,18,19" joinlinemax =20  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-20,50-_0_0-1.html" target="_blank" title="20-50万元加盟">20-50万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 20 cid="17,18,19"  joinlinemax =50  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-50,100-_0_0-1.html" target="_blank" title="50-100万元加盟" >50-100万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 50 cid="17,18,19"  joinlinemax =100  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-100,9999-_0_0-1.html" target="_blank" title="100万以上加盟">100万以上</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 100 cid="17,18,19"  joinlinemax =9999  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+		
+				 
+		</div>
+		<div class="nav-pane-r floatR">
+			<div class="title">热门品牌</div>
+			<div class="content_rc">
+				<%yp_list cid="17,18,19"  limit="0,12" ispay  =1 item="one"%>
+					<a href="<%$one.url%>" target="_blank">
+						<img width="80" height="52" title="<%$one.title%>加盟" alt="<%$one.title%>加盟" src="<%$one.picture%>">
+					</a>					
+				<%/yp_list%>		
+			</div>
+       
+		</div>
+
+	  </div>
+	  <!--3-->
+<div class="nav-pane">
+        <div class="nav-pane-l floatL">
+			<div class="class_jm">
+				 <a href="http://www.liansuo.com/tag-%E5%A4%A7%E5%AD%A6%E7%94%9F-1.html" class="pink" target="_blank"  rel="nofollow"      title="大学生创业加盟">大学生创业<i class="fl"></i></a>
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" class="green" target="_blank"  rel="nofollow"     title="白领创业加盟">白领创业
+					<i class="fl"></i></a>
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,9999-_0_0-1.html" class="ble" target="_blank"  rel="nofollow"     title="白领创业加盟">全职创业
+					<i class="fl"></i></a>
+			</div>
+			<div class="clear space10">
+			</div>
+			<div class="clear space10">
+			</div>
+			
+			<div class="row">
+		        <div class="floatL title">
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" target="_blank" title="1万元以下加盟">1万元以下</a>
+				</div> 
+			    <div class="floatL content_lc">
+					<%yp_list  joinlinemin = 0  joinlinemax =1 cid="20,21,22" item=one limit="0,15" %>
+						<a href="<%$one.hburl %>" target="_blank"  title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>						
+				</div>
+			</div>
+		 
+			<div class="row">
+				<div class="floatL title">
+					
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,5-_0_0-1.html" target="_blank" title="1-5万元加盟">1-5万元</a>
+					
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 1 cid="20,21,22"   joinlinemax =5  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>	
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-5,10-_0_0-1.html" target="_blank" title="5-10万元加盟">5-10万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 5 cid="20,21,22"  joinlinemax =10  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-10,20-_0_0-1.html" target="_blank" title="10-20万元加盟">10-20万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 10 cid="20,21,22"   joinlinemax =20  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-20,50-_0_0-1.html" target="_blank" title="20-50万元加盟">20-50万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 20 cid="20,21,22"   joinlinemax =50  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-50,100-_0_0-1.html" target="_blank" title="50-100万元加盟" >50-100万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 50 cid="20,21,22"  joinlinemax =100  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-100,9999-_0_0-1.html" target="_blank" title="100万以上加盟">100万以上</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 100 cid="20,21,22"  joinlinemax =9999 item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>	 
+		</div>
+		<div class="nav-pane-r floatR">
+			<div class="title">热门品牌</div>
+			<div class="content_rc">
+				<%yp_list   cid="20,21,22"   limit="0,12" ispay  =1 item="one"%>
+					<a href="<%$one.url%>" target="_blank">
+						<img width="80" height="52" title="<%$one.title%>加盟" alt="<%$one.title%>加盟" src="<%$one.picture%>">
+					</a>					
+				<%/yp_list%>		
+			</div>
+       
+		</div>
+
+	  </div>
+	  <!--4-->
+<div class="nav-pane">
+        <div class="nav-pane-l floatL">
+			<div class="class_jm">
+				 <a href="http://www.liansuo.com/tag-%E5%A4%A7%E5%AD%A6%E7%94%9F-1.html" class="pink" target="_blank"  rel="nofollow"      title="大学生创业加盟">大学生创业<i class="fl"></i></a>
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" class="green" target="_blank"  rel="nofollow"     title="白领创业加盟">白领创业
+					<i class="fl"></i></a>
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,9999-_0_0-1.html" class="ble" target="_blank"  rel="nofollow"     title="白领创业加盟">全职创业
+					<i class="fl"></i></a>
+			</div>
+			<div class="clear space10">
+			</div>
+			<div class="clear space10">
+			</div>
+			<div class="row">
+		        <div class="floatL title">
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" target="_blank" title="1万元以下加盟" >1万元以下</a>
+				</div> 
+			    <div class="floatL content_lc">
+					<%yp_list  joinlinemin = 0  joinlinemax =1 cid="25,30,151" item=one limit="0,15" %>
+						<a href="<%$one.hburl %>" target="_blank" title="<%$one.brandname %>加盟" ><%$one.brandname %></a>
+					<%/yp_list%></p>						
+				</div>
+			</div>
+		 
+			<div class="row">
+				<div class="floatL title">
+					
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,5-_0_0-1.html" target="_blank" title="1-5万元加盟">1-5万元</a>
+					
+				</div> 
+				<div class="floatL content_lc">	
+					
+					<%yp_list  joinlinemin = 1 cid="25,30,151"  joinlinemax =5  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-5,10-_0_0-1.html" target="_blank" title="5-10万元加盟">5-10万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 5 cid="25,30,151"  joinlinemax =10  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>	
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-10,20-_0_0-1.html" target="_blank" title="10-20万元加盟">10-20万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 10 cid="25,30,151"  joinlinemax =20  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>	
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-20,50-_0_0-1.html" target="_blank" title="20-50万元加盟">20-50万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 20 cid="25,30,151"   joinlinemax =50  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-50,100-_0_0-1.html" target="_blank" title="50-100万元加盟" >50-100万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 50 cid="25,30,151"  joinlinemax =100  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-100,9999-_0_0-1.html" target="_blank" title="100万以上加盟">100万以上</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 100  cid="25,30,151"  joinlinemax =9999  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>	 
+		 
+		
+		</div>
+		<div class="nav-pane-r floatR">
+			<div class="title">热门品牌</div>
+			<div class="content_rc">
+				<%yp_list cid="25,30,151"  limit="0,12" ispay  =1 item="one"%>
+					<a href="<%$one.url%>" target="_blank">
+						<img width="80" height="52" title="<%$one.title%>加盟" alt="<%$one.title%>加盟" src="<%$one.picture%>">
+					</a>					
+				<%/yp_list%>		
+			</div>
+       
+		</div>
+
+	  </div>
+	  <!--5-->
+<div class="nav-pane">
+        <div class="nav-pane-l floatL">
+			<div class="class_jm">
+				<a href="http://www.liansuo.com/tag-%E5%A4%A7%E5%AD%A6%E7%94%9F-1.html" class="pink" target="_blank"  rel="nofollow"      title="大学生创业加盟">大学生创业<i class="fl"></i></a>
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" class="green" target="_blank"  rel="nofollow"     title="白领创业加盟">白领创业
+					<i class="fl"></i></a>
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,9999-_0_0-1.html" class="ble" target="_blank"  rel="nofollow"     title="白领创业加盟">全职创业
+					<i class="fl"></i></a>
+			</div>
+			<div class="clear space10">
+			</div>
+			<div class="clear space10">
+			</div>
+				<div class="row">
+					<div class="floatL title">
+						<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" target="_blank" title="1万元以下加盟">1万元以下</a>
+					</div> 
+					<div class="floatL content_lc">
+						<%yp_list  joinlinemin = 0  joinlinemax =1 cid="123,124,122" item=one limit="0,15" %>
+							<a href="<%$one.hburl %>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+						<%/yp_list%></p>						
+					</div>
+				</div>
+		 
+			<div class="row">
+				<div class="floatL title">
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,5-_0_0-1.html" target="_blank" title="1-5万元加盟">1-5万元</a>
+				</div> 
+				<div class="floatL content_lc">	
+					
+					<%yp_list  joinlinemin = 1  cid="123,124,122"  joinlinemax =5  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-5,10-_0_0-1.html" target="_blank" title="5-10万元加盟">5-10万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 5 cid="123,124,122"  joinlinemax =10  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>	
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-10,20-_0_0-1.html" target="_blank" title="10-20万元加盟">10-20万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 10 cid="123,124,122"  joinlinemax =20  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>	
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-20,50-_0_0-1.html" target="_blank" title="20-50万元加盟">20-50万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 20 cid="123,124,122"   joinlinemax =50  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-50,100-_0_0-1.html" target="_blank" title="50-100万元加盟" >50-100万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 50 cid="123,124,122"  joinlinemax =100  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-100,9999-_0_0-1.html" target="_blank" title="100万以上加盟">100万以上</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 100  cid="123,124,122"  joinlinemax =9999  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>	 
+		</div>
+		<div class="nav-pane-r floatR">
+			<div class="title">热门品牌</div>
+			<div class="content_rc">
+				<%yp_list cid="123,124,122"  limit="0,8"  item="one"%>
+					<a href="<%$one.url%>" target="_blank">
+						<img width="80" height="52" title="<%$one.title%>加盟" alt="<%$one.title%>加盟" src="<%$one.picture%>">
+					</a>					
+				<%/yp_list%>		
+			</div>
+		</div>
+	  </div>
+	  <!--6-->
+<div class="nav-pane">
+        <div class="nav-pane-l floatL">
+			<div class="class_jm">
+				 <a href="http://www.liansuo.com/tag-%E5%A4%A7%E5%AD%A6%E7%94%9F-1.html" class="pink" target="_blank"  rel="nofollow"      title="大学生创业加盟">大学生创业<i class="fl"></i></a>
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" class="green" target="_blank"  rel="nofollow"     title="白领创业加盟">白领创业
+					<i class="fl"></i></a>
+				<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,9999-_0_0-1.html" class="ble" target="_blank"  rel="nofollow"     title="白领创业加盟">全职创业
+					<i class="fl"></i></a>
+			</div>
+			<div class="clear space10">
+			</div>
+			<div class="clear space10">
+			</div>
+			<div class="row">
+		        <div class="floatL title">
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-0,1-_0_0-1.html" target="_blank" title="1万元以下加盟">1万元以下</a>
+				</div> 
+			    <div class="floatL content_lc">
+					<%yp_list  joinlinemin = 0  joinlinemax =1 cid="149,215,161" item=one limit="0,15" %>					
+						<a href="<%$one.hburl %>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>						
+				</div>
+			</div>		 
+			<div class="row">
+				<div class="floatL title">
+					
+					<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-1,5-_0_0-1.html" target="_blank" title="1-5万元加盟">1-5万元</a>
+					
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 1   cid="149,215,161"  joinlinemax =5  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-5,10-_0_0-1.html" target="_blank" title="5-10万元加盟">5-10万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 5 cid="149,215,161"  joinlinemax =10  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>	
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-10,20-_0_0-1.html" target="_blank" title="10-20万元加盟">10-20万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 10  cid="149,215,161" joinlinemax =20  item=one limit="0,5" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-20,50-_0_0-1.html" target="_blank" title="20-50万元加盟">20-50万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 20  cid="149,215,161"  joinlinemax =50  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-50,100-_0_0-1.html" target="_blank" title="50-100万元加盟">50-100万元</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 50  cid="149,215,161"  joinlinemax =100  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div>
+			<!-- <div class="row">
+				<div class="floatL title">				
+							<a href="http://search.liansuo.com/<%$industry%>-<{$cata.id}>-100,9999-_0_0-1.html" target="_blank" title="100万以上加盟">100万以上</a>				
+				</div> 
+				<div class="floatL content_lc">	
+					<%yp_list  joinlinemin = 100  cid="149,215,161"  joinlinemax =9999  item=one limit="0,10" %>
+						<a href="<%if $one.isupload eq 0 or $one.payamount lt 100%><%$one.ypurl %><%else%><%$one.hburl %><%/if%>" target="_blank" title="<%$one.brandname %>加盟"><%$one.brandname %></a>
+					<%/yp_list%></p>				
+			
+				</div>
+			</div> -->
+		</div>	
+		<div class="nav-pane-r floatR">
+			<div class="title">热门品牌</div>
+			<div class="content_rc">
+				<%yp_list cid="149,215,161"  limit="0,12"  item="one"%>
+					<a href="<%$one.url%>" target="_blank">
+						<img width="80" height="52" title="<%$one.title%>加盟" alt="<%$one.title%>加盟" src="<%$one.picture%>">
+					</a>					
+				<%/yp_list%>		
+			</div>
+		</div>
+	  </div>
+		<!--新添代码结束-->		
+    </div>	
+    <div class="floatL N_right">
+    	<h3 class="T_three">
+			<span class="ls_map">
+				
+			</span>
+			<p class="N_son">
+				<a  href="http://search.liansuo.com/0-<{$cata.id}>-0-%E5%86%B0%E6%B7%87%E6%B7%8B-1.html" target="_blank" title="项目大全加盟">项目大全</a>
+				<a href="http://www.liansuo.com/top-<{$cata.id}>-0-1.html" target="_blank" title="加盟排行加盟">加盟排行</a>
+				
+				<a href="http://www.liansuo.com/tag-新手开店-1.html" target="_blank" title="新手开店 ">新手开店</a>
+				<a href="http://www.liansuo.com/tag-甄选品牌-1.html" target="_blank" title="甄选品牌">甄选品牌</a>
+				<a href="http://www.liansuo.com/tag-后期运营-1.html" target="_blank" title="后期运营 ">后期运营</a>
+			
+			</p></h3>       
+		<div class="AD_content_1">
+			<adlist id="937" item="one" row="9" >
+			<dl class="dl_one">				
+						<dt><a href="<{$one.url}>" target="_blank"><img src="<{$one.content1}>" width="229" height="181"  title="<{$one.brandname}>加盟" alt="<{$one.brandname}>加盟" /></a></dt>				
+						<dd>
+						
+								
+								<dl>
+									<dt><a href="<{$one.url}>" target="_blank"><img src="<{$one.content1}>"  title="<{$one.brandname}>加盟" alt="<{$one.brandname}>加盟" /></a></dt>
+									<dd>
+										<h3><a href="<{$one.url}>" target="_blank" title="<{$one.brandname}>加盟"><{$one.brandname}></a></h3>
+										<p><a href="<{$one.url}>" target="_blank" title="<{$one.content}>"><{$one.content}></a></p>
+									</dd>
+								</dl>
+						
+					
+						   <div class="clear"></div>
+							
+						</dd>
+					</dl>	
+			
+			
+			
+			
+			
+			
+			</adlist> 		
+        </div>
+		
+    </div>
+</div>
+</div>
+<div class="space10"></div>
+<div class="space10"></div>
+<div class="content">
+<div class="AD_pic">
+<span class="ad_1200x55">
+<%dd_list_rs  cid=941 limit ="0,1" item="one" %>	
+	<a href="<%$one.url%>" width="1200" height="55" target="_blank"><img src="<%$one.content1%>"  title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟" /></a>
+<%/dd_list_rs%> 
+</span>
+<%*
+<div class="space10 clear"></div>
+<%dd_list_rs  cid=203 item="one" %>	
+	<a href="<%$one.url%>" target="_blank">
+		<span <%if ($one.id+1) eq 1 %> class="ad_393x55 floatL p_right10" <%elseif ($one.id+1) eq 2%> class="ad_394x55 floatL  p_right10" <%else%>class="ad_393x55 floatL" <%/if%>>
+			<img src="<%$one.content1%>"   title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟"     <%if ($one.id+1) eq 2 %>	 width="394" <%else%>width="393"   <%/if%>/>
+		</span>
+	</a>	
+<%/dd_list_rs%> 
+
+<div class="space10 clear"></div>
+	
+<%dd_list_rs  cid=205 item="one" %>		
+	<a href="<%$one.url%>" target="_blank">
+		<span class="ad_595x55 floatL<%if ($one.id+1) eq 1 %> p_right10 <%/if%>">
+			<img src="<%$one.content1%>" width="595"     title="<%$one.brandname%>加盟"    alt="<%$one.brandname%>加盟"   />
+		</span>
+	</a>	
+<%/dd_list_rs%> 	
+	
+<div class="space10 clear"></div>
+
+<%dd_list_rs  cid=207 item="one" %>	
+		<a href="<%$one.url%>" target="_blank">
+			<span <%if ($one.id+1) eq 1 %> class="ad_293x55 floatL  p_right10" <%elseif ($one.id+1) eq 4%> class="ad_295x55 floatL" <%else%> class="ad_295x55 floatL p_right10" <%/if%>>
+				<img src="<%$one.content1%>"   title="<%$one.brandname%>加盟"    alt="<%$one.brandname%>加盟"    <%if ($one.id+1) eq 1 %> width="293" <%elseif ($one.id+1) eq 4%> width="293" <%else%> width="292" <%/if%> />
+			</span>
+		</a>
+<%/dd_list_rs%> *%>
+
+
+<div class="clear"></div>
+</div>
+</div>
+<div class="space10 clear"></div>
+<div class="space10 clear"></div>
+<div class="content">
+<!--精品专区开始-->
+<div id="J_jpzq">
+	<div class="J_left">
+    	<h3 class="T_four">精品专区</h3>
+        <div class="logo_pic">	
+	
+		<%dd_list_rs  cid=943 item="one" %>	
+			<%if ($one.id+1) >= 5 %>
+        	<dl >			
+            	<dt><a href="<%$one.url%>" target="_blank"><img src="<%$one.content1%>" width="125" height="73"    title="<%$one.brandname%>加盟"    alt="<%$one.brandname%>加盟"     /></a></dt>
+                <dd>
+                    <strong><a href="<%$one.url%>" target="_blank" title="<%$one.brandname%>加盟" ><%$one.brandname%></a></strong>
+                    <p><a href="<%$one.url%>" target="_blank" title="<%$one.content%>"><%$one.content%></a></p>
+				</dd>			
+            </dl>	
+			<%else%>
+			<dl class="last_border">			
+            	<dt><a href="<%$one.url%>" target="_blank"><img src="<%$one.content1%>" width="125" height="73"    title="<%$one.brandname%>加盟"    alt="<%$one.brandname%>加盟"     /></a></dt>
+                <dd>
+                    <strong><a href="<%$one.url%>" target="_blank" title="<%$one.brandname%>加盟"><%$one.brandname%></a></strong>
+                    <p><a href="<%$one.url%>" target="_blank" title="<%$one.content%>"><%$one.content%></a></p>
+				</dd>			
+            </dl>
+			<%/if%>
+        <%/dd_list_rs%> 
+		
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="J_center" id="statetab">
+    	<h3 class="T_five"><span class="floatR"><a href="" target="_blank"><strong><!--more--></strong></a></span>
+        <p class="J_nav">
+			<a id="two1" onmouseover="setContentTab('two',1,4)" class="current"  target="_blank" style="cursor:pointer">行业聚焦</a>
+			<a id="two2" onmouseover="setContentTab('two',2,4)"  target="_blank" style="cursor:pointer">项目考察</a>      
+        </p>
+        </h3>
+        <div class="space10 clear"></div>
+        <div class="J_content" id="con_two_1">
+		<!-- 行业聚焦 调取的是新增属性（行业动态q）目前调取为经营技巧k-->
+		<%dd_list cid=$cid  row=1  orderway='desc'   deflag="q"  item=one  %>
+        	<dl class="hyj">
+            	<dt><a href="<%$one.url%>" target="_blank"><img src="<%$one.picture%>" width="193" height="145"  title="<%$one.title%>加盟"    alt="<%$one.title%>加盟" /></a>
+				</dt>
+                <dd>
+                	<h3><span><a href="<%$one.url%>" target="_blank"><i class="ico ydl"></i><%$one.hits%>阅</a></span>
+					<a href="<%$one.url%>" target="_blank"  title="<%$one.title%>"><%$one.title%></a></h3>
+                    <p><%$one.description%></p>
+					<p class="tag"><span>标签：</span><a href="<%$one.url%>" target="_blank" title="<%$one.tag%>"><%$one.tag|strtotag%></a></p>
+                </dd>
+            </dl>
+            <div class="clear"></div>
+		<%/dd_list%>
+		<!-- 行业聚焦 调取的是新增属性（行业动态q）目前调取为项目资讯 l -->
+		<%dd_list  cid=$cid  row=4  orderway='desc' deflag="q"   item=one  %>
+        	<dl <%if $one.oid eq 4 %> class="last_border" <%/if%>>
+            	<dt><a href="<%$one.url%>" target="_blank"><img src="<%$one.picture%>" width="120" height="90"   title="<%$one.title%>"    alt="<%$one.title%>"  /></a>
+				</dt>
+                <dd>
+                	<h3 ><span><a href="<%$one.url%>" target="_blank"><i class="ico ydl"></i><%$one.hits%>阅</a></span>
+					<a href="<%$one.url%>" target="_blank" class="a_title" title="<%$one.title%>"><%$one.title%></a></h3>
+                    <p><%$one.description%></p>
+                </dd>
+            </dl>
+            <div class="clear"></div>
+		<%/dd_list%>
+        </div>
+        <div class="J_content" id="con_two_2"  style="display:none;">
+		<!-- 项目考察  调取的是(选项目和项目资讯)目前调取为选项目-->
+		<%dd_list  cid=$cid  row=5  group=1  orderway='desc'  deflag="e" newthree='1'  memberonly ='1' nopay = 1  item=one %>
+        	<dl <%if $one.oid eq 1 %> class="hyj" <%/if%> <%if $one.oid eq 4 %> class="last_border" <%/if%>>
+            	<dt><a href="<%$one.url%>" target="_blank"><img src="<%$one.picture%>"   title="<%$one.title%>"     alt="<%$one.title%>"      <%if $one.oid eq 1 %> width="193" height="145" <%else%>  width="120" height="90"<%/if%> />
+						<%if $one.member_id neq 0 %>
+							<%yp_list memberid=$one.member_id   item="two" %>
+								<a href="<%$two.ypurl%>" target="_blank" ><span><%$two.brandname%></span></a>
+							<%/yp_list%>
+						<%/if%>
+					</a>
+				</dt>
+                <dd>
+                	<h3><span><a href="<%$one.url%>" target="_blank"><i class="ico ydl"></i><%$one.hits%>阅</a></span>
+					<a href="<%$one.url%>" target="_blank" class="a_title" title="<%$one.title%>" ><%$one.title%></a></h3>
+                    <p><%$one.description%></p>
+					<%if $one.oid eq 1 %>  
+					<p class="tag"><span>标签：</span><a href="<%$one.url%>" target="_blank" title="<%$one.tag%>"><%$one.tag|strtotag%></a></p>
+					<%/if%>
+                </dd>
+            </dl>
+		<%/dd_list%>	
+		<!-- 项目考察  调取的是(选项目和项目资讯)目前调取为选项目-->
+			
+        </div>     
+    </div>
+    <div class="J_right">
+    	<h3><span>冰淇淋排行榜</span><i class="ico jttb"></i></h3>
+        <ul class="phb_list">
+        	<li><a class="pro_name" href="">品牌名称</a><a class="pro_money" href="">投资【<span>万元</span>】起</a><a class="pro_hot" href="">热度</a><div class="clear"></div></li>
+            <%yp_list cid=$subi  row=10  orderby="orderid" item="one"%>
+				<%if $one.oid < 4%>
+					<li>
+						<dl>
+							<dt><a href="<%$one.url%>" target="_blank"><i class="ico sjtb"><% $one.oid%></i><img src="<%$one.picture%>"  width="103" height="73"/></a></dt>
+							<dd>
+								<span><%$one.joinlinemin%>万元起</span>
+								<span><a href="<%$one.url%>" target="_blank" title="<%$one.title%>加盟" ><%$one.title%></a></span>
+								<span><a href="<%$one.url%>" target="_blank" title="全国<%$one.storesnum%>家加盟店">全国<strong><%$one.storesnum%></strong>家加盟店</a></span>  
+							</dd>
+						</dl>
+						
+					</li>
+					<div class="clear"></div>
+				<%else%>
+					<li>
+						<a class="pro_name" href="<%$one.url%>" target="_blank" title="<%$one.title%>加盟"><i><% $one.oid%></i><%$one.title%></a>
+						<a class="pro_money" href="<%$one.url%>" target="_blank" title="<%$one.joinlinemin%>"><span><%$one.joinlinemin%>万</span></a>
+						<a class="pro_hot" href="<%$one.url%>" target="_blank" title="<%$one.cindex%>" ><%$one.cindex%></a>
+						<div class="clear"></div>
+					</li>
+				<%/if%>
+            <%/yp_list%>
+           
+           
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--精品专区结束-->
+</div>
+<div class="space10 clear"></div>
+<div class="space10 clear"></div>
+<div class="content">
+<span class="ad_1200x55">
+<%dd_list_rs  cid=941 limit ="1,1" item="one" %>	
+	<a href="<%$one.url%>" target="_blank"> <img src="<%$one.content1%>"  title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟" /></a>
+<%/dd_list_rs%>
+</span>
+</div>
+<div class="space10 clear"></div>
+<div class="space10 clear"></div>
+<div class="content">
+<!--创业视频开始-->
+<div id="C_cysp">
+	<div class="C_left floatL">
+    	<h3 class="title_common"><span>创业视频</span></h3>
+        <div class="space10 clear"></div>
+        <div class="wshipin">
+		<%dd_list   cid=495   row=1  orderway='desc'   item="one" %>
+			<div onmouseout="$('#play_<%$one.oid%>').attr('src','http://img.liansuo.com/html/images/011/icoplay.png');" onmouseover="$('#play_<%$one.oid%>').attr('src','http://img.liansuo.com/html/images/011/icoplay.png');" class="xshipin"><img alt="<%$one.title%>" src="<%$one.picture%>" /></div>
+			<div class="xshipin02">
+				<a href="<%$one.url%>" target="_blank">
+					<%$one.title%>
+				</a>
+			</div>
+			<div class="xshipin03">
+				<a href="<%$one.url%>" onmouseout="$('#play_<%$one.oid%>').attr('src','http://img.liansuo.com/html/images/011/icoplay.png');" onmouseover="$('#play_<%$one.oid%>').attr('src','http://img.liansuo.com/html/images/011/icoplay.png');">
+					<img id="play_<%$one.oid%>" name="Image1" border="0" id="Image1" src="http://img.liansuo.com/html/images/011/icoplay.png" />
+				</a>
+			</div>
+		<%/dd_list%>
+		</div>
+        <div class="space10 clear"></div>
+        <div class="C_left_content">
+        	<h3 class="T_six"><span class="floatR"><a href="http://www.liansuo.com/list-5874-1.html"><strong>more</strong></a></span>
+            <p class="T_six_nav">
+            	<a id="one1" onmouseover="setContentTab('one',1,4)" class="current" href="">人物访谈</a>                
+            </p>
+            </h3>
+            <div class="space5 clear"></div>
+            <ul class="C_left_content_list" id="con_one_1">
+			 <%dd_list orderby='ctime' cid=$cid  orderway='desc' row=8  deflag="m"   item="one" %>				
+				<li>
+					<a href="<%$one.url%>" target="_blank" title="<%$one.title%>">
+						<i <%if $one.oid < 4%> class="red_bg"  <%/if%> ><%$one.oid%></i><%$one.title%>
+					</a>
+				</li>
+			          
+			<%/dd_list%>	
+				
+            </ul>
+         
+        </div>
+    </div>
+
+    <div class="C_center">
+    	<h3 class="T_seven">
+			<span class="floatR gd_news">
+			<marquee  scrollamount="3"> 
+				<%dd_list orderby='ctime' cid=$cid  orderway='desc' row=2  deflag="x"   item="one" %>
+					
+						<a class="red" href="<%$one.url%>" target="_blank" title="<%$one.title%>"><%$one.title%></a>
+				
+				<%/dd_list%>
+			</marquee>	
+			</span>
+        <p class="C_nav">
+        <a id="three1" onmouseover="setContentTab('three',1,4)" class="current" style="cursor:pointer">开店课堂</a>        
+        </p>
+        </h3>
+        <div class="space10 clear"></div>
+        <div class="C_content" id="con_three_1">
+		<!-- 开店课堂  调取的是合并属性（选址筹备、日常经营、经营技巧）目前调取为选址筹备g-->
+			
+			<%dd_list orderby='ctime' cid=$cid   orderway='desc' row=4 group=1 deflag="g"   item="one" %>
+            <dl <%if $one.oid eq 1%> class="first" <%/if%> >
+            	<dt><a href="<%$one.url%>" target="_blank"><img src="<%$one.picture%>" width="120" height="90"  title="<%$one.title%>"   alt="<%$one.title%>" />					
+					</a>
+				</dt>
+                <dd>
+                	<h3><span><a href="<%$one.url%>" target="_blank"><i class="ico ydl"></i><%$one.hits%>阅</a></span>
+					<a href="<%$one.url%>" target="_blank" class="a_title" title="<%$one.title%>"><%$one.title%></a></h3>
+                    <p><%$one.description%></p>
+                </dd>
+            </dl>
+			<%/dd_list%>
+            <div class="clear"></div>
+            <a class="more" href="http://www.liansuo.com/list-4874-1.html" target="_blank">更多</a>
+        </div>           
+    </div>
+    <div class="C_right">
+    	<h3 class="title_common"><span>经典案例</span></h3>
+		<div class="space5 clear"></div>
+        <div class="C_right_pic">
+		<%dd_list orderby='ctime' cid=$cid  row=1  deflag="n,c" repeat=1 item="one"%>
+			<a href ="<%$one.url%>" target="_blank" title="<%$one.title%>"><img src="<%$one.picture%>" width="260" height="195"  title="<%$one.title%>"  alt="<%$one.title%>"  /></a>
+			<div class="xshipin02x">
+				<a href="<%$one.url%>" target="_blank">
+					<%$one.title%>
+				</a>
+			</div>
+		<%/dd_list%>
+		</div>
+        <div class="space10 clear"></div>
+        <ul class="C_right_news">
+		<%dd_list orderby='ctime' cid=$cid  orderway='desc' row=8  deflag="n"   item="one" %>
+			<li><a href="<%$one.url%>" target="_blank" title="<%$one.title%>"><%$one.title%></a></li>
+		<%/dd_list%>
+        </ul>
+        
+    </div>
+    <div class="clear"></div>
+</div>
+<!--创业视频结束-->
+</div>
+<div class="space10 clear"></div>
+<div class="space10 clear"></div>
+<div class="content">
+<div class="AD_pic"><%*
+<%dd_list_rs  cid=213  limit ="0,2" item="one" %>
+	<a href="<%$one.url%>" target="_blank">
+		<span class="ad_595x55 floatL <%if ($one.id+1) eq 1%> p_right10 <%/if%>">
+			<img src="<%$one.content1%>" width="595"   title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟"     />
+		</span>
+	</a>
+<%/dd_list_rs%>
+
+<div class="space10 clear"></div>*%>
+
+<%dd_list_rs  cid=941 limit ="2,1" item="one" %>		
+	<a href="<%$one.url%>" target="_blank"> <span class="ad_1200x55"><img src="<%$one.content1%>"  title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟" /></span></a>
+<%/dd_list_rs%> 
+<%*
+<div class="space10 clear"></div>
+
+<%dd_list_rs  cid=213  limit ="2,2" item="one" %>
+	<a href="<%$one.url%>" target="_blank"> 
+		<span class="ad_595x55 floatL<%if ($one.id+1) eq 1%> p_right10 <%/if%>">
+			<img src="<%$one.content1%>" width="595"   title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟"     />
+		</span>
+	</a>
+<%/dd_list_rs%>*%>
+
+<div class="clear"></div>
+</div>
+</div>
+<div class="space10 clear"></div>
+<div class="space10 clear"></div>
+<div class="content">
+<!--搜索热点开始-->
+<div id="S_ssrd">
+	<div class="S_left">
+    	<h3 class="title_common"><span>搜索热点</span></h3>
+        <div class="space10 clear"></div>
+        <div class="S_left_content">
+			<%dd_list_rs  cid=945   item="one" %>
+				<dl>
+					<dt><a href="<%$one.url%>" target="_blank"><img src="<%$one.content1%>"  title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟" /></a></dt>
+					<dd><a href="<%$one.url%>" target="_blank" title="<%$one.brandname%>加盟"><%$one.brandname%></a></dd>
+				</dl>
+			<%/dd_list_rs%> 
+        </div>
+		<div class="space5 clear"></div>
+		
+    </div>
+    <div class="S_center">
+    	<h3 class="T_eight">
+        <p class="S_nav">
+        <a id="four1" onmouseover="setContentTab('four',1,4)" class="current" href="">加盟问答</a>      
+        </p>
+        </h3>
+        <div class="space10 clear"></div>
+        <div class="S_center_content" id="con_four_1">
+        	<div class="bg_line"></div>
+        	<ul>
+				<%yp_list sql="SELECT `askid`,ctime,`req_num`*11+FLOOR((RAND() * 11)) as req_num,`ask_content`,`hits`*11+FLOOR((RAND() * 11)) as hits FROM `ls_qa_ask` WHERE pid = 0 and `industry`= $industry and`subindustry`=$subi  order by askid desc limit 0,9" item=one%>
+					<li><a href="<%$purl%>qa/<%$one.askid%>.html" target="_blank"   title="<%$one.ask_content%>"><span><%$one.req_num%>个网友参与了回答</span><em><%$one.ctime|mb_substr:10:10:'GBK'%></em><i class="ico circle"></i><strong><%$one.ask_content%></strong></a></li>
+				 <%/yp_list%>
+            </ul>
+		
+        </div>              
+    </div>
+    <div class="S_right">
+    	<div class="space10 clear"></div>
+        <div class="space10 clear"></div>
+        <div class="space10 clear"></div>
+        <div class="space10 clear"></div>
+		<div class="space5 clear"></div>
+        <div>
+		<!--展会需新开广告位-->
+			<%dd_list_rs  cid=227  item="one" %>	
+				<a href="<%$one.url%>" target="_blank"><img src="<%$one.content1%>"  title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟" /></a>
+			<%/dd_list_rs%> 
+			
+		</div>
+        <div class="space5 clear"></div>
+        <div class="space5 clear"></div>
+		<!--展会频道展会公告-->
+        <ul class="S_right_news">
+			<%dd_list  cid=424  orderway='desc' row=6   item="one" %>
+				<li><a href="<%$one.url%>" target="_blank" title="<%$one.title%>"><%$one.title%></a></li>
+			<%/dd_list%>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--搜索热点结束-->
+</div>
+<div class="space10 clear"></div>
+<div class="space10 clear"></div>
+<div class="content">
+<!--项目展示开始-->
+<div id="X_xmzs">
+	<div class="X_left">
+	<%dd_list_rs  cid=947   item="one" %>
+    	<div><a href="<%$one.url%>" target="_blank"><img src="<%$one.content1%>"  title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟" /></a></div>
+	<%/dd_list_rs%>	
+        <div class="space10 clear"></div>
+	<%dd_list_rs  cid=219   item="one" %>	
+        <div><a href="http://zhuanti.liansuo.com/cyb.html" target="_blank"><img src="<%$one.content1%>"  title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟" /></a></div>
+	<%/dd_list_rs%>	
+    </div>
+    <div class="X_right">
+    	<h3 class="T_nine">
+        <p class="X_nav">
+        <a id="five1" onmouseover="setContentTab('five',1,4)" class="current" href="" title="冰淇淋品牌">冰淇淋品牌</a>
+        <a id="five2" onmouseover="setContentTab('five',2,4)" href="" title="小吃">小吃</a>
+        <a id="five3" onmouseover="setContentTab('five',3,4)" href="" title="西餐">西餐</a>
+        <a id="five4" onmouseover="setContentTab('five',4,4)" href="" title="精品餐饮">精品餐饮</a>
+        </p>
+        </h3>
+        <div class="space10 clear"></div>
+        <div class="X_right_content" id="con_five_1">
+        	<ul>
+				<%yp_list cid=$subi row =63 item="one"%>
+					<li><a href="<%$one.url%>" target="_blank" title="<%$one.title%>加盟"><%$one.title%>加盟</a></li>
+				<%/yp_list%>           	
+            </ul>            	            	
+        </div>
+        <div class="X_right_content" id="con_five_2" style="display:none;">				
+        	<ul>
+				<%yp_list cid=20  row =63 item="one"%>
+					<li><a href="<%$one.url%>" target="_blank" title="<%$one.title%>加盟"><%$one.title%>加盟</a></li>
+				<%/yp_list%>
+            </ul>
+
+        </div>
+        <div class="X_right_content" id="con_five_3" style="display:none;">       	         
+            <ul>
+            	<%yp_list cid=21  row =63 item="one"%>
+					<li><a href="<%$one.url%>" target="_blank" title="<%$one.title%>加盟"><%$one.title%>加盟</a></li>
+				<%/yp_list%>
+            </ul>
+        </div>
+        <div class="X_right_content" id="con_five_4" style="display:none;">
+            <ul>
+				<%yp_list cid=24  row =63 item="one"%>
+					<li><a href="<%$one.url%>" target="_blank" title="<%$one.title%>加盟"><%$one.title%>加盟</a></li>
+				<%/yp_list%>
+				
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--项目展示结束-->
+</div>
+<div class="space10 clear"></div>
+<div class="space10 clear"></div>
+<div class="content">
+<%dd_list_rs  cid=941 limit ="3,1" item="one" %>		
+	<a href="<%$one.url%>" target="_blank"><span class="ad_1200x55"><img src="<%$one.content1%>"  title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟" /></span></a>
+<%/dd_list_rs%> 
+</div>
+<div class="space10 clear"></div>
+<div class="space10 clear"></div>
+<div class="content">
+	<div class="G_gdad">
+    	<div class="floatL"><img src="http://img.liansuo.com/html/images/011/gd_left.jpg" width="35" height="110" /></div>
+        <div class="floatL G_gdad_content">
+        	<div id="colee_one" style="overflow:hidden; width:1165px; height:110px;">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td id="colee_one1" valign="top" align="center">
+			<table cellpadding="2" cellspacing="0" border="0">
+				<tr align="center">
+					<%dd_list_rs  cid=951 item="one" %>						
+					  <td style="border-right:1px solid #d7d7d6;"><a href="<%$one.url%>" target="_blank"><img src="<%$one.content1%>"  title="<%$one.brandname%>加盟" alt="<%$one.brandname%>加盟" /></a></td>
+					<%/dd_list_rs%> 
+				</tr>
+			  </table>
+		  </td>
+        <td id="colee_one2" valign="top"></td>
+      </tr>
+    </table>
+  </div>
+        </div>
+    </div>
+</div>
+<div class="space10 clear"></div>
+<div class="space10 clear"></div>
+
+
+<script>	var __chid  = <%$cid%>;	</script>
+
+
+
+<!--#include virtual="/header_footer/20151101/foot.html"--> 
+<div id="Footer" class="F_top">
+	<dl>
+		<dt>友情链接</dt>
+		<dd>			
+			<%dd_list sql="SELECT `title`,`linkurl` as `url`,`state`  FROM `ls_class_links`  where `industryid`=$cid order by `orderid` asc limit 0,24" item="one"%>
+			<a href="<%$one.url%>"  > <%$one.title%></a>
+			<%/dd_list%>								
+		</dd>
+	</dl>
+</div> 
+<script src="http://www.liansuo.com/html/js/011/jquery.selectbox.js"></script>
+	
+<!--#include virtual="/header_footer/20151101/footer.html"-->    	       
+   	
+            
+        
+    
+
+	
+
+	
+

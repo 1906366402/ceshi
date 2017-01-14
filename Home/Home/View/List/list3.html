@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title><{$industry_pid.industryname}>专题</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="Keywords" content="投资华林蜂蜜行业,加盟投资华林蜂蜜行业怎么样,投资华林蜂蜜行业相关资讯">
+<meta name="Description" content="加盟投资华林蜂蜜行业怎么样,投资华林蜂蜜行业相关资讯,投资华林蜂蜜行业加盟焦点,最新最全的投资华林蜂蜜行业加盟资讯尽在中国连锁网.">
+<link rel="shortcut icon" href="http://www.liansuo.com/favicon.ico">
+<script type="text/javascript" src="__PUBLIC__/js/home/list/list3/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/home/list/list3/koala.min.1.5.js"></script>
+<link href="http://www.liansuo.com/html/style/liansuo_ini.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/home/list/list3/style_list.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="__PUBLIC__/css/home/list/list3/swiper.min.css">
+</head>
+<body>
+<div class="head">
+  <div class="lsgb_header_bj">
+    <div class="center">
+      <include file="../Public/html/home/tag/header.html" />
+      <div class="space10 clear"></div>
+      <div class="space10 clear"></div>
+        <div class="lsgb_logo"> <a class="floatL m_r" href="http://www.liansuo.com/"> <img alt="中国连锁网" src="__PUBLIC__/css/home/images/logo_11.png" height="55" width="210"> </a>
+      <div class="floatL title_pro">
+        <h1><{$industry_pid.industryname}>加盟指南</h1>
+        <p><a href="" target="_blank"><{$industry_pid.pathname}>.liansuo.com/</a></p>
+      </div>
+      <div class="floatR ad_pic">
+		<adlist item="one" cid="817" row="3">
+			<a href="<{$one.ypurl}>" target="_blank"><img width="226" height="55" src="http://img.liansuo.com/html/images/<{$one.fileurl}>"></a>
+		</adlist>	
+	  </div>
+    </div>
+    </div>
+  </div>
+  <div class="space10 clear"></div>
+  <div class="space10 clear"></div>
+  <div class="pro_nav">
+	<div class="pro_nav_con">
+		<span class="floatR pro_nav_right">
+			<a href="http://www.liansuo.com/top-<{$industry_pid.id}>-0-1.html" target="_blank" class="bd_r"><{$industry_pid.industryname}>排行榜</a>                       
+			<a href="http://www.liansuo.com/top10/<{$industry_pid.pathname}>/" title="<{$industry_pid.industryname}>加盟十大品牌">十大品牌</a> 
+		</span>
+		<a href="http://www.liansuo.com">首页</a>
+		<a href="http://www.liansuo.com/<{$industry_pid.pathname}>/jmzn/" target="_self">加盟指南</a><a href="http://www.liansuo.com/<{$industry_pid.pathname}>/xzcb/" target="_self">选址筹备</a>
+		<a href="http://www.liansuo.com/<{$industry_pid.pathname}>/rcjy/" target="_self">日常经营</a><a href="http://www.liansuo.com/<{$industry_pid.pathname}>/xmzx/" target="_self">项目资讯</a>
+		<a href="http://www.liansuo.com/<{$industry_pid.pathname}>/jdal/" target="_self">经典案例</a><a href="http://www.liansuo.com/<{$industry_pid.pathname}>/rwzf/" target="_self">人物专访</a>
+		<a href="http://www.liansuo.com/<{$industry_pid.pathname}>/czxx/" target="_self">参展信息</a><a href="http://www.liansuo.com/<{$industry_pid.pathname}>/hydt/" target="_self">行业动态</a>
+	</div>
+</div>
+</div>
+<div class="gd_nav"><if condition="$industry_pid.parentid eq 0"><{$industry_pid.industryname}><else /><{$industry_pid.parent.industryname}></if>类别：<volist name="industry_name" id="two" >
+									<a href="http://www.liansuo.com/<{$industry_pid.pathname}>/list3/"><{$two.industryname}></a>
+								</volist></div>
+<div class="space10 clear"></div>
+
+<p class="classly">
+	<?php shuffle($industry_ispay_1);?>
+	<volist name="industry_ispay_1" id="one" offset="0" length='8'>
+		<a href="<{$one.ypurl}>" target="_blank"><{$one.brandname}></a>
+	</volist>
+</p>
+<div class="space10 clear"></div>
+<div class="center module_two">
+    <div class="brand_con">
+        <div class="floatL brand_con_l">
+            <div class="brand_con_lt">
+              <div class="floatL brand_con_ltl">
+                <h3><span class="floatR"><em>连锁网恭贺：</em><div id="scrollDiv"><ul class="news_li">
+				<?php 		
+					$surname = array('刘先生','张先生','段先生','张先生','丁先生','曹女士','陈女士','王女士','贾女士','周女士');
+					$province = array('成都','北京','上海','深圳','青岛','唐山','合肥');
+				?>
+				<?php shuffle($industry_ispay_1);?>
+				<volist name="industry_ispay_1" id="one" offset="0" length='15'>
+					<?php
+							shuffle($surname);
+							shuffle($province);
+					?>
+					<li><?php echo $province[0]; ?> <?php echo $surname[0];?> 成功加盟了<a href="<{$one.ypurl}>" target="_blank"><{$one.brandname}></a></li>
+				</volist>
+                </ul></div></span>大牌<b>推荐</b></h3>
+                <div class="box">
+				<div id="fsD101" class="focus01">
+
+	<div id="D1pic101" class="fPic">
+		<volist name="industry_ispay_1_img_307" id="one" offset="0" length='4'>
+						<div class="fcon">
+							<a href="<{$one.ypurl}>"><img src="http://img.liansuo.com/html/images/<{$one.s_307_1}>" width="640" height="300" /></a>
+							<span class="shadow"><a href="<{$one.ypurl}>"><?php 
+														//去除html标签和首尾空格（包含全角空格）
+														$str=trim(strip_tags($one["title"]));
+														$str = mb_ereg_replace('^(　| )+', '', $str);
+														$str = mb_ereg_replace('(　| )+$', '', $str);
+														echo mb_ereg_replace('　　', "\n　　", $str); 
+													?></a></span>
+						</div>
+					</volist>
+	</div>
+	
+	<div class="fbg">
+		<div class="D1fBt" id="D1fBt">
+			<a href="javascript:void(0)" class="current"><i>1</i></a>
+			<a href="javascript:void(0)"><i>2</i></a>
+			<a href="javascript:void(0)"><i>3</i></a>
+			<a href="javascript:void(0)"><i>4</i></a>
+		</div>
+	</div>
+	
+	<span class="prev"></span>
+	<span class="next"></span>
+	
+</div>
+                </div>
+              </div>
+              <div class="floatR brand_con_ltr">
+                <h3><{$industry_pid.industryname}><b>加盟项目库</b></h3>
+                <div class="forms">
+                     <select name="jfindustry2" id="jfindustry2" class="fl">
+								<volist name="industry_name" id="two" >
+									<option value="<{$two.industryname}>"><{$two.industryname}></option>
+								</volist>
+						</select>
+						<select name="jfmoneysearchNum2" id="jfmoney2" class="fl">
+							<option value="0-1">1万以下</option>
+							<option value="1-5">1~5万</option>
+							<option value="5-10">5~10万</option>
+							<option value="10-20">10~20万</option>
+							<option value="20-50">20~50万</option>
+							<option value="50-100">50~100万</option>
+							<option value="100">100万以上</option>
+						</select>
+						<select name="jfad2" id="jfad2">
+							<option value="">不限</option>
+							<option value="北京">北京</option>
+							<option value="上海">上海</option>
+							<option value="广东">广东</option>
+							<option value="深圳">深圳</option>
+							<option value="天津">天津</option>
+							<option value="重庆">重庆</option>
+							<option value="青岛">青岛</option>
+						</select>
+                    <input value="" type="text"><button></button>
+                    <div class="space10"></div>
+                    <h3>热门关注</h3>
+                    <ul>
+                      <?php shuffle($industry_ispay_1);?>
+						<volist name="industry_ispay_1" id="one" offset="0" length='8'>
+							<li><a href="<{$one.ypurl}>" target="_blank"><{$one.title}></a></li>  
+						</volist>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            
+        </div>
+        <div class="floatR brand_con_r">
+          <div class="main-right-section sszx">
+					<h3><{$industry_pid.industryname}><b>加盟项目库</b></h3>
+					<div class="module-main">
+						<arclist item="one" row="10" industry="$industry_pid.id">
+							  <a class="sszx-item" href="<{$one.url}>" ><{$one.title}></a>
+						 </arclist>
+					</div>
+			</div>
+        </div>
+    </div>
+</div>
+	<div class="space10 clear"></div>
+    <div class="space10 clear"></div>
+    <div class="space10 clear"></div>
+	<div class="center phb_list">
+    	<h3><span>排行榜</span></h3>
+    <div class="space10 clear"></div>
+    <div class="space10 clear"></div>
+    <div class="space10 clear"></div>
+        <div class="phb_cont">
+        	<div class="phb_dl">
+            	<p class="phb_dl_title">最热品牌</p>
+                <ul class="phb_dl_list">
+					<?php shuffle($industry_ispay_1_img_logo);?>
+					<volist name="industry_ispay_1_img_logo" id="one" offset="0" length='5'>
+						<li>
+                    	<dl>
+                        	<dt><i class="number"><{$key+1}></i><p><span><{$one.brandname}></span><em><?php echo mt_rand(35481,45613);?>关注</em></p></dt>
+                            <dd><a href=""><img width="130" height="76" src="http://img.liansuo.com/html/images/<{$one.logo}>"></a></dd>
+                        </dl>
+                    </li>	
+					</volist>
+                </ul>
+            </div>
+            <div class="phb_dl">
+            	<p class="phb_dl_title">最热品牌</p>
+                <ul class="phb_dl_list">
+					<volist name="industry_ispay_1_img_logo" id="one" offset="5" length='5'>
+						<li>
+                    	<dl>
+                        	<dt><i class="number"><{$key-4}></i><p><span><{$one.brandname}></span><em><?php echo mt_rand(35481,45613);?>关注</em></p></dt>
+                            <dd><a href=""><img width="130" height="76" src="http://img.liansuo.com/html/images/<{$one.logo}>"></a></dd>
+                        </dl>
+                    </li>	
+					</volist>
+                </ul>
+            </div>
+            <div class="phb_dl">
+            	<p class="phb_dl_title">最热品牌</p>
+                <ul class="phb_dl_list">
+
+					<volist name="industry_ispay_1_img_logo" id="one" offset="10" length='5'>
+						<li>
+                    	<dl>
+                        	<dt><i class="number"><{$key-9}></i><p><span><{$one.brandname}></span><em><?php echo mt_rand(35481,45613);?>关注</em></p></dt>
+                            <dd><a href=""><img width="130" height="76" src="http://img.liansuo.com/html/images/<{$one.logo}>"></a></dd>
+                        </dl>
+                    </li>	
+					</volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+  <div class="space10 clear"></div>
+  <div class="space10 clear"></div>
+  <div class="space10 clear"></div>
+  <div class="join_info">
+  	<h3 class="title_h"><{$industry_pid.industryname}>加盟资讯</h3>
+    <div class="space10 clear"></div>
+    <div class="join_info_cont">
+    	<dl>
+        	<h4>加盟指南</h4>
+			
+			 <?php $type=0;?>
+				  <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="e">
+					<?php $type=1;?>
+					<dt><a href="<{$one.url}>" target="_blank"><img width="272" height="210" src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""></a></dt>
+				  </arclist>
+				  <if condition="$type eq 0">
+					<arclist item="one" row="1" picture="1" industry="$industry_pid.id"> 
+						<dt><a href="<{$one.url}>" target="_blank"><img width="272" height="210" src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""></a></dt>
+					</arclist>
+				  <else />
+				   <?php $type=0;?>
+				  </if>
+				<dd>
+					<ul>
+				  	<arclist item="one" row="4" industry="$industry_pid.id" deflag="e"> 
+						<?php $type=1;?>
+						  <li><a class="link js_link" href="<{$one.url}>" ><{$one.title}></a></li>
+					  </arclist>
+					  <if condition="$type eq 0">
+						  <arclist item="one" row="4" industry="$industry_pid.id"> 
+							 <li> <a class="link js_link" href="<{$one.url}>" ><{$one.title}></a></li>
+						  </arclist>
+					  <else />
+						<?php $type=0;?>
+					  </if>
+					</ul>
+				</dd>    
+        </dl>
+        <dl>
+        	<h4>选址筹备</h4>
+        	<?php $type=0;?>
+				  <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="g">
+					<?php $type=1;?>
+					<dt><a href="<{$one.url}>" target="_blank"><img width="272" height="210" src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""></a></dt>
+				  </arclist>
+				  <if condition="$type eq 0">
+					<arclist item="one" row="1" picture="1" industry="$industry_pid.id"> 
+						<dt><a href="<{$one.url}>" target="_blank"><img width="272" height="210" src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""></a></dt>
+					</arclist>
+				  <else />
+				   <?php $type=0;?>
+				  </if>
+				<dd>
+					<ul>
+				  	<arclist item="one" row="4" industry="$industry_pid.id" deflag="g"> 
+						<?php $type=1;?>
+						  <li><a class="link js_link" href="<{$one.url}>" ><{$one.title}></a></li>
+					  </arclist>
+					  <if condition="$type eq 0">
+						  <arclist item="one" row="4" industry="$industry_pid.id"> 
+							 <li> <a class="link js_link" href="<{$one.url}>" ><{$one.title}></a></li>
+						  </arclist>
+					  <else />
+						<?php $type=0;?>
+					  </if>
+					</ul>
+				</dd>    
+        </dl>
+        <dl>
+        	<h4>日常经营</h4>
+        	<?php $type=0;?>
+				  <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="i,k,o">
+					<?php $type=1;?>
+					<dt><a href="<{$one.url}>" target="_blank"><img width="272" height="210" src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""></a></dt>
+				  </arclist>
+				  <if condition="$type eq 0">
+					<arclist item="one" row="1" picture="1" industry="$industry_pid.id"> 
+						<dt><a href="<{$one.url}>" target="_blank"><img width="272" height="210" src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""></a></dt>
+					</arclist>
+				  <else />
+				   <?php $type=0;?>
+				  </if>
+				<dd>
+					<ul>
+				  	<arclist item="one" row="4" industry="$industry_pid.id" deflag="i,k,o"> 
+						<?php $type=1;?>
+						  <li><a class="link js_link" href="<{$one.url}>" ><{$one.title}></a></li>
+					  </arclist>
+					  <if condition="$type eq 0">
+						  <arclist item="one" row="4" industry="$industry_pid.id"> 
+							 <li> <a class="link js_link" href="<{$one.url}>" ><{$one.title}></a></li>
+						  </arclist>
+					  <else />
+						<?php $type=0;?>
+					  </if>
+					</ul>
+				</dd>    
+        </dl>
+        <dl>
+        	<h4>项目资讯</h4>
+        	<?php $type=0;?>
+				  <arclist item="one" row="1" picture="1" industry="$industry_pid.id" deflag="l,q">
+					<?php $type=1;?>
+					<dt><a href="<{$one.url}>" target="_blank"><img width="272" height="210" src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""></a></dt>
+				  </arclist>
+				  <if condition="$type eq 0">
+					<arclist item="one" row="1" picture="1" industry="$industry_pid.id"> 
+						<dt><a href="<{$one.url}>" target="_blank"><img width="272" height="210" src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""></a></dt>
+					</arclist>
+				  <else />
+				   <?php $type=0;?>
+				  </if>
+				<dd>
+					<ul>
+				  	<arclist item="one" row="4" industry="$industry_pid.id" deflag="l,q"> 
+						<?php $type=1;?>
+						  <li><a class="link js_link" href="<{$one.url}>" ><{$one.title}></a></li>
+					  </arclist>
+					  <if condition="$type eq 0">
+						  <arclist item="one" row="4" industry="$industry_pid.id"> 
+							 <li> <a class="link js_link" href="<{$one.url}>" ><{$one.title}></a></li>
+						  </arclist>
+					  <else />
+						<?php $type=0;?>
+					  </if>
+					</ul>
+				</dd>    
+        </dl>
+        
+    </div>
+    <div class="space10 clear"></div>
+  <div class="space10 clear"></div>
+  <div class="space5 clear"></div>
+    <h3 class="title_h b_top"><span>聚合阅读：</span>
+	<modlist name="newssearch" cid="$industry_pid.id" item="one" row="6">
+				<if condition="$one.oid neq 1">|</if><a href="/hot/<{$one.id}>.html" title="<{$one.word}>"><{$one.word}></a>
+			</modlist>
+	</h3>
+    <div class="business">
+    	<div class="floatL business_l">
+        	<div class="business_l_top">
+            	<div class="floatL business_l_topl">
+                	<h3 class="commen_h">创业人物</h3>
+                    <div class="space10 clear"></div>
+                    <div class="space10 clear"></div>
+                    <div class="sp_cont">
+                    	<arclist item="one" row="5" cid="745">
+							<p class="sp_node"><a href="<{$one.url}>" target="_blank"><img width="400" height="271" src="http://img.liansuo.com/html/images/<{$one.picture}>" alt=""></a> </p>  
+							<p class="sp_text"><?php echo mb_substr($one["description"],0,50,'utf-8');?>...</p>
+							<php>break;</php>
+						</arclist>
+						
+                        
+                        <p class="sp_nav">
+                        	<span class="floatR"><a target="_blank" href="http://www.liansuo.com/people">更多</a></span>
+							<arclist item="one" row="5" cid="745">
+								<a href="<{$one.url}>" target="_blank"><{$one.ext1}>期</a>
+								<if condition="$one.oid eq 3"><php>break;</php></if>
+							</arclist>
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="floatR business_l_topr">
+                	<h3 class="commen_h">加盟问答</h3>
+                    <div class="space10 clear"></div>
+                    <div class="space10 clear"></div>
+                    <dl class="qa">
+                    	<dt class="qa_dt"><i class="floatL qdt_text">Q</i><div class="floatR text_div"><p class="question">加入伊斯曼干洗获得？</p><p class="q_p">伊斯曼：已解决</p></div></dt>
+                        <dd class="qa_dd"><i class="floatL qdd_text">A</i><div class="floatR text_div"><p class="ask">加入伊斯曼干洗获得？<a href="">查看</a></p></div></dd>
+                    </dl>
+                    <div class="space10 clear"></div>
+                    <dl class="qa">
+                    	<dt class="qa_dt"><i class="floatL qdt_text">Q</i><div class="floatR text_div"><p class="question">加入伊斯曼干洗获得？</p><p  class="q_p">伊斯曼：已解决</p></div></dt>
+                        <dd class="qa_dd"><i class="floatL qdd_text">A</i><div class="floatR text_div"><p class="ask">加入伊斯曼干洗获得？<a href="">查看</a></p></div></dd>
+                    </dl>
+                    <div class="clear space6"></div>
+                    <p class="qa_xm">
+					<?php shuffle($industry_ispay_1);?>
+						<volist name="industry_ispay_1" id="one" offset="0" length='5'>
+							<a href="<{$one.ypurl}>" title="<{$one.brandname}>" target="_blank">
+										<{$one.brandname}>
+									</a>
+						</volist>
+					</p>
+                </div>
+            </div>
+            <div class="space10 clear"></div>
+            <div class="business_l_bottom">
+            	<h3 class="commen_h"><i class="jb_red"></i>加盟好项目</h3>
+                <div class="space10"></div><div class="space5"></div>
+                <div class="demo">
+              <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper" style="">
+			<for start="1" end="3" name="j">
+				<div class="swiper-slide" style="width: 820px;">
+					<ul>
+						<volist name="industry_ispay_1_img_587" id="one" offset="($j-1)*4" length='4'>
+						<li>
+								<a href="<{$one.ypurl}>" title="<{$one.brandname}>" target="_blank">
+								<img src="http://img.liansuo.com/html/images/<{$one.s_587_1}>" alt="<{$one.brandname}>"  width="184" height="184"> 
+								</a>
+							</li>
+						</volist>
+						
+					</ul>
+				</div>
+			</for>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev swiper-button-disabled"></div>
+    </div>
+    		  </div>
+            </div>
+        </div>
+        <div class="floatR business_r">
+        	<div class="pic_img">
+			<volist name="industry_ispay_1_img_55" id="one" offset="0" length='1'>
+					<a href="<{$one.ypurl}>" title="<{$one.brandname}>" target="_blank">
+						<img src="http://img.liansuo.com/html/images/<{$one.s_55_1}>" alt="<{$one.brandname}>"  width="226" height="278"> 
+					</a>
+			</volist>
+            </div>
+            <div class="space5"></div>
+            <h3 class="latest">最新入驻</h3>
+            <ul class="pro_list">
+				<?php shuffle($industry_ispay_1);?>
+				<volist name="industry_ispay_1" id="one" offset="0" length='12'>
+							<li><a href="<{$one.ypurl}>" title="<{$one.brandname}>" target="_blank">
+										<{$one.brandname}>
+									</a></li>
+				</volist>
+            </ul>
+            <div class="space12 clear"></div>
+            <h3 class="latest_1">品牌动态</h3>
+            <ul class="news_lis">
+			 <arclist item="one" row="7" industry="$industry_pid.id" >
+						<li><a target="_blank" title="<{$one.title}>" href="<{$one.url}>"><{$one.title}></a></li>
+					</arclist>
+            </ul>
+        </div>
+    </div>
+    <div class="space10 clear"></div>
+    <div class="space5 clear"></div>
+    <div class="class_nav">
+    		<?php shuffle($industry_ispay_1);?>
+						<volist name="industry_ispay_1" id="one" offset="0" length='6'>
+							<a href="<{$one.ypurl}>" title="<{$one.brandname}>" target="_blank">
+										<{$one.brandname}>
+									</a>
+						</volist>
+    </div>
+    <h3 class="red_h"><{$industry_pid.industryname}>加盟资讯</h3>
+    <ul class="pro_img_div">
+    	<?php shuffle($industry_ispay_1_img_logo);?>
+					<volist name="industry_ispay_1_img_logo" id="one" offset="0" length='16'>
+						<li><a href=""><img width="130" height="76" src="http://img.liansuo.com/html/images/<{$one.logo}>"></a></li>	
+					</volist>
+        <div class="center"></div>
+    </ul>
+  </div>
+  <div class="space10 clear"></div>
+  <div class="center project_xm">
+    <div class="project_xm_conx">
+      <h3 class="floatL">热门城市</h3>
+      <ul class="floatR xm_ul_pro">
+        <if condition="$industry_pid.parentid eq 0">
+					<li><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-0-_北京_0_0-1.html" target="_blank">北京加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-0-_上海_0_0-1.html" target="_blank">上海加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-0-_广东_0_0-1.html" target="_blank">广东加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-0-_深圳_0_0-1.html" target="_blank">深圳加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-0-_天津_0_0-1.html" target="_blank">天津加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-0-_重庆_0_0-1.html" target="_blank">重庆加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.id}>-0-0-_青岛_0_0-1.html" target="_blank">青岛加盟</a></li>
+					
+			<else />
+					<li><a href="http://search.liansuo.com/<{$industry_pid.parentid}>-<{$industry_pid.id}>-0-_北京_0_0-1.html" target="_blank">北京加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.parentid}>-<{$industry_pid.id}>-0-_上海_0_0-1.html" target="_blank">上海加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.parentid}>-<{$industry_pid.id}>-0-_广东_0_0-1.html" target="_blank">广东加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.parentid}>-<{$industry_pid.id}>-0-_深圳_0_0-1.html" target="_blank">深圳加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.parentid}>-<{$industry_pid.id}>-0-_天津_0_0-1.html" target="_blank">天津加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.parentid}>-<{$industry_pid.id}>-0-_重庆_0_0-1.html" target="_blank">重庆加盟</a></li>
+					<li><a href="http://search.liansuo.com/<{$industry_pid.parentid}>-<{$industry_pid.id}>-0-_青岛_0_0-1.html" target="_blank">青岛加盟</a></li>
+			</if>
+
+      </ul>
+    </div>
+</div>
+<div class="space10 clear"></div>
+	<!-- 公共页脚部分 -->
+		<include file="../Public/html/public/footer.html" />
+		<!-- 公共页脚部分end -->
+<script type="text/javascript">
+Qfast.add('widgets', { path: "__PUBLIC__/js/home/list/list3/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+Qfast(false, 'widgets', function () {
+	K.tabs({
+		id: 'fsD101',   //焦点图包裹id  
+		conId: "D1pic101",  //** 大图域包裹id  
+		tabId:"D1fBt",  
+		tabTn:"a",
+		conCn: '.fcon', //** 大图域配置class       
+		auto: 1,   //自动播放 1或0
+		effect: 'fade',   //效果配置
+		eType: 'click', //** 鼠标事件
+		pageBt:true,//是否有按钮切换页码
+		bns: ['.prev', '.next'],//** 前后按钮配置class                          
+		interval: 3000  //** 停顿时间  
+	}) 
+
+})  
+</script>
+<script src="__PUBLIC__/js/home/list/list3/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false
+    });
+	function AutoScroll(obj){
+	$(obj).find("ul:first").animate({
+		marginTop:"-30px"
+	},500,function(){
+		$(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+	});
+}
+$(document).ready(function(){
+	setInterval('AutoScroll("#scrollDiv")',3500);
+});
+    </script>
+</body>
+</html>
